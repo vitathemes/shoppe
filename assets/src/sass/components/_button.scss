@@ -1,0 +1,78 @@
+.c-btn {
+  @include h6;
+  font-weight: 700;
+  font-size: rem(12px);
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  border-radius: $shelly_global_radius;
+  transition: $shelly_global_transition;
+  padding: rem(10px 16px);
+  text-decoration: none;
+  display: inline-block;
+
+  @include mq(desktop) {
+    font-size: rem(14px);
+  }
+}
+
+.c-btn--primary {
+  background: $shelly_neutral_black;
+  border: rem(1px) solid $shelly_neutral_black;
+  color: $shelly_neutral_white !important;
+
+  &:hover {
+    background-color: $shelly_neutral_white;
+    color: $shelly_neutral_black !important;
+  }
+}
+
+.c-btn--secondary {
+  background: $shelly_branding_color;
+  border: rem(1px) solid $shelly_branding_color;
+  color: $shelly_neutral_white !important;
+
+  &:hover {
+    background-color: $shelly_neutral_black;
+    border-color: $shelly_neutral_black;
+    color: $shelly_neutral_white !important;
+  }
+}
+
+.c-btn--ghost.c-btn--primary {
+  background-color: transparent;
+  color: $shelly_neutral_black !important;
+
+  &:hover {
+    background-color: $shelly_neutral_black;
+    border-color: $shelly_neutral_black;
+    color: $shelly_neutral_white !important;
+  }
+}
+
+.c-btn--ghost.c-btn--secondary {
+  background-color: transparent;
+  color: $shelly_branding_color !important;
+
+  &:hover {
+    background-color: $shelly_branding_color;
+    border-color: $shelly_branding_color;
+    color: $shelly_neutral_white !important;
+  }
+}
+
+
+.c-btn--sm {
+  font-size: rem(12px) !important;
+  padding: rem(7px 12px);
+}
+
+
+.c-btn.c-btn--lg {
+  font-size: rem(12px);
+  padding: rem(16px 32px);
+
+  @include mq(desktop) {
+    font-size: rem(16px);
+  }
+}

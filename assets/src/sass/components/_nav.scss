@@ -1,0 +1,155 @@
+.c-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  @include mq(desktop) {
+    background-color: transparent;
+    height: auto;
+    width: auto;
+    display: flex;
+    padding: 0;
+    flex-direction: row;
+  }
+}
+
+.s-nav {
+
+  li {
+    margin: rem(24px) 0;
+    padding: 0;
+    position: relative;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    @include mq(desktop) {
+      margin: 0 2em;
+      padding: rem(27px 0);
+    }
+  }
+
+  a {
+    line-height: 1.2;
+    text-decoration: none;
+    color: $shelly_headings_color;
+    font-size: rem(20px);
+
+    @include mq(desktop) {
+      font-size: rem(16px);
+    }
+
+    &:hover {
+      color: $shelly_branding_color;
+    }
+  }
+
+  & > li > .sub-menu {
+    top: 100%;
+    left: 0;
+  }
+
+  li:hover , li.focus {
+
+    & > .sub-menu {
+      opacity: 1;
+      visibility: visible;
+      max-height: unset;
+      margin-top: rem(8px);
+
+      @include mq(desktop) {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .sub-menu {
+    transition: $shelly_global_transition;
+    opacity: 0;
+    visibility: hidden;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: unset;
+    max-height: 0;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $shelly_neutral_white;
+    border: 0;
+    padding-left: rem(24px);
+
+    @include mq(desktop) {
+      margin-top: 0;
+      padding-left: 0;
+      width: auto;
+      left: 100%;
+      position: absolute;
+      max-height: unset;
+      border: 1px solid $shelly_neutral_secondary_color;
+    }
+
+    li {
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      padding: rem(12px) 0;
+      white-space: nowrap;
+      display: block;
+
+      @include mq(desktop) {
+        padding: rem(12px 16px);
+      }
+    }
+  }
+}
+
+.s-nav--footer {
+
+  li {
+    padding: 0;
+    margin: 0 rem(20px);
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  a {
+    color: $shelly_neutral_primary_color;
+
+    &:hover {
+      color: $shelly_headings_color;
+    }
+  }
+}
+
+
+li.current-menu-item, li.current_page_item {
+  @include mq(desktop) {
+    border-bottom: 2px solid #000000;
+  }
+}
+
+.c-nav--footer {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+body.admin-bar .c-nav {
+  top: 6.5rem;
+}

@@ -1,0 +1,124 @@
+.c-search-form {
+  position: relative;
+}
+
+.c-search-form__label__field {
+  border: none;
+  border-bottom: 1px solid $shelly_neutral_secondary_color;
+  background-color: transparent;
+  font-size: 1.5rem;
+  padding: rem(12px 3px);
+
+
+  @include mq(tablet) {
+    width: 100%;
+    max-width: 100%;
+    font-size: 2.5rem;
+
+    &::placeholder {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+.c-search-form__submit {
+  border: none;
+  background-color: transparent;
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  cursor: pointer;
+
+  &:hover {
+
+    .c-search-form__submit__icon {
+      fill: $shelly_branding_color;
+    }
+  }
+}
+
+
+.c-search-form__submit__icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  fill: $shelly_headings_color;
+  transition: $shelly_global_transition;
+}
+
+.c-widget.widget_search, .c-widget.woocommerce.widget_product_search {
+  .c-search-form__submit__icon {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+
+  .c-search-form__submit {
+    padding-right: 0;
+    width: 1.7rem;
+    height: 1.7rem;
+  }
+
+  .c-search-form__label__field {
+    @include mq(tablet) {
+
+      &::placeholder {
+        font-size: 1rem !important;
+      }
+    }
+  }
+}
+
+
+// Inside Widget
+.c-widget .c-search-form {
+
+  .c-search-form__label__field {
+    border: none;
+    border-bottom: 1px solid $shelly_neutral_secondary_color;
+    background-color: transparent;
+    font-size: 1rem;
+    padding: rem(12px 3px);
+
+    @include mq(tablet) {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+
+  .c-search-form__submit {
+    border: none;
+    background-color: transparent;
+    width: 1.75rem;
+    height: 1.75rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    cursor: pointer;
+
+    @include mq(desktop) {
+      width: 3rem;
+      height: 3rem;
+    }
+
+    &:hover {
+
+      .c-search-form__submit__icon {
+        fill: $shelly_branding_color;
+      }
+    }
+  }
+
+}
+
+.rtl {
+
+  .c-search-form__submit {
+    right: unset !important;
+    left: 0 !important;
+    padding-right: rem(16px);
+    padding-left: 0;
+  }
+}

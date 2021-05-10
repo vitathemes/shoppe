@@ -1,0 +1,46 @@
+.c-cats {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 80%;
+  width: auto;
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+.c-cats__item {
+  display: inline-block;
+  font-weight: normal;
+  font-size: rem(13px);
+  line-height: rem(17px);
+  text-transform: capitalize;
+  color: $shelly_neutral_primary_color;
+
+  &:not(&:last-child) {
+    margin-right: rem(5px);
+
+    &::after {
+      content: ", ";
+    }
+  }
+}
+
+.c-cats__item__link {
+  font-weight: normal;
+  font-size: rem(12px);
+  line-height: rem(17px);
+  text-transform: capitalize;
+  color: $shelly_neutral_primary_color;
+  text-decoration: none;
+
+  @include mq(tablet) {
+    font-size: rem(14px);
+  }
+
+  &:hover {
+    color: $shelly_headings_color;
+  }
+}

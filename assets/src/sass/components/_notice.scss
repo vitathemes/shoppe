@@ -1,0 +1,106 @@
+.c-notice {
+  background-color: $shelly_neutral_tertiary_color;
+  border-top: 2px solid $shelly_branding_color;
+  padding: rem(12px 12px);
+  display: flex;
+  align-items: center;
+  margin-bottom: rem(24px);
+  font-size: 0.75rem;
+
+  @include mq(tablet) {
+    font-size: 1rem;
+    padding: rem(24px 40px);
+  }
+
+  &::before {
+    content: '';
+    fill: $shelly_branding_color;
+    width: rem(28px);
+    height: rem(28px);
+    margin-right: rem(10px);
+    background: center center/100% no-repeat;
+
+    @include mq(tablet) {
+      width: rem(32px);
+      height: rem(32px);
+      margin-right: rem(16px);
+    }
+  }
+}
+
+.s-notice {
+
+  a {
+    color: $shelly_headings_color;
+    font-weight: 500;
+    text-decoration: none;
+    white-space: nowrap;
+
+    @include mq(tablet) {
+      width: auto;
+    }
+
+    &:hover {
+      color: $shelly_branding_color;
+    }
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      line-height: 1.25;
+      margin-bottom: rem(10px);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.c-notice__main {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.c-notice--error {
+  border-top-color: $shelly_error_color;
+
+  &::before {
+    fill: $shelly_error_color;
+  }
+}
+
+.woocommerce .c-notice {
+
+  a.button {
+    color: $shelly_branding_color;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    text-transform: uppercase;
+
+    &:hover {
+      color: $shelly_headings_color;
+    }
+  }
+}
+
+.c-notice, .c-notice--error {
+
+  &::before {
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"%3E%3Cpath d="M128 24a104 104 0 1 0 104 104A104.118 104.118 0 0 0 128 24zm-8 56a8 8 0 0 1 16 0v56a8 8 0 0 1-16 0zm8 104a12 12 0 1 1 12-12a12 12 0 0 1-12 12z" fill="%23000"/%3E%3Crect x="0" y="0" width="256" height="256" fill="rgba(0, 0, 0, 0)" /%3E%3C/svg%3E');
+     }
+}
+
+.c-notice--success {
+
+  &::before {
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"%3E%3Cpath d="M128 24a104 104 0 1 0 104 104A104.12 104.12 0 0 0 128 24zm49.531 85.79l-58.672 56a8.024 8.024 0 0 1-11.062 0l-29.328-28a8.007 8.007 0 0 1 11.062-11.58l23.797 22.728l53.14-50.727a8.007 8.007 0 0 1 11.063 11.578z" fill="%23000"/%3E%3Crect x="0" y="0" width="256" height="256" fill="rgba(0, 0, 0, 0)" /%3E%3C/svg%3E');
+  }
+}

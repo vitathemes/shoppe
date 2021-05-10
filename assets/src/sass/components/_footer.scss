@@ -1,0 +1,38 @@
+.c-footer {
+  clear: both;
+  font-size: rem(14px);
+
+  @include mq(tablet) {
+    font-size: rem(16px);
+  }
+}
+
+.c-footer__main {
+  border-top: 1px solid $shelly_neutral_secondary_color;
+  padding: 2rem 0 4rem;
+}
+
+.c-footer__copyright {
+  color: $shelly_neutral_primary_color;
+}
+
+.s-footer-copyright {
+  text-align: left;
+
+  @include mq(tablet) {
+    text-align: right;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  a {
+    color: $shelly_neutral_primary_color;
+    text-decoration: underline;
+
+    &:hover {
+      color: $shelly_headings_color;
+    }
+  }
+}

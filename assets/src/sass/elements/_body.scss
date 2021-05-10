@@ -1,0 +1,11 @@
+body {
+  font: 12px/#{$shelly_default_line_height} $shelly_default_font_family;
+
+  @include mq(tablet) {
+    font: 14px/#{$shelly_default_line_height} $shelly_default_font_family;
+  }
+
+  @include mq(desktop) {
+    font: #{$shelly_default_font_size}/#{$shelly_default_line_height} $shelly_default_font_family;
+  }
+}

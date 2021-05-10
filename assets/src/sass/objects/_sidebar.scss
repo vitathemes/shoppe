@@ -1,0 +1,86 @@
+.o-sidebar {
+  width: 100%;
+  order: 2;
+  margin-top: rem(24px);
+
+  @include mq(tablet) {
+    margin-top: rem(64px);
+  }
+
+  @include mq(desktop) {
+    margin-top: 0;
+  }
+
+  @include mq(tablet) {
+    width: 40%;
+    margin-right: rem(32px);
+    order: unset;
+  }
+
+  @include mq(desktop) {
+    width: 25%;
+    margin-right: rem(36px);
+  }
+}
+
+
+.o-sidebar--right {
+  order: 2;
+
+  @include mq(tablet) {
+    width: 40%;
+    margin-right: 0;
+    margin-left: rem(32px);
+  }
+
+  @include mq(desktop) {
+    width: 30%;
+    margin-right: 0;
+    margin-left: rem(36px);
+  }
+}
+
+.o-sidebar--product-filters {
+  margin-bottom: rem(16px);
+}
+
+.rtl .o-sidebar{
+  width: 100%;
+  order: 1 !important;
+  margin-top: rem(24px);
+
+  @include mq(tablet) {
+    margin-top: rem(64px);
+  }
+
+  @include mq(desktop) {
+    margin-top: 0;
+  }
+
+  @include mq(tablet) {
+    width: 40%;
+    margin-right: rem(32px);
+    order: unset;
+  }
+
+  @include mq(desktop) {
+    width: 25%;
+    margin-right: rem(36px);
+  }
+
+  &.o-sidebar--right {
+    order: unset !important;
+
+    @include mq(tablet) {
+      width: 40%;
+      margin-right: 0;
+      margin-left: rem(32px);
+    }
+
+    @include mq(desktop) {
+      width: 30%;
+      margin-right: 0;
+      margin-left: rem(36px);
+    }
+  }
+}
