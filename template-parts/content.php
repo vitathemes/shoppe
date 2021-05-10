@@ -67,7 +67,7 @@ else: ?>
             <?php
             wp_link_pages(
 	            array(
-		            'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'wp-meliora' ),
+		            'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'shoppe' ),
 		            'after'  => '</div>',
 	            )
             );
