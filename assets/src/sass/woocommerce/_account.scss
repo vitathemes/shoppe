@@ -16,7 +16,7 @@
 .woocommerce-account .woocommerce-MyAccount-navigation {
   width: 100%;
   float: unset;
-  border-bottom: 1px solid $shelly_neutral_secondary_color;
+  border-bottom: 1px solid $shoppe_neutral_secondary_color;
   overflow-x: scroll;
   @include mq(desktop) {
     overflow: visible;
@@ -51,25 +51,25 @@
 
     a {
       text-decoration: none;
-      color: $shelly_neutral_primary_color;
+      color: $shoppe_neutral_primary_color;
       word-break: keep-all;
       white-space: nowrap;
 
       &:hover {
-        color: $shelly_branding_color;
+        color: $shoppe_branding_color;
       }
     }
 
     li.is-active {
-      border-bottom: 1px solid $shelly_neutral_black;
+      border-bottom: 1px solid $shoppe_neutral_black;
 
       a {
-        color: $shelly_headings_color;
+        color: $shoppe_headings_color;
       }
     }
 
     li.woocommerce-MyAccount-navigation-link--customer-logout a:hover {
-      color: $shelly_error_color;
+      color: $shoppe_error_color;
     }
   }
 }
@@ -81,12 +81,12 @@
   padding-top: rem(40px);
 
   a {
-    color: $shelly_branding_color;
+    color: $shoppe_branding_color;
     text-decoration: none;
     font-size: inherit;
 
     &:hover {
-      color: $shelly_headings_color;
+      color: $shoppe_headings_color;
     }
   }
 }
@@ -109,7 +109,7 @@
   }
 
   p, address {
-    color: $shelly_neutral_primary_color;
+    color: $shoppe_neutral_primary_color;
     font-style: normal;
   }
 
@@ -144,7 +144,7 @@
   background-color: #fff;
   border: none;
   border-radius: 0;
-  border-bottom: 1px solid $shelly_neutral_secondary_color;
+  border-bottom: 1px solid $shoppe_neutral_secondary_color;
   padding: rem(16px) 0;
   height: rem(53.6px);
 }
@@ -164,7 +164,7 @@
 
   &:hover {
     background-color: transparent;
-    color: $shelly_neutral_black;
+    color: $shoppe_neutral_black;
   }
 }
 
@@ -174,14 +174,14 @@
     font-size: 1rem;
     line-height: 1.35;
     font-weight: inherit;
-    border-bottom: 1px solid $shelly_neutral_primary_color;
+    border-bottom: 1px solid $shoppe_neutral_primary_color;
     padding-bottom: 1.5rem;
     text-transform: uppercase;
   }
 
   td {
     border-top: 0;
-    border-bottom: 1px solid $shelly_neutral_secondary_color;
+    border-bottom: 1px solid $shoppe_neutral_secondary_color;
     padding: rem(20px) 0;
   }
 
@@ -220,7 +220,7 @@
   }
 
   address {
-    background-color: $shelly_neutral_quaternary_color;
+    background-color: $shoppe_neutral_quaternary_color;
     border: none;
     border-radius: 0;
     line-height: 1.7;
@@ -259,14 +259,14 @@ form.edit-account {
 }
 
 .woocommerce-submit-button-account {
-  background-color: $shelly_neutral_black !important;
-  border: 1px solid $shelly_neutral_black;
+  background-color: $shoppe_neutral_black !important;
+  border: 1px solid $shoppe_neutral_black;
   display: block;
   width: 100%;
 
   &:hover {
-    background-color: $shelly_neutral_white !important;
-    border-color: $shelly_neutral_black !important;
+    background-color: $shoppe_neutral_white !important;
+    border-color: $shoppe_neutral_black !important;
   }
 }
 .woocommerce form .form-row {
@@ -284,11 +284,11 @@ form.edit-account {
     padding: rem(12px) 0;
     border: 0;
     background-color: transparent !important;
-    color: $shelly_neutral_primary_color;
+    color: $shoppe_neutral_primary_color;
 
     &::before {
       font-weight: 400;
-      color: $shelly_neutral_black;
+      color: $shoppe_neutral_black;
     }
 
     &:first-child {
@@ -301,7 +301,7 @@ form.edit-account {
 
     &:last-child {
       padding-bottom: rem(40px);
-      border-bottom: 1px solid $shelly_neutral_secondary_color;
+      border-bottom: 1px solid $shoppe_neutral_secondary_color;
 
       @include mq(tablet) {
         border-bottom: 0;

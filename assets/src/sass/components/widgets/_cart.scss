@@ -37,11 +37,11 @@
     padding-left: 1.75rem !important;
 
     .name a {
-      color: $shelly_headings_color;
+      color: $shoppe_headings_color;
     }
 
     .quantity .amount {
-      color: $shelly_branding_color;
+      color: $shoppe_branding_color;
     }
   }
 
@@ -53,38 +53,38 @@
       letter-spacing: 0.025em;
       text-transform: uppercase;
       box-sizing: border-box;
-      border-radius: $shelly_global_radius;
-      transition: $shelly_global_transition;
+      border-radius: $shoppe_global_radius;
+      transition: $shoppe_global_transition;
       padding: rem(8px 10px);
       text-decoration: none;
       display: inline-block;
 
-      background: $shelly_neutral_black;
-      border: rem(1px) solid $shelly_neutral_black;
+      background: $shoppe_neutral_black;
+      border: rem(1px) solid $shoppe_neutral_black;
 
       &:hover {
-        background-color: $shelly_branding_color;
-        border-color: $shelly_branding_color;
-        color: $shelly_neutral_white !important;
+        background-color: $shoppe_branding_color;
+        border-color: $shoppe_branding_color;
+        color: $shoppe_neutral_white !important;
       }
 
       background-color: transparent;
-      color: $shelly_neutral_black !important;
+      color: $shoppe_neutral_black !important;
 
       &:hover {
-        background-color: $shelly_neutral_black;
-        border-color: $shelly_neutral_black;
-        color: $shelly_neutral_white !important;
+        background-color: $shoppe_neutral_black;
+        border-color: $shoppe_neutral_black;
+        color: $shoppe_neutral_white !important;
       }
     }
   }
 
   li .remove_from_cart_button {
   font-weight: 400;
-    color: $shelly_headings_color !important;
+    color: $shoppe_headings_color !important;
 
     &:hover {
-    color: $shelly_error_color !important;
+    color: $shoppe_error_color !important;
       background-color: transparent !important;
     }
   }

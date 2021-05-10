@@ -6,23 +6,23 @@
   margin:0 0 rem(8px);
   display: flex;
   align-items: center;
-  color: $shelly_neutral_primary_color;
+  color: $shoppe_neutral_primary_color;
 }
 
 .c-post__title {
   margin: 0 0 rem(14px);
   font-weight: 400;
-  transition: $shelly_global_transition;
+  transition: $shoppe_global_transition;
   display: inline-block;
   word-wrap: break-word;
 }
 
 .c-post__title-link {
-  color: $shelly_headings_color;
+  color: $shoppe_headings_color;
   text-decoration: none;
 
   &:hover {
-    color: $shelly_branding_color;
+    color: $shoppe_branding_color;
   }
 }
 
@@ -32,7 +32,7 @@
   padding-top: 66.66%; /* 3:2 Aspect Ratio */
   position: relative; /* If you want text inside of it */
   overflow: hidden;
-  border-radius: $shelly_global_radius2x;
+  border-radius: $shoppe_global_radius2x;
   margin-bottom: rem(22px);
 
   &:hover {
@@ -60,7 +60,7 @@
 .s-post-thumbnail {
 
   img {
-    transition: $shelly_global_transition ease-out;
+    transition: $shoppe_global_transition ease-out;
     position: absolute;
     left: 0;
     top: 0;
@@ -70,7 +70,7 @@
     height: 100%;
     object-position: center;
     object-fit: cover;
-    border-radius: $shelly_global_radius2x;
+    border-radius: $shoppe_global_radius2x;
   }
 }
 
@@ -79,7 +79,7 @@
   font-size: rem(12px);
   line-height: rem(17px);
   text-transform: capitalize;
-  color: $shelly_neutral_primary_color;
+  color: $shoppe_neutral_primary_color;
   text-decoration: none;
 
   @include mq(tablet) {
@@ -87,7 +87,7 @@
   }
 
   &:is(a):hover {
-    color: $shelly_headings_color;
+    color: $shoppe_headings_color;
   }
 }
 
@@ -96,16 +96,16 @@
   font-size: rem(13px);
   line-height: rem(17px);
   text-transform: capitalize;
-  color: $shelly_headings_color;
+  color: $shoppe_headings_color;
   text-decoration: none;
 
   &:hover {
-    color: $shelly_branding_color;
+    color: $shoppe_branding_color;
   }
 }
 
 .c-post__excerpt {
-  color: $shelly_neutral_primary_color;
+  color: $shoppe_neutral_primary_color;
   font-style: normal;
   font-weight: normal;
   font-size: rem(14px);
@@ -118,7 +118,7 @@
 
 .c-post__read-more__link {
   @include h6;
-  color: $shelly_branding_color;
+  color: $shoppe_branding_color;
   text-decoration: none;
 
   @include mq(tablet) {
@@ -126,7 +126,7 @@
   }
 
   &:hover {
-    color: $shelly_headings_color;
+    color: $shoppe_headings_color;
   }
 }
 
@@ -141,7 +141,7 @@
   }
 
   .c-post__header__meta {
-    color: $shelly_neutral_primary_color;
+    color: $shoppe_neutral_primary_color;
     @include h5;
   }
 
@@ -177,18 +177,18 @@
 }
 
 .c-post__footer__tags {
-  color: $shelly_neutral_primary_color;
+  color: $shoppe_neutral_primary_color;
 }
 
 
 .c-post__tags__title {
-  color: $shelly_headings_color;
+  color: $shoppe_headings_color;
 
   &::after {
     content: '';
     width: rem(64px);
     height: rem(1px);
-    background-color: $shelly_headings_color;
+    background-color: $shoppe_headings_color;
     display: inline-block;
     margin: 0 rem(8px);
     vertical-align: middle;
@@ -198,11 +198,11 @@
 .s-post-tags {
 
   a {
-    color: $shelly_neutral_primary_color;
+    color: $shoppe_neutral_primary_color;
     text-decoration: none;
 
     &:hover {
-      color: $shelly_branding_color;
+      color: $shoppe_branding_color;
     }
   }
 }
@@ -212,7 +212,7 @@
   display: flex;
   justify-content: space-between;
   padding: rem(48px) 0 rem(32px);
-  border-bottom: 1px solid $shelly_neutral_secondary_color;
+  border-bottom: 1px solid $shoppe_neutral_secondary_color;
   margin-bottom: 32px;
   flex-wrap: wrap;
   align-items: flex-start;

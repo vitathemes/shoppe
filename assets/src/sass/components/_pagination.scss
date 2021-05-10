@@ -10,12 +10,12 @@
     justify-content: center;
 
     a {
-      color: $shelly_headings_color;
+      color: $shoppe_headings_color;
       text-decoration: none;
       @include h4;
 
       &:hover {
-        color: $shelly_branding_color;
+        color: $shoppe_branding_color;
       }
     }
   }
@@ -67,7 +67,7 @@
     align-items: center;
 
     .page-numbers {
-      color: $shelly_neutral_black;
+      color: $shoppe_neutral_black;
       font-weight: normal;
       font-size: 16px;
       line-height: 32px;
@@ -79,18 +79,18 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      border-radius: $shelly_global_radius;
-      border: 1px solid $shelly_neutral_secondary_color;
+      border-radius: $shoppe_global_radius;
+      border: 1px solid $shoppe_neutral_secondary_color;
 
       &:hover {
-        color: $shelly_neutral_black;
-        background-color: $shelly_neutral_secondary_color;
+        color: $shoppe_neutral_black;
+        background-color: $shoppe_neutral_secondary_color;
       }
 
       &.current {
-        color: $shelly_neutral_white;
-        background-color: $shelly_neutral_black;
-        border-color: $shelly_neutral_black;
+        color: $shoppe_neutral_white;
+        background-color: $shoppe_neutral_black;
+        border-color: $shoppe_neutral_black;
       }
 
       &.next, &.prev {
@@ -99,9 +99,9 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 1px solid $shelly_neutral_secondary_color;
-        color: $shelly_neutral_black;
-        border-radius: $shelly_global_radius;
+        border: 1px solid $shoppe_neutral_secondary_color;
+        color: $shoppe_neutral_black;
+        border-radius: $shoppe_global_radius;
         background-color: transparent;
 
         span {
@@ -111,8 +111,8 @@
         }
 
         &:hover {
-          color: $shelly_neutral_black;
-          background-color: $shelly_neutral_secondary_color;
+          color: $shoppe_neutral_black;
+          background-color: $shoppe_neutral_secondary_color;
         }
       }
     }

@@ -23,19 +23,19 @@ if ( ! wc_coupons_enabled() ) { // @codingStandardsIgnoreLine.
 
 ?>
 <div class="woocommerce-form-coupon-toggle">
-	<p><?php esc_html_e( 'Have a coupon?', 'shelly' ) ?> <a href="#" class="showcoupon"><?php esc_html_e( 'Click here to enter your code', 'shelly' ) ?></a></p>
+	<p><?php esc_html_e( 'Have a coupon?', 'shoppe' ) ?> <a href="#" class="showcoupon"><?php esc_html_e( 'Click here to enter your code', 'shoppe' ) ?></a></p>
 </div>
 
 <form class="checkout_coupon woocommerce-form-coupon" method="post" style="display:none">
 
-	<p><?php esc_html_e( 'If you have a coupon code, please apply it below.', 'shelly' ); ?></p>
+	<p><?php esc_html_e( 'If you have a coupon code, please apply it below.', 'shoppe' ); ?></p>
 
 	<p class="form-row form-row-first">
-		<input type="text" name="coupon_code" class="input-text" placeholder="<?php esc_attr_e( 'Coupon code', 'shelly' ); ?>" id="coupon_code" value="" />
+		<input type="text" name="coupon_code" class="input-text" placeholder="<?php esc_attr_e( 'Coupon code', 'shoppe' ); ?>" id="coupon_code" value="" />
 	</p>
 
 	<p class="form-row form-row-last">
-		<button type="submit" class="button" name="apply_coupon" value="<?php esc_attr_e( 'Apply coupon', 'shelly' ); ?>"><?php esc_html_e( 'Apply coupon', 'shelly' ); ?></button>
+		<button type="submit" class="button" name="apply_coupon" value="<?php esc_attr_e( 'Apply coupon', 'shoppe' ); ?>"><?php esc_html_e( 'Apply coupon', 'shoppe' ); ?></button>
 	</p>
 
 	<div class="clear"></div>

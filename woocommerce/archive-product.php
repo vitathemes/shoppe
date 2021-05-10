@@ -53,11 +53,11 @@ do_action( 'woocommerce_before_main_content' );
                             <path d="M133.999 62.706V40a6 6 0 1 0-12 0v22.706a25.994 25.994 0 0 0 0 50.587V216a6 6 0 0 0 12 0V113.293a25.994 25.994 0 0 0 0-50.587zm-6 39.294a14 14 0 1 1 14-14a14.016 14.016 0 0 1-14 14zm98 66a26.04 26.04 0 0 0-20-25.294L206 40a6 6 0 1 0-12 0l-.001 102.706a25.994 25.994 0 0 0 0 50.587L194 216a6 6 0 0 0 12 0l-.001-22.707a26.04 26.04 0 0 0 20-25.293zm-26 14a14 14 0 1 1 14-14a14.016 14.016 0 0 1-14 14zm-138-71.294V40a6 6 0 0 0-12 0v70.706a25.994 25.994 0 0 0 0 50.587V216a6 6 0 0 0 5.999 6a6 6 0 0 0 6-6L62 161.293a25.994 25.994 0 0 0 0-50.587zm-6 39.294a14 14 0 1 1 14-14a14.016 14.016 0 0 1-14 14z"/>
                             <rect x="0" y="0" width="256" height="256" fill="rgba(0, 0, 0, 0)"/>
                         </svg>
-						<?php esc_html_e( 'Filters', 'shelly' ); ?>
+						<?php esc_html_e( 'Filters', 'shoppe' ); ?>
                     </button>
                     <div class="o-popup o-popup--filters js-popup-filters">
                         <button onclick="closeFiltersPopup()" aria-label="<?php esc_attr_e( 'Close popup',
-							'shelly' ); ?>" class="o-popup__close js-popup-close">
+							'shoppe' ); ?>" class="o-popup__close js-popup-close">
                             <svg class="o-popup__close__icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="1em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256">
                                 <path d="M205.657 194.343a8 8 0 1 1-11.314 11.314L128 139.313l-66.343 66.344a8 8 0 0 1-11.314-11.314L116.687 128L50.343 61.657a8 8 0 0 1 11.314-11.314L128 116.687l66.343-66.344a8 8 0 0 1 11.314 11.314L139.313 128z"/>
                             </svg>
@@ -76,10 +76,10 @@ do_action( 'woocommerce_before_main_content' );
                     </div>
                 </div>
 			<?php endif; ?>
-            <div class="<?php echo esc_attr( shelly_page_classes_layout() ); ?>">
+            <div class="<?php echo esc_attr( shoppe_page_classes_layout() ); ?>">
 
 				<?php
-				if ( shelly_has_sidebar() ) {
+				if ( shoppe_has_sidebar() ) {
 					get_sidebar();
 				} ?>
                 <div class="o-page__main">

@@ -1,6 +1,6 @@
 .c-menu {
   display: none;
-  background-color: $shelly_neutral_white;
+  background-color: $shoppe_neutral_white;
   margin: 0;
   position: fixed;
   left: 0;
@@ -41,8 +41,8 @@
       line-height: 1.65;
       padding: rem(6.1px 10px);
       border: none;
-      background-color: $shelly_neutral_tertiary_color;
-      border-radius: $shelly_global_radius;
+      background-color: $shoppe_neutral_tertiary_color;
+      border-radius: $shoppe_global_radius;
     }
   }
 }

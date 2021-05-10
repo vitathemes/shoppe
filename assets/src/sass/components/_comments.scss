@@ -45,7 +45,7 @@
 
 .comment-content a {
   word-wrap: break-word;
-  color: $shelly_neutral_primary_color;
+  color: $shoppe_neutral_primary_color;
   font-weight: 400;
   font-size: 19px;
   line-height: 23px;
@@ -107,7 +107,7 @@
 
   .comment-header .time, .comment-header .time * {
     font-size: 12px;
-    color: $shelly_neutral_primary_color;
+    color: $shoppe_neutral_primary_color;
     font-weight: var(--heading-typography-variant) !important;
   }
 
@@ -120,7 +120,7 @@
   .avatar {
     vertical-align: middle;
     margin-right: 10px;
-    border-radius: $shelly_global_radius2x;
+    border-radius: $shoppe_global_radius2x;
   }
 
   .comment {
@@ -154,7 +154,7 @@
     font-size: 0.8em;
     margin-top: 0;
     text-decoration: none;
-    color: $shelly_headings_color;
+    color: $shoppe_headings_color;
 
     @include mq(desktop) {
       font-size: 1em;
@@ -193,7 +193,7 @@ ol.children:last-child {
 
 .comment-content p {
   margin-bottom: 16px;
-  color: $shelly_neutral_primary_color;
+  color: $shoppe_neutral_primary_color;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.05em;
@@ -226,13 +226,13 @@ ol.children:last-child {
   line-height: 27px;
   text-align: center;
   letter-spacing: 0.1em;
-  color: $shelly_neutral_black !important;
+  color: $shoppe_neutral_black !important;
   transition: 0.25s;
   text-decoration: none;
   margin-left: auto;
 
   &:hover {
-    color: $shelly_branding_color;
+    color: $shoppe_branding_color;
   }
 }
 
@@ -261,7 +261,7 @@ ol.children:last-child {
     align-items: center;
     margin-bottom: 0.5em;
     font-weight: var(--heading-typography-variant);
-    color: $shelly_neutral_black;
+    color: $shoppe_neutral_black;
   }
 
   input {
@@ -276,7 +276,7 @@ ol.children:last-child {
 .comment-form-rating {
   margin-top: rem(24px);
   font-size: rem(14px);
-  color: $shelly_neutral_primary_color;
+  color: $shoppe_neutral_primary_color;
 
   label {
     display: block;
@@ -289,7 +289,7 @@ ol.children:last-child {
     font-size: rem(16px);
 
     a {
-      color: $shelly_neutral_black;
+      color: $shoppe_neutral_black;
     }
   }
 }
@@ -311,7 +311,7 @@ ol.children:last-child {
   font-size: 1rem;
   line-height: 24px;
   font-weight: var(--heading-typography-variant);
-  color: $shelly_neutral_black;
+  color: $shoppe_neutral_black;
 
   label {
     font-weight: normal;
@@ -321,7 +321,7 @@ ol.children:last-child {
     align-items: center;
     margin-bottom: 0.5em;
     font-weight: var(--heading-typography-variant);
-    color: $shelly_neutral_black;
+    color: $shoppe_neutral_black;
   }
 
   @include mq(desktop) {
@@ -337,22 +337,22 @@ ol.children:last-child {
 
 .comment-form .form-submit {
   button {
-    border: 1px solid $shelly_headings_color;
-    color: $shelly_neutral_white;
-    background-color: $shelly_headings_color;
+    border: 1px solid $shoppe_headings_color;
+    color: $shoppe_neutral_white;
+    background-color: $shoppe_headings_color;
     flex-grow: 1;
     text-align: center;
     padding: rem(14.5px 32px);
     border-radius: rem(4px);
-    transition: $shelly_global_transition;
+    transition: $shoppe_global_transition;
     font-family: inherit;
     @include h5;
 
     &:hover {
       cursor: pointer;
-      background-color: $shelly_neutral_white;
-      border-color: $shelly_neutral_black;
-      color: $shelly_neutral_black;
+      background-color: $shoppe_neutral_white;
+      border-color: $shoppe_neutral_black;
+      color: $shoppe_neutral_black;
     }
   }
 }
@@ -368,7 +368,7 @@ ol.children:last-child {
   }
 
   label {
-    color: $shelly_neutral_primary_color;
+    color: $shoppe_neutral_primary_color;
     font-weight: normal;
     font-size: rem(14px);
     line-height: 24px;
@@ -389,14 +389,14 @@ ol.children:last-child {
   font-size: 0.8em;
   margin-top: 0;
   text-decoration: none;
-  color: $shelly_neutral_black !important;
+  color: $shoppe_neutral_black !important;
 
   @include mq(desktop) {
     font-size: 1em;
   }
 
   &:hover {
-    color: $shelly_branding_color;
+    color: $shoppe_branding_color;
   }
 }
 
@@ -408,7 +408,7 @@ ol.children:last-child {
 .comment-notes {
   font-size: rem(13px);
   font-weight: var(--text-typography-variant);
-  color: $shelly_neutral_primary_color;
+  color: $shoppe_neutral_primary_color;
   margin-top: 0;
 }
 
@@ -418,10 +418,10 @@ ol.children:last-child {
   input{
     font-weight: var(--heading-typography-variant);
     padding: 10px 24px;
-    background-color: $shelly_neutral_white;
-    color: $shelly_neutral_white;
+    background-color: $shoppe_neutral_white;
+    color: $shoppe_neutral_white;
     cursor: pointer;
-    transition: $shelly_global_transition;
+    transition: $shoppe_global_transition;
 
     &:hover {
       background-color: #2B2B2B;
@@ -439,19 +439,19 @@ ol.children:last-child {
 .logged-in-as {
 
   a {
-    color: $shelly_branding_color;
+    color: $shoppe_branding_color;
     text-decoration: none;
 
     &:hover {
-      color: $shelly_neutral_primary_color;
+      color: $shoppe_neutral_primary_color;
     }
   }
 
   a:first-child {
-    color: $shelly_neutral_black;
+    color: $shoppe_neutral_black;
 
     &:hover {
-      color: $shelly_branding_color;
+      color: $shoppe_branding_color;
     }
   }
 }

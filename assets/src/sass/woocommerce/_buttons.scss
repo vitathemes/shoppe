@@ -4,20 +4,20 @@
   font-size: rem(12px);
   letter-spacing: 0.025em;
   text-transform: uppercase;
-  background: $shelly_neutral_white;
-  border: rem(1px) solid $shelly_neutral_black;
-  color: $shelly_neutral_black;
+  background: $shoppe_neutral_white;
+  border: rem(1px) solid $shoppe_neutral_black;
+  color: $shoppe_neutral_black;
   box-sizing: border-box;
-  border-radius: $shelly_global_radius;
-  transition: $shelly_global_transition;
+  border-radius: $shoppe_global_radius;
+  transition: $shoppe_global_transition;
 
   @include mq(tablet) {
     font-size: rem(14px);
   }
 
   &:hover {
-    background-color: $shelly_neutral_black;
-    color: $shelly_neutral_white;
+    background-color: $shoppe_neutral_black;
+    color: $shoppe_neutral_white;
   }
 }
 

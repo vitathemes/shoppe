@@ -8,12 +8,12 @@
 }
 
 .c-footer__main {
-  border-top: 1px solid $shelly_neutral_secondary_color;
+  border-top: 1px solid $shoppe_neutral_secondary_color;
   padding: 2rem 0 4rem;
 }
 
 .c-footer__copyright {
-  color: $shelly_neutral_primary_color;
+  color: $shoppe_neutral_primary_color;
 }
 
 .s-footer-copyright {
@@ -28,11 +28,11 @@
   }
 
   a {
-    color: $shelly_neutral_primary_color;
+    color: $shoppe_neutral_primary_color;
     text-decoration: underline;
 
     &:hover {
-      color: $shelly_headings_color;
+      color: $shoppe_headings_color;
     }
   }
 }

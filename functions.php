@@ -1,10 +1,10 @@
 <?php
 /**
- * Shelly functions and definitions
+ * Shoppe functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package Shelly
+ * @package Shoppe
  */
 
 if ( ! defined( 'THEME_VERSION' ) ) {
@@ -12,7 +12,7 @@ if ( ! defined( 'THEME_VERSION' ) ) {
 	define( 'THEME_VERSION', '1.0.0' );
 }
 
-if ( ! function_exists( 'shelly_setup' ) ) :
+if ( ! function_exists( 'shoppe_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
@@ -20,14 +20,14 @@ if ( ! function_exists( 'shelly_setup' ) ) :
 	 * runs before the init hook. The init hook is too late for some features, such
 	 * as indicating support for post thumbnails.
 	 */
-	function shelly_setup() {
+	function shoppe_setup() {
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
-		 * If you're building a theme based on Shelly, use a find and replace
-		 * to change 'shelly' to the name of your theme in all the template files.
+		 * If you're building a theme based on Shoppe, use a find and replace
+		 * to change 'shoppe' to the name of your theme in all the template files.
 		 */
-		load_theme_textdomain( 'shelly', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'shoppe', get_template_directory() . '/languages' );
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
@@ -49,17 +49,17 @@ if ( ! function_exists( 'shelly_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'menu-1' => __( 'Header Menu', 'shelly' ),
+			'menu-1' => __( 'Header Menu', 'shoppe' ),
 		) );
 
 
 		/*
 		 * Add image sizes
 		 */
-		add_image_size( "shelly_thumbnail_square_mobile", 140, 140, true );
-		add_image_size( "shelly_thumbnail_square", 380, 380, true );
-		add_image_size( "shelly_thumbnail_blog", 450, 300, true );
-		add_image_size( "shelly_thumbnail_single", 700, 600, false );
+		add_image_size( "shoppe_thumbnail_square_mobile", 140, 140, true );
+		add_image_size( "shoppe_thumbnail_square", 380, 380, true );
+		add_image_size( "shoppe_thumbnail_blog", 450, 300, true );
+		add_image_size( "shoppe_thumbnail_single", 700, 600, false );
 
 		/*
 		 * Switch default core markup for search form, comment form, and comments
@@ -82,7 +82,7 @@ if ( ! function_exists( 'shelly_setup' ) ) :
 		add_theme_support(
 			'custom-background',
 			apply_filters(
-				'shelly_custom_background_args',
+				'shoppe_custom_background_args',
 				array(
 					'default-color' => 'ffffff',
 					'default-image' => '',
@@ -114,13 +114,13 @@ if ( ! function_exists( 'shelly_setup' ) ) :
 		add_theme_support( 'woocommerce' );
 	}
 endif;
-add_action( 'after_setup_theme', 'shelly_setup' );
+add_action( 'after_setup_theme', 'shoppe_setup' );
 
 /**
  * Check if WooCommerce is activated
  */
-if ( ! function_exists( 'shelly_is_woocommerce_activated' ) ) {
-	function shelly_is_woocommerce_activated() {
+if ( ! function_exists( 'shoppe_is_woocommerce_activated' ) ) {
+	function shoppe_is_woocommerce_activated() {
 		if ( class_exists( 'woocommerce' ) ) { return true; } else { return false; }
 	}
 }
@@ -132,22 +132,22 @@ if ( ! function_exists( 'shelly_is_woocommerce_activated' ) ) {
  *
  * @global int $content_width
  */
-function shelly_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'shelly_content_width', 1248 );
+function shoppe_content_width() {
+	$GLOBALS['content_width'] = apply_filters( 'shoppe_content_width', 1248 );
 }
-add_action( 'after_setup_theme', 'shelly_content_width', 0 );
+add_action( 'after_setup_theme', 'shoppe_content_width', 0 );
 
 /**
  * Register widget area.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function shelly_widgets_init() {
+function shoppe_widgets_init() {
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Blog Sidebar', 'shelly' ),
+			'name'          => esc_html__( 'Blog Sidebar', 'shoppe' ),
 			'id'            => 'sidebar-1',
-			'description'   => esc_html__( 'Add widgets here.', 'shelly' ),
+			'description'   => esc_html__( 'Add widgets here.', 'shoppe' ),
 			'before_widget' => '<section id="%1$s" class="c-widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h3 class="c-widget__title">',
@@ -157,9 +157,9 @@ function shelly_widgets_init() {
 
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Shop Sidebar', 'shelly' ),
+			'name'          => esc_html__( 'Shop Sidebar', 'shoppe' ),
 			'id'            => 'sidebar-2',
-			'description'   => esc_html__( 'Add widgets here.', 'shelly' ),
+			'description'   => esc_html__( 'Add widgets here.', 'shoppe' ),
 			'before_widget' => '<section id="%1$s" class="c-widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h3 class="c-widget__title">',
@@ -169,9 +169,9 @@ function shelly_widgets_init() {
 
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Footer Sidebar - Left', 'shelly' ),
+			'name'          => esc_html__( 'Footer Sidebar - Left', 'shoppe' ),
 			'id'            => 'sidebar-3',
-			'description'   => esc_html__( 'Add widgets here.', 'shelly' ),
+			'description'   => esc_html__( 'Add widgets here.', 'shoppe' ),
 			'before_widget' => '<section id="%1$s" class="c-widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h3 class="c-widget__title">',
@@ -181,9 +181,9 @@ function shelly_widgets_init() {
 
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Footer sidebar - Right', 'shelly' ),
+			'name'          => esc_html__( 'Footer sidebar - Right', 'shoppe' ),
 			'id'            => 'sidebar-4',
-			'description'   => esc_html__( 'Add widgets here.', 'shelly' ),
+			'description'   => esc_html__( 'Add widgets here.', 'shoppe' ),
 			'before_widget' => '<section id="%1$s" class="c-widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h3 class="c-widget__title">',
@@ -191,26 +191,26 @@ function shelly_widgets_init() {
 		)
 	);
 }
-add_action( 'widgets_init', 'shelly_widgets_init' );
+add_action( 'widgets_init', 'shoppe_widgets_init' );
 
 /**
  * Enqueue scripts and styles.
  */
-function shelly_scripts() {
-	if ( ! shelly_is_woocommerce_activated()) {
-		wp_enqueue_style( 'shelly-style',
+function shoppe_scripts() {
+	if ( ! shoppe_is_woocommerce_activated()) {
+		wp_enqueue_style( 'shoppe-style',
 			get_template_directory_uri() . '/assets/css/main.css',
 			array(),
 			THEME_VERSION );
-		wp_style_add_data( 'shelly-style', 'rtl', 'replace' );
+		wp_style_add_data( 'shoppe-style', 'rtl', 'replace' );
 	} else {
-		wp_enqueue_style( 'shelly-style', get_template_directory_uri() . '/assets/css/main-woocommerce.css', array(), THEME_VERSION );
+		wp_enqueue_style( 'shoppe-style', get_template_directory_uri() . '/assets/css/main-woocommerce.css', array(), THEME_VERSION );
 		wp_enqueue_script( 'flickity-main-scripts','https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js', array(), THEME_VERSION, true );
 	}
 
-	wp_enqueue_script( 'shelly-vendor-scripts', get_template_directory_uri() . '/assets/js/vendor.min.js', array(), THEME_VERSION, true );
-	wp_enqueue_script( 'shelly-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), THEME_VERSION, true );
-	wp_enqueue_script( 'shelly-main-scripts', get_template_directory_uri() . '/assets/js/main.js', array('shelly-vendor-scripts'), THEME_VERSION, true );
+	wp_enqueue_script( 'shoppe-vendor-scripts', get_template_directory_uri() . '/assets/js/vendor.min.js', array(), THEME_VERSION, true );
+	wp_enqueue_script( 'shoppe-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), THEME_VERSION, true );
+	wp_enqueue_script( 'shoppe-main-scripts', get_template_directory_uri() . '/assets/js/main.js', array('shoppe-vendor-scripts'), THEME_VERSION, true );
 
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -219,7 +219,7 @@ function shelly_scripts() {
 
 
 }
-add_action( 'wp_enqueue_scripts', 'shelly_scripts' );
+add_action( 'wp_enqueue_scripts', 'shoppe_scripts' );
 
 /**
  * Implement the Custom Header feature.
@@ -240,7 +240,7 @@ require get_template_directory() . '/inc/template-functions.php';
 /**
  * Comments walker
  */
-require get_template_directory() . '/classes/class_shelly_walker_comment.php';
+require get_template_directory() . '/classes/class_shoppe_walker_comment.php';
 
 /**
  * Customizer additions.
@@ -257,7 +257,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 /**
  * Load WooCommerce Files
  */
-if ( shelly_is_woocommerce_activated() ) {
+if ( shoppe_is_woocommerce_activated() ) {
 	require get_template_directory() . '/inc/woocommerce/setup.php';
 }
 

@@ -37,9 +37,9 @@ do_action( 'woocommerce_before_account_downloads', $has_downloads ); ?>
 <?php else : ?>
 	<div class="c-notice s-notice">
         <div class="c-notice__main">
-	        <?php esc_html_e( 'No downloads available yet.', 'shelly' ); ?>
+	        <?php esc_html_e( 'No downloads available yet.', 'shoppe' ); ?>
             <a class="button" href="<?php echo esc_url( apply_filters( 'woocommerce_return_to_shop_redirect', wc_get_page_permalink( 'shop' ) ) ); ?>">
-		        <?php esc_html_e( 'Browse products', 'shelly' ); ?>
+		        <?php esc_html_e( 'Browse products', 'shoppe' ); ?>
             </a>
         </div>
 

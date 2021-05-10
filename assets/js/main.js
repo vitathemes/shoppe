@@ -9,11 +9,11 @@ const openPopup = () => {
 };
 
 if (document.querySelector('.js-search-btn')) {
-const shelly_searchBtnToggle = document.querySelector('.js-search-btn');
-const shelly_searchBtnClose = document.querySelector('.js-popup-close');
+const shoppe_searchBtnToggle = document.querySelector('.js-search-btn');
+const shoppe_searchBtnClose = document.querySelector('.js-popup-close');
 
-shelly_searchBtnToggle.addEventListener('click', openPopup);
-shelly_searchBtnClose.addEventListener('click', closePopup);
+shoppe_searchBtnToggle.addEventListener('click', openPopup);
+shoppe_searchBtnClose.addEventListener('click', closePopup);
 }
 
 const selectCarouselSlide = (carousel, index) => {

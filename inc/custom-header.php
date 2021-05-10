@@ -8,39 +8,39 @@
  *
  * @link https://developer.wordpress.org/themes/functionality/custom-headers/
  *
- * @package Shelly
+ * @package Shoppe
  */
 
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses shelly_header_style()
+ * @uses shoppe_header_style()
  */
-function shelly_custom_header_setup() {
+function shoppe_custom_header_setup() {
 	add_theme_support(
 		'custom-header',
 		apply_filters(
-			'shelly_custom_header_args',
+			'shoppe_custom_header_args',
 			array(
 				'default-image'      => '',
 				'default-text-color' => '000000',
 				'width'              => 1000,
 				'height'             => 250,
 				'flex-height'        => true,
-				'wp-head-callback'   => 'shelly_header_style',
+				'wp-head-callback'   => 'shoppe_header_style',
 			)
 		)
 	);
 }
-add_action( 'after_setup_theme', 'shelly_custom_header_setup' );
+add_action( 'after_setup_theme', 'shoppe_custom_header_setup' );
 
-if ( ! function_exists( 'shelly_header_style' ) ) :
+if ( ! function_exists( 'shoppe_header_style' ) ) :
 	/**
 	 * Styles the header image and text displayed on the blog.
 	 *
-	 * @see shelly_custom_header_setup().
+	 * @see shoppe_custom_header_setup().
 	 */
-	function shelly_header_style() {
+	function shoppe_header_style() {
 		$header_text_color = get_header_textcolor();
 
 		/*

@@ -29,9 +29,9 @@ do_action( 'woocommerce_before_cart' ); ?>
                 <tr>
                     <th class="product-thumbnail">&nbsp;</th>
                     <th class="product-name"><span class="screen-reader-text"><?php esc_html_e( 'Product',
-								'shelly' ); ?></span></th>
+								'shoppe' ); ?></span></th>
                     <th class="product-quantity"><span class="screen-reader-text"><?php esc_html_e( 'Quantity',
-								'shelly' ); ?></span></th>
+								'shoppe' ); ?></span></th>
                     <th class="product-remove">&nbsp;</th>
                 </tr>
                 </thead>
@@ -78,7 +78,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 								?>
                             </td>
 
-                            <td class="product-name" data-title="<?php esc_attr_e( 'Product', 'shelly' ); ?>">
+                            <td class="product-name" data-title="<?php esc_attr_e( 'Product', 'shoppe' ); ?>">
 								<?php
 								if ( ! $product_permalink ) {
 									echo wp_kses_post( apply_filters( 'woocommerce_cart_item_name',
@@ -103,17 +103,17 @@ do_action( 'woocommerce_before_cart' ); ?>
 								if ( $_product->backorders_require_notification() && $_product->is_on_backorder( $cart_item['quantity'] ) ) {
 									echo wp_kses_post( apply_filters( 'woocommerce_cart_item_backorder_notification',
 										'<p class="backorder_notification">' . esc_html__( 'Available on backorder',
-											'shelly' ) . '</p>',
+											'shoppe' ) . '</p>',
 										$product_id ) );
 								}
 								?>
                                 <span class="product-variations"><?php echo esc_html($_product->attribute_summary); ?></span>
-                                <span class="product-price" data-title="<?php esc_attr_e( 'Price', 'shelly' ); ?>"><?php
+                                <span class="product-price" data-title="<?php esc_attr_e( 'Price', 'shoppe' ); ?>"><?php
 									echo apply_filters( 'woocommerce_cart_item_price', WC()->cart->get_product_price( $_product ), $cart_item, $cart_item_key ); // phpcs:disable WordPress.XSS.EscapeOutput.OutputNotEscaped
 									?></span>
                             </td>
 
-                            <td class="product-quantity" data-title="<?php esc_attr_e( 'Quantity', 'shelly' ); ?>">
+                            <td class="product-quantity" data-title="<?php esc_attr_e( 'Quantity', 'shoppe' ); ?>">
 								<?php
 								if ( $_product->is_sold_individually() ) {
 									$product_quantity = sprintf( '1 <input type="hidden" name="cart[%s][qty]" value="1" />',
@@ -143,7 +143,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 									sprintf(
 										'<a href="%s" class="remove" aria-label="%s" data-product_id="%s" data-product_sku="%s"><svg class="o-popup__close__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="M205.657 194.343a8 8 0 1 1-11.314 11.314L128 139.313l-66.343 66.344a8 8 0 0 1-11.314-11.314L116.687 128L50.343 61.657a8 8 0 0 1 11.314-11.314L128 116.687l66.343-66.344a8 8 0 0 1 11.314 11.314L139.313 128z" /></svg></a>',
 										esc_url( wc_get_cart_remove_url( $cart_item_key ) ),
-										esc_html__( 'Remove this item', 'shelly' ),
+										esc_html__( 'Remove this item', 'shoppe' ),
 										esc_attr( $product_id ),
 										esc_attr( $_product->get_sku() )
 									),
@@ -162,14 +162,14 @@ do_action( 'woocommerce_before_cart' ); ?>
                 <tr>
                     <td colspan="6" class="actions">
                         <button type="submit" class="button update-card-btn" name="update_cart" value="<?php esc_attr_e( 'Update cart',
-							'shelly' ); ?>"><?php esc_html_e( 'Update cart', 'shelly' ); ?></button>
+							'shoppe' ); ?>"><?php esc_html_e( 'Update cart', 'shoppe' ); ?></button>
 						<?php if ( wc_coupons_enabled() ) { ?>
                             <div class="coupon">
-                                <label for="coupon_code"><?php esc_html_e( 'Coupon:', 'shelly' ); ?></label>
+                                <label for="coupon_code"><?php esc_html_e( 'Coupon:', 'shoppe' ); ?></label>
                                 <input type="text" name="coupon_code" class="input-text" id="coupon_code" value="" placeholder="<?php esc_attr_e( 'Coupon code',
-									'shelly' ); ?>"/>
+									'shoppe' ); ?>"/>
                                 <button type="submit" class="button" name="apply_coupon" value="<?php esc_attr_e( 'Apply coupon',
-									'shelly' ); ?>"><?php esc_html_e( 'Apply coupon', 'shelly' ); ?></button>
+									'shoppe' ); ?>"><?php esc_html_e( 'Apply coupon', 'shoppe' ); ?></button>
 								<?php do_action( 'woocommerce_cart_coupon' ); ?>
                             </div>
 						<?php } ?>

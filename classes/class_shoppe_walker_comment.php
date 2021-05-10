@@ -6,7 +6,7 @@
  * @package     WordPress
  * @subpackage  Comment_Walker
  */
-class Shelly_walker_comment extends Walker_Comment {
+class Shoppe_walker_comment extends Walker_Comment {
 	/**
 	 * Output a comment in the HTML5 format. Don't worry, we're
 	 * just extending default WordPress functionality.
@@ -66,14 +66,14 @@ class Shelly_walker_comment extends Walker_Comment {
 
 					<?php if ( ! $comment->comment_approved ): ?>
                         <p class="comment-awaiting-moderation"><?php esc_html_e( 'Your comment is awaiting moderation.',
-								'shelly' ); ?></p>
+								'shoppe' ); ?></p>
 					<?php endif; ?>
 
 					<?php comment_text(); ?>
 
 					<?php
 					// Output Edit link
-					edit_comment_link( __( 'Edit', 'shelly' ), '<span class="edit-link">', '</span>' );
+					edit_comment_link( __( 'Edit', 'shoppe' ), '<span class="edit-link">', '</span>' );
 					?>
                 </div>
             </div>

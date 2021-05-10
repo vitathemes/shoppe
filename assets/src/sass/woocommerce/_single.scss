@@ -17,7 +17,7 @@
 }
 
 .woocommerce-Tabs-panel--description {
-  color: $shelly_neutral_primary_color;
+  color: $shoppe_neutral_primary_color;
 
   ul {
     list-style: "- ";
@@ -25,12 +25,12 @@
     padding-left: rem(12px);
 
     li {
-      color: $shelly_neutral_primary_color;
+      color: $shoppe_neutral_primary_color;
       line-height: 1.57;
       margin-bottom: rem(8px);
 
       &::marker {
-        color: $shelly_headings_color;
+        color: $shoppe_headings_color;
       }
     }
   }
@@ -93,7 +93,7 @@
   margin: 0 rem(24px) 0 0;
   padding: 0 0 rem(12px);
   border-bottom: 1px solid transparent !important;
-  transition: $shelly_global_transition;
+  transition: $shoppe_global_transition;
 
   @include mq(desktop) {
     padding: 0 0 rem(30px);
@@ -107,7 +107,7 @@
 
 .woocommerce div.product .woocommerce-tabs ul.tabs li a {
   font-size: rem(12px);
-  color: $shelly_neutral_primary_color;
+  color: $shoppe_neutral_primary_color;
   padding: 0;
   font-weight: inherit;
 
@@ -117,10 +117,10 @@
 }
 
 .woocommerce div.product .woocommerce-tabs ul.tabs li.active {
-  border-color: $shelly_headings_color !important;
+  border-color: $shoppe_headings_color !important;
 
   a {
-    color: $shelly_headings_color;
+    color: $shoppe_headings_color;
   }
 }
 
@@ -129,9 +129,9 @@
 }
 
 .woocommerce div.product form.cart div.quantity {
-  background-color: $shelly_neutral_tertiary_color;
-  color: $shelly_neutral_primary_color;
-  border-radius: $shelly_global_radius;
+  background-color: $shoppe_neutral_tertiary_color;
+  color: $shoppe_neutral_primary_color;
+  border-radius: $shoppe_global_radius;
 
   input {
     background-color: transparent;
@@ -155,14 +155,14 @@
 }
 
 .woocommerce div.product form.cart .button {
-  border: 1px solid $shelly_headings_color;
-  color: $shelly_headings_color;
+  border: 1px solid $shoppe_headings_color;
+  color: $shoppe_headings_color;
   background-color: transparent;
   flex-grow: 1;
   text-align: center;
   margin-left: rem(10px);
   border-radius: rem(4px);
-  transition: $shelly_global_transition;
+  transition: $shoppe_global_transition;
   font-family: inherit;
   @include h7;
 
@@ -172,14 +172,14 @@
   }
 
   &:hover {
-    background-color: $shelly_headings_color;
-    color: $shelly_neutral_white;
+    background-color: $shoppe_headings_color;
+    color: $shoppe_neutral_white;
   }
 }
 
 .woocommerce div.product form.cart .reset_variations {
-  border: 1px solid $shelly_neutral_secondary_color;
-  color: $shelly_headings_color;
+  border: 1px solid $shoppe_neutral_secondary_color;
+  color: $shoppe_headings_color;
   background-color: transparent;
   flex-grow: 1;
   text-align: center;
@@ -187,26 +187,26 @@
   padding: rem(4px) rem(6px);
   font-size: rem(12px);
   text-decoration: none;
-  transition: $shelly_global_transition;
+  transition: $shoppe_global_transition;
 
   &:hover {
-    background-color: $shelly_neutral_secondary_color;
-    color: $shelly_headings_color;
+    background-color: $shoppe_neutral_secondary_color;
+    color: $shoppe_headings_color;
   }
 }
 
 .woocommerce .woocommerce-review-link {
   text-decoration: none;
-  color: $shelly_neutral_primary_color;
+  color: $shoppe_neutral_primary_color;
   margin-left: rem(8px);
 
   &:hover {
-    color: $shelly_headings_color;
+    color: $shoppe_headings_color;
   }
 }
 
 .woocommerce-product-details__short-description {
-  color: $shelly_neutral_primary_color;
+  color: $shoppe_neutral_primary_color;
   margin-bottom: rem(48px);
   line-height: 1.6875em;
   font-size: rem(12px);
@@ -251,7 +251,7 @@
     }
 
     span, a {
-      color: $shelly_neutral_primary_color;
+      color: $shoppe_neutral_primary_color;
       text-decoration: none;
       margin-left: rem(4px);
       font-size: rem(12px);
@@ -261,7 +261,7 @@
       }
 
       &[href]:hover {
-        color: $shelly_headings_color;
+        color: $shoppe_headings_color;
       }
     }
   }
@@ -327,7 +327,7 @@
       height: 100%;
       object-fit: cover;
       object-position: center;
-      border-radius: $shelly_global_radius2x;
+      border-radius: $shoppe_global_radius2x;
     }
   }
 }
@@ -343,7 +343,7 @@
 
   .carousel-cell {
     transform: rotate(-90deg);
-    border-radius: $shelly_global_radius2x;
+    border-radius: $shoppe_global_radius2x;
     overflow: hidden;
     cursor: pointer;
     margin-right: rem(40px);
@@ -417,7 +417,7 @@
       height: 2px;
       margin: 0;
       border-radius: 0;
-      background: $shelly_neutral_secondary_color;
+      background: $shoppe_neutral_secondary_color;
       opacity: 0.25;
       cursor: pointer;
 
@@ -426,7 +426,7 @@
 
     .dot.is-selected {
       height: 2px;
-      background: $shelly_neutral_primary_color;
+      background: $shoppe_neutral_primary_color;
     }
   }
 }
@@ -453,13 +453,13 @@
   @include h7;
   min-height: rem(20px);
   font-weight: 400;
-  background-color: $shelly_branding_color;
+  background-color: $shoppe_branding_color;
   left: 0.5rem;
   top: 0.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: $shelly_global_radius;
+  border-radius: $shoppe_global_radius;
   z-index: 2;
 
   @include mq(tablet) {
@@ -502,7 +502,7 @@
 
     .review {
       padding: rem(40px) 0;
-      border-bottom: 1px solid $shelly_neutral_secondary_color;
+      border-bottom: 1px solid $shoppe_neutral_secondary_color;
 
       &:last-of-type {
         border-bottom: none;
@@ -517,7 +517,7 @@
       }
 
       .description {
-        color: $shelly_neutral_primary_color;
+        color: $shoppe_neutral_primary_color;
       }
 
       .avatar {
@@ -551,10 +551,10 @@
     button, input[type="submit"] {
       @include h5;
       text-transform: uppercase;
-      background: $shelly_neutral_black;
-      color: $shelly_neutral_white;
+      background: $shoppe_neutral_black;
+      color: $shoppe_neutral_white;
       box-sizing: border-box;
-      border-radius: $shelly_global_radius;
+      border-radius: $shoppe_global_radius;
     }
   }
 }
@@ -592,7 +592,7 @@
 
     td {
       width: auto;
-      color: $shelly_neutral_primary_color;
+      color: $shoppe_neutral_primary_color;
     }
   }
 }

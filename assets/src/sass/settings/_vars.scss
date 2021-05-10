@@ -5,26 +5,26 @@ $global_media_queries: (
         md: 64em,
         lg: 80em
 ) !default;
-$shelly_global_transition: 0.25s !default;
-$shelly_global_radius: 0.25rem !default;
-$shelly_global_radius2x: 0.5rem !default;
+$shoppe_global_transition: 0.25s !default;
+$shoppe_global_radius: 0.25rem !default;
+$shoppe_global_radius2x: 0.5rem !default;
 
 // Colors
-$shelly_headings_color: var(--shelly-primary-color);
-$shelly_neutral_primary_color: var(--shelly-secondary-color);
-$shelly_neutral_secondary_color: var(--shelly-tertiary-color);
-$shelly_neutral_tertiary_color: var(--shelly-quaternary-color);
-$shelly_neutral_quaternary_color: var(--shelly-quinary-color);
-$shelly_neutral_white: #fff;
-$shelly_neutral_black: var(--shelly-primary-color);
+$shoppe_headings_color: var(--shoppe-primary-color);
+$shoppe_neutral_primary_color: var(--shoppe-secondary-color);
+$shoppe_neutral_secondary_color: var(--shoppe-tertiary-color);
+$shoppe_neutral_tertiary_color: var(--shoppe-quaternary-color);
+$shoppe_neutral_quaternary_color: var(--shoppe-quinary-color);
+$shoppe_neutral_white: #fff;
+$shoppe_neutral_black: var(--shoppe-primary-color);
 
-$shelly_branding_color: var(--shelly-branding-color);
+$shoppe_branding_color: var(--shoppe-branding-color);
 
-$shelly_error_color: #D82700;
+$shoppe_error_color: #D82700;
 
 // Typography (Fallback)
-$shelly_default_font_family: 'DM Sans', Arial;
-$shelly_default_font_size: 16px;
-$shelly_default_line_height: 1.563;
+$shoppe_default_font_family: 'DM Sans', Arial;
+$shoppe_default_font_size: 16px;
+$shoppe_default_line_height: 1.563;
 
 

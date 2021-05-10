@@ -1,4 +1,4 @@
-=== Shelly ===
+=== Shoppe ===
 
 Contributors: vitathemes, kashani, mrmolaei, mostafas1990
 Requires at least: 5.6
@@ -8,11 +8,11 @@ Stable tag: 1.0.0
 License: GPL-2.0-or-later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Shelly is a WordPress minimal & Fast-loading theme for people who want to have a simple blog & introduce themselves.
+Shoppe is a WordPress minimal & Fast-loading theme for people who want to have a simple blog & introduce themselves.
 
 == Description ==
 
-Shelly is a WordPress minimal & Fast-loading theme for people who want to have a simple blog & introduce themselves.
+Shoppe is a WordPress minimal & Fast-loading theme for people who want to have a simple blog & introduce themselves.
 
 == Features ==
 * No additional JS
@@ -51,7 +51,7 @@ See a working example at [demo.vitathemes.com/indigo](https://demo.vitathemes.co
 
 == Copyright ==
 
-Shelly is distributed under the terms of the GNU GPL.
+Shoppe is distributed under the terms of the GNU GPL.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -63,9 +63,9 @@ but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
 
-Shelly is distributed under the terms of the GNU GPL version 2.0
+Shoppe is distributed under the terms of the GNU GPL version 2.0
 
-Shelly bundles the following third-party resources:
+Shoppe bundles the following third-party resources:
 
 Dashicons by WordPress
 License: GNU GPLv2, https://www.gnu.org/licenses/old-licenses/gpl-2.0.html

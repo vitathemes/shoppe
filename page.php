@@ -9,7 +9,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Shelly
+ * @package Shoppe
  */
 
 get_header();
@@ -24,7 +24,7 @@ get_header();
 		            while ( have_posts() ) :
 			            the_post();
 
-			            if ( shelly_is_woocommerce_page() ) {
+			            if ( shoppe_is_woocommerce_page() ) {
 				            get_template_part( 'template-parts/content', 'woocommerce-page' );
 			            } else {
 				            get_template_part( 'template-parts/content', 'page' );

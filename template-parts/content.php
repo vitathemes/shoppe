@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Shelly
+ * @package Shoppe
  */
 if ( ! is_singular() ):
 	?>
@@ -12,18 +12,18 @@ if ( ! is_singular() ):
         <article id="post-<?php the_ID(); ?>" <?php post_class( 'c-post c-post--archive c-post--blog' ); ?>>
 			<?php
 			if ( get_theme_mod( 'show_posts_thumbnail_archive', true ) ) {
-				shelly_post_thumbnail();
+				shoppe_post_thumbnail();
 			} ?>
             <div class="c-post__meta">
 				<?php
 				if ( get_theme_mod( 'show_cat_archive', true ) ) {
-					shelly_post_categories();
+					shoppe_post_categories();
 				}
 				if ( get_theme_mod( 'show_cat_archive', true ) && get_theme_mod( 'show_date_archive', true ) ) {
-					shelly_separator();
+					shoppe_separator();
 				}
 				if ( get_theme_mod( 'show_date_archive', true ) ) {
-					shelly_posted_on();
+					shoppe_posted_on();
 				}
 				?>
             </div>
@@ -47,20 +47,20 @@ else: ?>
             <div class="c-post__header__meta">
 				<?php
 				if ( get_theme_mod( 'show_post_author', true ) ) {
-					shelly_posted_by();
+					shoppe_posted_by();
 				}
 				if ( get_theme_mod( 'show_post_author', true ) && get_theme_mod( 'show_post_date', true ) ) {
-					shelly_separator();
+					shoppe_separator();
 				}
 				if ( get_theme_mod( 'show_post_date', true ) ) {
-					shelly_posted_on();
+					shoppe_posted_on();
 				}
 				?>
             </div>
         </header>
 		<?php
 		if ( get_theme_mod( 'show_posts_thumbnail', true ) ) {
-			shelly_post_thumbnail();
+			shoppe_post_thumbnail();
 		} ?>
         <div class="c-post__container">
             <div class="c-post__content"><?php the_content(); ?></div>
@@ -76,15 +76,15 @@ else: ?>
 				<?php if ( get_theme_mod( 'show_post_tags', true ) ) { ?>
 					<?php if ( has_tag() ) : ?>
                         <div class="c-post__footer__tags s-post-tags">
-                            <span class="c-post__tags__title"><?php esc_html_e( 'Tags', 'shelly' ); ?></span>
+                            <span class="c-post__tags__title"><?php esc_html_e( 'Tags', 'shoppe' ); ?></span>
 							<?php the_tags( '' ); ?>
                         </div>
 					<?php endif; ?>
 				<?php } ?>
 				<?php if ( get_theme_mod( 'show_share_icons', true ) ) { ?>
                     <div class="c-post__footer__share">
-                        <span class="c-post__tags__title"><?php esc_html_e( 'Share', 'shelly' ); ?></span>
-						<?php shelly__share_links() ?>
+                        <span class="c-post__tags__title"><?php esc_html_e( 'Share', 'shoppe' ); ?></span>
+						<?php shoppe__share_links() ?>
                     </div>
 				<?php } ?>
             </footer>

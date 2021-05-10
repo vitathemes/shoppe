@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Creating_an_Error_404_Page
  *
- * @package Shelly
+ * @package Shoppe
  */
 
 get_header();
@@ -18,17 +18,17 @@ get_header();
                     <div class="o-grid-center">
                         <div class="o-col-12_md-5">
                             <header class="page-header">
-                                <span style="font-size: 3rem;"><?php esc_html_e('404 ERROR', 'shelly') ?></span>
+                                <span style="font-size: 3rem;"><?php esc_html_e('404 ERROR', 'shoppe') ?></span>
                                 <h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.',
-										'shelly' ); ?></h1>
+										'shoppe' ); ?></h1>
                             </header><!-- .page-header -->
 
                             <div class="page-content">
                                 <p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?',
-										'shelly' ); ?></p>
+										'shoppe' ); ?></p>
 
                                 <p style="margin: 3rem 0 4rem;">
-                                    <a href="<?php echo esc_url(home_url()); ?>" class="c-btn c-btn--primary c-btn--ghost c-btn--lg"><?php esc_html_e('Homepage', 'shelly') ?></a>
+                                    <a href="<?php echo esc_url(home_url()); ?>" class="c-btn c-btn--primary c-btn--ghost c-btn--lg"><?php esc_html_e('Homepage', 'shoppe') ?></a>
                                 </p>
 
                                 <div class="o-grid-center">

@@ -4,7 +4,7 @@
 
 .c-search-form__label__field {
   border: none;
-  border-bottom: 1px solid $shelly_neutral_secondary_color;
+  border-bottom: 1px solid $shoppe_neutral_secondary_color;
   background-color: transparent;
   font-size: 1.5rem;
   padding: rem(12px 3px);
@@ -35,7 +35,7 @@
   &:hover {
 
     .c-search-form__submit__icon {
-      fill: $shelly_branding_color;
+      fill: $shoppe_branding_color;
     }
   }
 }
@@ -44,8 +44,8 @@
 .c-search-form__submit__icon {
   width: 2.5rem;
   height: 2.5rem;
-  fill: $shelly_headings_color;
-  transition: $shelly_global_transition;
+  fill: $shoppe_headings_color;
+  transition: $shoppe_global_transition;
 }
 
 .c-widget.widget_search, .c-widget.woocommerce.widget_product_search {
@@ -76,7 +76,7 @@
 
   .c-search-form__label__field {
     border: none;
-    border-bottom: 1px solid $shelly_neutral_secondary_color;
+    border-bottom: 1px solid $shoppe_neutral_secondary_color;
     background-color: transparent;
     font-size: 1rem;
     padding: rem(12px 3px);
@@ -106,7 +106,7 @@
     &:hover {
 
       .c-search-form__submit__icon {
-        fill: $shelly_branding_color;
+        fill: $shoppe_branding_color;
       }
     }
   }

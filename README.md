@@ -1,5 +1,5 @@
-# Shelly - [Demo](https://demo.vitathemes.com/Shelly/) | [Download](https://wordpress.org/themes/Shelly/)
-Shelly is a Shopping theme and ready to use WooCommerce as your e-commerce WordPress plugin
+# Shoppe - [Demo](https://demo.vitathemes.com/Shoppe/) | [Download](https://wordpress.org/themes/Shoppe/)
+Shoppe is a Shopping theme and ready to use WooCommerce as your e-commerce WordPress plugin
 
 ![Home Page](screenshot.png)
 
@@ -33,7 +33,7 @@ See a working example at [https://demo.vitathemes.com/meliora/](https://demo.vit
 ## Theme structure
 
 ```shell
-themes/Shelly/        # → Root of your theme
+themes/Shoppe/        # → Root of your theme
 │── css/                  # → Compiled CSS file
 │── js/                   # → Theme js files
 │── sass/                 # → Theme scss files
@@ -71,4 +71,4 @@ See the [Changelog](CHANGELOG.md)
 
 ## License
 
-Shelly is licensed under [GNU GPL](LICENSE).
+Shoppe is licensed under [GNU GPL](LICENSE).

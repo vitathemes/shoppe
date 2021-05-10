@@ -1,8 +1,8 @@
 <?php
 /**
- * Shelly Theme Customizer
+ * Shoppe Theme Customizer
  *
- * @package Shelly
+ * @package Shoppe
  */
 
 function wp_meliora_enqueue_customizer_style( $hook_suffix ) {
@@ -22,7 +22,7 @@ add_action( 'admin_enqueue_scripts', 'wp_meliora_enqueue_customizer_style' );
  *
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  */
-function shelly_customize_register( $wp_customize ) {
+function shoppe_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
@@ -32,27 +32,27 @@ function shelly_customize_register( $wp_customize ) {
 			'blogname',
 			array(
 				'selector'        => '.site-title a',
-				'render_callback' => 'shelly_customize_partial_blogname',
+				'render_callback' => 'shoppe_customize_partial_blogname',
 			)
 		);
 		$wp_customize->selective_refresh->add_partial(
 			'blogdescription',
 			array(
 				'selector'        => '.site-description',
-				'render_callback' => 'shelly_customize_partial_blogdescription',
+				'render_callback' => 'shoppe_customize_partial_blogdescription',
 			)
 		);
 	}
 }
 
-add_action( 'customize_register', 'shelly_customize_register' );
+add_action( 'customize_register', 'shoppe_customize_register' );
 
 /**
  * Render the site title for the selective refresh partial.
  *
  * @return void
  */
-function shelly_customize_partial_blogname() {
+function shoppe_customize_partial_blogname() {
 	bloginfo( 'name' );
 }
 
@@ -61,22 +61,22 @@ function shelly_customize_partial_blogname() {
  *
  * @return void
  */
-function shelly_customize_partial_blogdescription() {
+function shoppe_customize_partial_blogdescription() {
 	bloginfo( 'description' );
 }
 
 /**
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  */
-function shelly_customize_preview_js() {
-	wp_enqueue_script( 'shelly-customizer',
+function shoppe_customize_preview_js() {
+	wp_enqueue_script( 'shoppe-customizer',
 		get_template_directory_uri() . '/js/customizer.js',
 		array( 'customize-preview' ),
 		THEME_VERSION,
 		true );
 }
 
-add_action( 'customize_preview_init', 'shelly_customize_preview_js' );
+add_action( 'customize_preview_init', 'shoppe_customize_preview_js' );
 
 
 /**
@@ -92,7 +92,7 @@ if ( function_exists( 'Kirki' ) ) {
 
 
 			// Add config
-			Kirki::add_config( 'shelly',
+			Kirki::add_config( 'shoppe',
 				array(
 					'option_type' => 'theme_mod',
 				) );
@@ -101,8 +101,8 @@ if ( function_exists( 'Kirki' ) ) {
 			Kirki::add_panel( 'elements',
 				array(
 					'priority'    => 10,
-					'title'       => esc_html__( 'Elements', 'shelly' ),
-					'description' => esc_html__( 'Elements', 'shelly' ),
+					'title'       => esc_html__( 'Elements', 'shoppe' ),
+					'description' => esc_html__( 'Elements', 'shoppe' ),
 				) );
 
 // Add sections \\
@@ -112,7 +112,7 @@ if ( function_exists( 'Kirki' ) ) {
 			// Header
 			Kirki::add_section( 'header',
 				array(
-					'title'    => esc_html__( 'Header', 'shelly' ),
+					'title'    => esc_html__( 'Header', 'shoppe' ),
 					'panel'    => '',
 					'priority' => 1,
 				) );
@@ -121,7 +121,7 @@ if ( function_exists( 'Kirki' ) ) {
 // Branding
 			Kirki::add_section( 'colors',
 				array(
-					'title'    => esc_html__( 'Colors', 'shelly' ),
+					'title'    => esc_html__( 'Colors', 'shoppe' ),
 					'panel'    => '',
 					'priority' => 3,
 				) );
@@ -130,7 +130,7 @@ if ( function_exists( 'Kirki' ) ) {
 // Home Page
 			Kirki::add_section( 'homepage',
 				array(
-					'title'    => esc_html__( 'Homepage', 'shelly' ),
+					'title'    => esc_html__( 'Homepage', 'shoppe' ),
 					'panel'    => '',
 					'priority' => 4,
 				) );
@@ -138,7 +138,7 @@ if ( function_exists( 'Kirki' ) ) {
 // Typography
 			Kirki::add_section( 'typography',
 				array(
-					'title'      => esc_html__( 'Typography', 'shelly' ),
+					'title'      => esc_html__( 'Typography', 'shoppe' ),
 					'panel'      => '',
 					'priority'   => 4,
 					'capability' => 'edit_theme_options',
@@ -147,7 +147,7 @@ if ( function_exists( 'Kirki' ) ) {
 // Elements
 			Kirki::add_section( 'layout',
 				array(
-					'title'    => esc_html__( 'Layout', 'shelly' ),
+					'title'    => esc_html__( 'Layout', 'shoppe' ),
 					'panel'    => '',
 					'priority' => 3,
 				) );
@@ -155,28 +155,28 @@ if ( function_exists( 'Kirki' ) ) {
 			// Posts
 			Kirki::add_section( 'single_opts',
 				array(
-					'title'    => esc_html__( 'Single Options', 'shelly' ),
+					'title'    => esc_html__( 'Single Options', 'shoppe' ),
 					'panel'    => 'elements',
 					'priority' => 6,
 				) );
 
 			Kirki::add_section( 'archive_opts',
 				array(
-					'title'    => esc_html__( 'Archive Options', 'shelly' ),
+					'title'    => esc_html__( 'Archive Options', 'shoppe' ),
 					'panel'    => 'elements',
 					'priority' => 6,
 				) );
 
 			Kirki::add_section( 'prod_single_opts',
 				array(
-					'title'    => esc_html__( 'Products Single Options', 'shelly' ),
+					'title'    => esc_html__( 'Products Single Options', 'shoppe' ),
 					'panel'    => 'elements',
 					'priority' => 6,
 				) );
 
 			Kirki::add_section( 'prod_archive_opts',
 				array(
-					'title'    => esc_html__( 'Products Archive Options', 'shelly' ),
+					'title'    => esc_html__( 'Products Archive Options', 'shoppe' ),
 					'panel'    => 'elements',
 					'priority' => 6,
 				) );
@@ -185,32 +185,32 @@ if ( function_exists( 'Kirki' ) ) {
 
 
 // Header
-			Kirki::add_field( 'shelly',
+			Kirki::add_field( 'shoppe',
 				[
 					'type'     => 'toggle',
 					'settings' => 'search_header',
-					'label'    => esc_html__( 'Display Search', 'shelly' ),
+					'label'    => esc_html__( 'Display Search', 'shoppe' ),
 					'section'  => 'header',
 					'default'  => 1,
 					'priority' => 10,
 				] );
 
-			if ( shelly_is_woocommerce_activated() ) {
-				Kirki::add_field( 'shelly',
+			if ( shoppe_is_woocommerce_activated() ) {
+				Kirki::add_field( 'shoppe',
 					[
 						'type'     => 'toggle',
 						'settings' => 'cart_header',
-						'label'    => esc_html__( 'Display Cart', 'shelly' ),
+						'label'    => esc_html__( 'Display Cart', 'shoppe' ),
 						'section'  => 'header',
 						'default'  => 1,
 						'priority' => 10,
 					] );
 
-				Kirki::add_field( 'shelly',
+				Kirki::add_field( 'shoppe',
 					[
 						'type'     => 'toggle',
 						'settings' => 'profile_header',
-						'label'    => esc_html__( 'Display Profile', 'shelly' ),
+						'label'    => esc_html__( 'Display Profile', 'shoppe' ),
 						'section'  => 'header',
 						'default'  => 1,
 						'priority' => 10,
@@ -220,17 +220,17 @@ if ( function_exists( 'Kirki' ) ) {
 // Header
 			// -- Typography Fields --
 			// <editor-fold desc="Typography">
-			Kirki::add_field( 'shelly',
+			Kirki::add_field( 'shoppe',
 				[
 					'type'     => 'toggle',
 					'settings' => 'use_google_fonts',
-					'label'    => esc_html__( 'Use google Fonts', 'shelly' ),
+					'label'    => esc_html__( 'Use google Fonts', 'shoppe' ),
 					'section'  => 'typography',
 					'default'  => 1,
 					'priority' => 10,
 				] );
 
-			Kirki::add_field( 'shelly',
+			Kirki::add_field( 'shoppe',
 				[
 					'active_callback' => [
 						[
@@ -241,7 +241,7 @@ if ( function_exists( 'Kirki' ) ) {
 					],
 					'type'            => 'typography',
 					'settings'        => 'typography_h1',
-					'label'           => esc_html__( 'H1', 'shelly' ),
+					'label'           => esc_html__( 'H1', 'shoppe' ),
 					'section'         => 'typography',
 					'default'         => [
 						'font-family'    => 'DM Sans',
@@ -280,7 +280,7 @@ if ( function_exists( 'Kirki' ) ) {
 					),
 				] );
 
-			Kirki::add_field( 'shelly',
+			Kirki::add_field( 'shoppe',
 				[
 					'active_callback' => [
 						[
@@ -291,7 +291,7 @@ if ( function_exists( 'Kirki' ) ) {
 					],
 					'type'            => 'typography',
 					'settings'        => 'typography_h2',
-					'label'           => esc_html__( 'H2', 'shelly' ),
+					'label'           => esc_html__( 'H2', 'shoppe' ),
 					'section'         => 'typography',
 					'default'         => [
 						'font-family'    => 'DM Sans',
@@ -330,7 +330,7 @@ if ( function_exists( 'Kirki' ) ) {
 					),
 				] );
 
-			Kirki::add_field( 'shelly',
+			Kirki::add_field( 'shoppe',
 				[
 					'active_callback' => [
 						[
@@ -341,7 +341,7 @@ if ( function_exists( 'Kirki' ) ) {
 					],
 					'type'            => 'typography',
 					'settings'        => 'typography_h3',
-					'label'           => esc_html__( 'H3', 'shelly' ),
+					'label'           => esc_html__( 'H3', 'shoppe' ),
 					'section'         => 'typography',
 					'default'         => [
 						'font-family'    => 'DM Sans',
@@ -380,7 +380,7 @@ if ( function_exists( 'Kirki' ) ) {
 					),
 				] );
 
-			Kirki::add_field( 'shelly',
+			Kirki::add_field( 'shoppe',
 				[
 					'active_callback' => [
 						[
@@ -391,7 +391,7 @@ if ( function_exists( 'Kirki' ) ) {
 					],
 					'type'            => 'typography',
 					'settings'        => 'typography_h4',
-					'label'           => esc_html__( 'H4', 'shelly' ),
+					'label'           => esc_html__( 'H4', 'shoppe' ),
 					'section'         => 'typography',
 					'default'         => [
 						'font-family'    => 'DM Sans',
@@ -430,7 +430,7 @@ if ( function_exists( 'Kirki' ) ) {
 					),
 				] );
 
-			Kirki::add_field( 'shelly',
+			Kirki::add_field( 'shoppe',
 				[
 					'active_callback' => [
 						[
@@ -441,7 +441,7 @@ if ( function_exists( 'Kirki' ) ) {
 					],
 					'type'            => 'typography',
 					'settings'        => 'typography_h5',
-					'label'           => esc_html__( 'H5', 'shelly' ),
+					'label'           => esc_html__( 'H5', 'shoppe' ),
 					'section'         => 'typography',
 					'default'         => [
 						'font-family'    => 'DM Sans',
@@ -480,7 +480,7 @@ if ( function_exists( 'Kirki' ) ) {
 					),
 				] );
 
-			Kirki::add_field( 'shelly',
+			Kirki::add_field( 'shoppe',
 				[
 					'active_callback' => [
 						[
@@ -491,7 +491,7 @@ if ( function_exists( 'Kirki' ) ) {
 					],
 					'type'            => 'typography',
 					'settings'        => 'typography_h6',
-					'label'           => esc_html__( 'H6', 'shelly' ),
+					'label'           => esc_html__( 'H6', 'shoppe' ),
 					'section'         => 'typography',
 					'default'         => [
 						'font-family'    => 'DM Sans',
@@ -533,7 +533,7 @@ if ( function_exists( 'Kirki' ) ) {
 
 
 
-			Kirki::add_field( 'shelly',
+			Kirki::add_field( 'shoppe',
 				[
 					'active_callback' => [
 						[
@@ -544,7 +544,7 @@ if ( function_exists( 'Kirki' ) ) {
 					],
 					'type'            => 'typography',
 					'settings'        => 'text_typography',
-					'label'           => esc_html__( 'Base font', 'shelly' ),
+					'label'           => esc_html__( 'Base font', 'shoppe' ),
 					'section'         => 'typography',
 					'default'         => [
 						'font-family'    => 'DM Sans',
@@ -584,7 +584,7 @@ if ( function_exists( 'Kirki' ) ) {
 					),
 				] );
 
-			Kirki::add_field( 'shelly',
+			Kirki::add_field( 'shoppe',
 				[
 					'active_callback' => [
 						[
@@ -595,7 +595,7 @@ if ( function_exists( 'Kirki' ) ) {
 					],
 					'type'            => 'typography',
 					'settings'        => 'buttons_typography',
-					'label'           => esc_html__( 'Buttons', 'shelly' ),
+					'label'           => esc_html__( 'Buttons', 'shoppe' ),
 					'section'         => 'typography',
 					'default'         => [
 						'font-family'    => 'DM Sans',
@@ -640,56 +640,56 @@ if ( function_exists( 'Kirki' ) ) {
 
 // <editor-fold desc="colors">
 
-			Kirki::add_field( 'shelly',
+			Kirki::add_field( 'shoppe',
 				[
 					'type'     => 'color',
 					'settings' => 'color_primary_color',
-					'label'    => __( 'Primary Color', 'shelly' ),
+					'label'    => __( 'Primary Color', 'shoppe' ),
 					'section'  => 'colors',
 					'default'  => '#A18A68',
 				] );
 
-			Kirki::add_field( 'shelly',
+			Kirki::add_field( 'shoppe',
 				[
 					'type'     => 'color',
 					'settings' => 'color_1',
-					'label'    => __( 'Color #1', 'shelly' ),
+					'label'    => __( 'Color #1', 'shoppe' ),
 					'section'  => 'colors',
 					'default'  => '#000000',
 				] );
 
-			Kirki::add_field( 'shelly',
+			Kirki::add_field( 'shoppe',
 				[
 					'type'     => 'color',
 					'settings' => 'color_2',
-					'label'    => __( 'Color #2', 'shelly' ),
+					'label'    => __( 'Color #2', 'shoppe' ),
 					'section'  => 'colors',
 					'default'  => '#707070',
 				] );
 
-			Kirki::add_field( 'shelly',
+			Kirki::add_field( 'shoppe',
 				[
 					'type'     => 'color',
 					'settings' => 'color_3',
-					'label'    => __( 'Color #3', 'shelly' ),
+					'label'    => __( 'Color #3', 'shoppe' ),
 					'section'  => 'colors',
 					'default'  => '#D8D8D8',
 				] );
 
-			Kirki::add_field( 'shelly',
+			Kirki::add_field( 'shoppe',
 				[
 					'type'     => 'color',
 					'settings' => 'color_4',
-					'label'    => __( 'Color #4', 'shelly' ),
+					'label'    => __( 'Color #4', 'shoppe' ),
 					'section'  => 'colors',
 					'default'  => '#EFEFEF',
 				] );
 
-			Kirki::add_field( 'shelly',
+			Kirki::add_field( 'shoppe',
 				[
 					'type'     => 'color',
 					'settings' => 'color_5',
-					'label'    => __( 'Color #5', 'shelly' ),
+					'label'    => __( 'Color #5', 'shoppe' ),
 					'section'  => 'colors',
 					'default'  => '#F9F9F9',
 				] );
@@ -699,11 +699,11 @@ if ( function_exists( 'Kirki' ) ) {
 			// -- Layout Fields --
 // <editor-fold desc="colors">
 
-			Kirki::add_field( 'shelly',
+			Kirki::add_field( 'shoppe',
 				[
 					'type'     => 'radio-image',
 					'settings' => 'blog_layout',
-					'label'    => __( 'Blog Layout', 'shelly' ),
+					'label'    => __( 'Blog Layout', 'shoppe' ),
 					'section'  => 'layout',
 					'default'  => 'left',
 					'priority' => 10,
@@ -714,11 +714,11 @@ if ( function_exists( 'Kirki' ) ) {
 					],
 				] );
 
-			Kirki::add_field( 'shelly',
+			Kirki::add_field( 'shoppe',
 				[
 					'type'     => 'radio-image',
 					'settings' => 'shop_layout',
-					'label'    => __( 'Shop Layout', 'shelly' ),
+					'label'    => __( 'Shop Layout', 'shoppe' ),
 					'section'  => 'layout',
 					'default'  => 'left',
 					'priority' => 10,
@@ -732,61 +732,61 @@ if ( function_exists( 'Kirki' ) ) {
 // </editor-fold>
 
 			// Posts
-			Kirki::add_field( 'shelly',
+			Kirki::add_field( 'shoppe',
 				[
 					'type'     => 'toggle',
 					'settings' => 'show_posts_thumbnail_archive',
-					'label'    => esc_html__( 'Show posts thumbnail', 'shelly' ),
+					'label'    => esc_html__( 'Show posts thumbnail', 'shoppe' ),
 					'section'  => 'archive_opts',
 					'default'  => 0,
 					'priority' => 10,
 				] );
 
-			Kirki::add_field( 'shelly',
+			Kirki::add_field( 'shoppe',
 				[
 					'type'     => 'toggle',
 					'settings' => 'show_posts_thumbnail',
-					'label'    => esc_html__( 'Show posts thumbnail', 'shelly' ),
+					'label'    => esc_html__( 'Show posts thumbnail', 'shoppe' ),
 					'section'  => 'single_opts',
 					'default'  => 1,
 					'priority' => 10,
 				] );
 
-			Kirki::add_field( 'shelly',
+			Kirki::add_field( 'shoppe',
 				[
 					'type'     => 'toggle',
 					'settings' => 'show_share_icons',
-					'label'    => esc_html__( 'Show share buttons', 'shelly' ),
+					'label'    => esc_html__( 'Show share buttons', 'shoppe' ),
 					'section'  => 'single_opts',
 					'default'  => 1,
 					'priority' => 10,
 				] );
 
-			Kirki::add_field( 'shelly',
+			Kirki::add_field( 'shoppe',
 				[
 					'type'     => 'toggle',
 					'settings' => 'show_post_date',
-					'label'    => esc_html__( 'Show published date', 'shelly' ),
+					'label'    => esc_html__( 'Show published date', 'shoppe' ),
 					'section'  => 'single_opts',
 					'default'  => 1,
 					'priority' => 10,
 				] );
 
-			Kirki::add_field( 'shelly',
+			Kirki::add_field( 'shoppe',
 				[
 					'type'     => 'toggle',
 					'settings' => 'show_post_author',
-					'label'    => esc_html__( 'Show author name', 'shelly' ),
+					'label'    => esc_html__( 'Show author name', 'shoppe' ),
 					'section'  => 'single_opts',
 					'default'  => 1,
 					'priority' => 10,
 				] );
 
-			Kirki::add_field( 'shelly',
+			Kirki::add_field( 'shoppe',
 				[
 					'type'     => 'toggle',
 					'settings' => 'show_post_tags',
-					'label'    => esc_html__( 'Show post tags', 'shelly' ),
+					'label'    => esc_html__( 'Show post tags', 'shoppe' ),
 					'section'  => 'single_opts',
 					'default'  => 1,
 					'priority' => 10,
@@ -794,31 +794,31 @@ if ( function_exists( 'Kirki' ) ) {
 
 
 
-			Kirki::add_field( 'shelly',
+			Kirki::add_field( 'shoppe',
 				[
 					'type'     => 'toggle',
 					'settings' => 'show_cat_archive',
-					'label'    => esc_html__( 'Show categories', 'shelly' ),
+					'label'    => esc_html__( 'Show categories', 'shoppe' ),
 					'section'  => 'archive_opts',
 					'default'  => 1,
 					'priority' => 10,
 				] );
 
-			Kirki::add_field( 'shelly',
+			Kirki::add_field( 'shoppe',
 				[
 					'type'     => 'toggle',
 					'settings' => 'show_date_archive',
-					'label'    => esc_html__( 'Show publish date', 'shelly' ),
+					'label'    => esc_html__( 'Show publish date', 'shoppe' ),
 					'section'  => 'archive_opts',
 					'default'  => 1,
 					'priority' => 10,
 				] );
 
-			Kirki::add_field( 'shelly',
+			Kirki::add_field( 'shoppe',
 				[
 					'type'     => 'toggle',
 					'settings' => 'show_post_excerpt',
-					'label'    => esc_html__( 'Show posts excerpt', 'shelly' ),
+					'label'    => esc_html__( 'Show posts excerpt', 'shoppe' ),
 					'section'  => 'archive_opts',
 					'default'  => 1,
 					'priority' => 10,
@@ -827,11 +827,11 @@ if ( function_exists( 'Kirki' ) ) {
 			// Posts
 
 			// Shop
-			Kirki::add_field( 'shelly',
+			Kirki::add_field( 'shoppe',
 				[
 					'type'     => 'toggle',
 					'settings' => 'show_mobile_filters',
-					'label'    => esc_html__( 'Show Mobile Filters', 'shelly' ),
+					'label'    => esc_html__( 'Show Mobile Filters', 'shoppe' ),
 					'section'  => 'prod_archive_opts',
 					'default'  => 1,
 					'priority' => 10,
@@ -839,41 +839,41 @@ if ( function_exists( 'Kirki' ) ) {
 			// Shop
 
 			// Secondary Menu
-			Kirki::add_field( 'shelly',
+			Kirki::add_field( 'shoppe',
 				[
 					'type'     => 'toggle',
 					'settings' => 'show_slider_menu_index',
-					'label'    => esc_html__( 'Show Slider Menu on Home/Blog page', 'shelly' ),
+					'label'    => esc_html__( 'Show Slider Menu on Home/Blog page', 'shoppe' ),
 					'section'  => 'secondary_menu',
 					'default'  => 1,
 					'priority' => 10,
 				] );
 
-			Kirki::add_field( 'shelly',
+			Kirki::add_field( 'shoppe',
 				[
 					'type'     => 'toggle',
 					'settings' => 'show_slider_menu_cats',
-					'label'    => esc_html__( 'Show Slider Menu on Category pages', 'shelly' ),
+					'label'    => esc_html__( 'Show Slider Menu on Category pages', 'shoppe' ),
 					'section'  => 'secondary_menu',
 					'default'  => 1,
 					'priority' => 10,
 				] );
 
-			Kirki::add_field( 'shelly',
+			Kirki::add_field( 'shoppe',
 				[
 					'type'     => 'toggle',
 					'settings' => 'show_slider_menu_tags',
-					'label'    => esc_html__( 'Show Slider Menu on Tags pages', 'shelly' ),
+					'label'    => esc_html__( 'Show Slider Menu on Tags pages', 'shoppe' ),
 					'section'  => 'secondary_menu',
 					'default'  => 1,
 					'priority' => 10,
 				] );
 
-			Kirki::add_field( 'shelly',
+			Kirki::add_field( 'shoppe',
 				[
 					'type'     => 'toggle',
 					'settings' => 'show_slider_menu_author',
-					'label'    => esc_html__( 'Show Slider Menu on Author pages', 'shelly' ),
+					'label'    => esc_html__( 'Show Slider Menu on Author pages', 'shoppe' ),
 					'section'  => 'secondary_menu',
 					'default'  => 1,
 					'priority' => 10,

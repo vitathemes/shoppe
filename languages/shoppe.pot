@@ -102,16 +102,16 @@ msgstr ""
 msgid "Next:"
 msgstr ""
 
-#: classes/class_shelly_walker_comment.php:68
+#: classes/class_shoppe_walker_comment.php:68
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
-#: classes/class_shelly_walker_comment.php:76
+#: classes/class_shoppe_walker_comment.php:76
 #: woocommerce/myaccount/my-address.php:63
 msgid "Edit"
 msgstr ""
 
-#: classes/class_shelly_walker_nav_menu.php:27
+#: classes/class_shoppe_walker_nav_menu.php:27
 msgid "Toggle sub menu"
 msgstr ""
 

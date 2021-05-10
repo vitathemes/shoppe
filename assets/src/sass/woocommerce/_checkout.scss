@@ -11,14 +11,14 @@
 
 .woocommerce ul.order_details li {
   line-height: 2;
-  border-bottom: 1px dashed $shelly_neutral_primary_color;
+  border-bottom: 1px dashed $shoppe_neutral_primary_color;
   border-right: 0;
   padding: rem(12px 0);
 
   @include mq(desktop) {
     border-bottom: 0;
     padding-right: rem(20px);
-    border-right: 1px dashed $shelly_neutral_primary_color;
+    border-right: 1px dashed $shoppe_neutral_primary_color;
   }
 }
 
@@ -33,7 +33,7 @@
     font-weight: inherit;
     padding: rem(24px) 0;
     text-transform: uppercase;
-    border-bottom: 1px solid $shelly_neutral_secondary_color;
+    border-bottom: 1px solid $shoppe_neutral_secondary_color;
   }
 
   td {
@@ -42,7 +42,7 @@
     }
 
     a {
-      color: $shelly_headings_color;
+      color: $shoppe_headings_color;
       text-decoration: none;
     }
   }
@@ -62,7 +62,7 @@
   }
 
   td a {
-    color: $shelly_branding_color;
+    color: $shoppe_branding_color;
     background-color: transparent;
     border: none;
     text-transform: capitalize;
@@ -71,13 +71,13 @@
 
     &:hover {
       background-color: transparent;
-      color: $shelly_headings_color;
+      color: $shoppe_headings_color;
     }
   }
 }
 
 .woocommerce-review-order {
-  background-color: $shelly_neutral_quaternary_color;
+  background-color: $shoppe_neutral_quaternary_color;
   padding: rem(16px);
 
   @include mq(tablet) {
@@ -93,7 +93,7 @@
       padding: rem(16px) 0 !important;
       border: none;
       font-weight: normal;
-      border-bottom: 1px solid $shelly_neutral_secondary_color;
+      border-bottom: 1px solid $shoppe_neutral_secondary_color;
     }
 
     tr:last-child {
@@ -107,7 +107,7 @@
     }
 
     td {
-      color: $shelly_neutral_primary_color;
+      color: $shoppe_neutral_primary_color;
       width: 30%;
     }
 
@@ -131,7 +131,7 @@
 
       th {
         font-weight: normal;
-        border-bottom: 1px solid $shelly_neutral_secondary_color !important;
+        border-bottom: 1px solid $shoppe_neutral_secondary_color !important;
       }
     }
 
@@ -150,11 +150,11 @@
       .order-total {
         th, td {
           font-weight: bolder !important;
-          color: $shelly_neutral_black;
+          color: $shoppe_neutral_black;
 
           strong {
             font-weight: bolder !important;
-            color: $shelly_neutral_black;
+            color: $shoppe_neutral_black;
           }
         }
       }
@@ -219,14 +219,14 @@
   letter-spacing: 0.025em;
   text-transform: uppercase;
   box-sizing: border-box;
-  border-radius: $shelly_global_radius;
-  transition: $shelly_global_transition;
+  border-radius: $shoppe_global_radius;
+  transition: $shoppe_global_transition;
   text-decoration: none;
   font-size: rem(12px);
   padding: rem(8px 32px);
-  background: $shelly_neutral_black;
-  border: rem(1px) solid $shelly_neutral_black;
-  color: $shelly_neutral_white !important;
+  background: $shoppe_neutral_black;
+  border: rem(1px) solid $shoppe_neutral_black;
+  color: $shoppe_neutral_white !important;
   line-height: 1.215;
 
   @include mq(tablet) {
@@ -235,9 +235,9 @@
   }
 
   &:hover {
-    background-color: $shelly_neutral_white;
-    border-color: $shelly_neutral_black;
-    color: $shelly_neutral_black !important;
+    background-color: $shoppe_neutral_white;
+    border-color: $shoppe_neutral_black;
+    color: $shoppe_neutral_black !important;
   }
 }
 
@@ -246,7 +246,7 @@
   background-color: transparent;
   padding: 0;
   font-style: rem(12px) !important;
-  color: $shelly_neutral_primary_color;
+  color: $shoppe_neutral_primary_color;
 
   &::before {
     content: unset;
@@ -275,18 +275,18 @@
 .woocommerce-privacy-policy-text {
   font-style: rem(12px);
   line-height: 1.35;
-  color: $shelly_neutral_primary_color;
+  color: $shoppe_neutral_primary_color;
 
   p {
     font-style: rem(12px) !important;
   }
 
   a {
-    color: $shelly_neutral_black;
+    color: $shoppe_neutral_black;
     text-decoration: none;
 
     &:hover {
-      color: $shelly_branding_color;
+      color: $shoppe_branding_color;
     }
   }
 }
@@ -299,10 +299,10 @@
     .about_paypal {
       font-style: rem(12px);
       text-decoration: none;
-      color: $shelly_neutral_black;
+      color: $shoppe_neutral_black;
 
       &:hover {
-        color: $shelly_branding_color;
+        color: $shoppe_branding_color;
       }
     }
   }
@@ -331,15 +331,15 @@
 .woocommerce-form-coupon-toggle {
 
   p {
-    color: $shelly_neutral_primary_color;
+    color: $shoppe_neutral_primary_color;
 
     a {
-      color: $shelly_neutral_black;
+      color: $shoppe_neutral_black;
       text-decoration: none;
       font-weight: inherit;
 
       &:hover {
-        color: $shelly_branding_color;
+        color: $shoppe_branding_color;
       }
     }
   }
@@ -359,15 +359,15 @@
 
     .c-notice__main {
       display: block;
-      color: $shelly_neutral_primary_color;
+      color: $shoppe_neutral_primary_color;
 
       a {
-        color: $shelly_neutral_black;
+        color: $shoppe_neutral_black;
         text-decoration: none;
         font-weight: inherit;price_slider_amount
 
         &:hover {
-          color: $shelly_branding_color;
+          color: $shoppe_branding_color;
         }
       }
     }
@@ -379,14 +379,14 @@
 }
 
 p.lost_password {
-  color: $shelly_neutral_black;
+  color: $shoppe_neutral_black;
 
   a {
     color: inherit;
     text-decoration: none;
 
     &:hover {
-      color: $shelly_branding_color;
+      color: $shoppe_branding_color;
     }
   }
 }
@@ -423,17 +423,17 @@ p.lost_password {
 }
 
 .woocommerce-remove-coupon {
-  color: $shelly_branding_color;
+  color: $shoppe_branding_color;
   text-decoration: none;
 
   &:hover {
-    color: $shelly_headings_color;
+    color: $shoppe_headings_color;
   }
 }
 
 .select2-container--default .select2-selection--single .select2-selection__rendered {
   padding-left: 0;
-  color: $shelly_neutral_black !important;
+  color: $shoppe_neutral_black !important;
 }
 
 .woocommerce table.shop_table th {

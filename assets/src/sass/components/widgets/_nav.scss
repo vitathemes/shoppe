@@ -43,10 +43,10 @@
     a {
       line-height: 1.2;
       text-decoration: none;
-      color: $shelly_headings_color;
+      color: $shoppe_headings_color;
 
       &:hover {
-        color: $shelly_branding_color;
+        color: $shoppe_branding_color;
       }
     }
 
@@ -69,10 +69,10 @@
     }
 
     a {
-      color: $shelly_neutral_primary_color;
+      color: $shoppe_neutral_primary_color;
 
       &:hover {
-        color: $shelly_headings_color;
+        color: $shoppe_headings_color;
       }
     }
   }

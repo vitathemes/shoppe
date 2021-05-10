@@ -5,8 +5,8 @@
   letter-spacing: 0.025em;
   text-transform: uppercase;
   box-sizing: border-box;
-  border-radius: $shelly_global_radius;
-  transition: $shelly_global_transition;
+  border-radius: $shoppe_global_radius;
+  transition: $shoppe_global_transition;
   padding: rem(10px 16px);
   text-decoration: none;
   display: inline-block;
@@ -17,47 +17,47 @@
 }
 
 .c-btn--primary {
-  background: $shelly_neutral_black;
-  border: rem(1px) solid $shelly_neutral_black;
-  color: $shelly_neutral_white !important;
+  background: $shoppe_neutral_black;
+  border: rem(1px) solid $shoppe_neutral_black;
+  color: $shoppe_neutral_white !important;
 
   &:hover {
-    background-color: $shelly_neutral_white;
-    color: $shelly_neutral_black !important;
+    background-color: $shoppe_neutral_white;
+    color: $shoppe_neutral_black !important;
   }
 }
 
 .c-btn--secondary {
-  background: $shelly_branding_color;
-  border: rem(1px) solid $shelly_branding_color;
-  color: $shelly_neutral_white !important;
+  background: $shoppe_branding_color;
+  border: rem(1px) solid $shoppe_branding_color;
+  color: $shoppe_neutral_white !important;
 
   &:hover {
-    background-color: $shelly_neutral_black;
-    border-color: $shelly_neutral_black;
-    color: $shelly_neutral_white !important;
+    background-color: $shoppe_neutral_black;
+    border-color: $shoppe_neutral_black;
+    color: $shoppe_neutral_white !important;
   }
 }
 
 .c-btn--ghost.c-btn--primary {
   background-color: transparent;
-  color: $shelly_neutral_black !important;
+  color: $shoppe_neutral_black !important;
 
   &:hover {
-    background-color: $shelly_neutral_black;
-    border-color: $shelly_neutral_black;
-    color: $shelly_neutral_white !important;
+    background-color: $shoppe_neutral_black;
+    border-color: $shoppe_neutral_black;
+    color: $shoppe_neutral_white !important;
   }
 }
 
 .c-btn--ghost.c-btn--secondary {
   background-color: transparent;
-  color: $shelly_branding_color !important;
+  color: $shoppe_branding_color !important;
 
   &:hover {
-    background-color: $shelly_branding_color;
-    border-color: $shelly_branding_color;
-    color: $shelly_neutral_white !important;
+    background-color: $shoppe_branding_color;
+    border-color: $shoppe_branding_color;
+    color: $shoppe_neutral_white !important;
   }
 }
 

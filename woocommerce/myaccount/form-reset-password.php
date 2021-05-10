@@ -22,16 +22,16 @@ do_action( 'woocommerce_before_reset_password_form' );
     <div class="c-account c-account--reset-password">
         <form method="post" class="c-account__reset-password woocommerce-ResetPassword lost_reset_password">
 
-            <p><?php echo apply_filters( 'woocommerce_reset_password_message', esc_html__( 'Enter a new password below.', 'shelly' ) ); ?></p><?php // @codingStandardsIgnoreLine ?>
+            <p><?php echo apply_filters( 'woocommerce_reset_password_message', esc_html__( 'Enter a new password below.', 'shoppe' ) ); ?></p><?php // @codingStandardsIgnoreLine ?>
 
             <p class="woocommerce-form-row woocommerce-form-row--first form-row form-row-first">
                 <label for="password_1"><?php esc_html_e( 'New password',
-						'shelly' ); ?>&nbsp;<span class="required">*</span></label>
+						'shoppe' ); ?>&nbsp;<span class="required">*</span></label>
                 <input type="password" class="woocommerce-Input woocommerce-Input--text input-text" name="password_1" id="password_1" autocomplete="new-password"/>
             </p>
             <p class="woocommerce-form-row woocommerce-form-row--last form-row form-row-last">
                 <label for="password_2"><?php esc_html_e( 'Re-enter new password',
-						'shelly' ); ?>&nbsp;<span class="required">*</span></label>
+						'shoppe' ); ?>&nbsp;<span class="required">*</span></label>
                 <input type="password" class="woocommerce-Input woocommerce-Input--text input-text" name="password_2" id="password_2" autocomplete="new-password"/>
             </p>
 
@@ -45,7 +45,7 @@ do_action( 'woocommerce_before_reset_password_form' );
             <p class="woocommerce-form-row form-row">
                 <input type="hidden" name="wc_reset_password" value="true"/>
                 <button type="submit" class="c-account__btn woocommerce-Button button" value="<?php esc_attr_e( 'Save',
-					'shelly' ); ?>"><?php esc_html_e( 'Save', 'shelly' ); ?></button>
+					'shoppe' ); ?>"><?php esc_html_e( 'Save', 'shoppe' ); ?></button>
             </p>
 
 			<?php wp_nonce_field( 'reset_password', 'woocommerce-reset-password-nonce' ); ?>

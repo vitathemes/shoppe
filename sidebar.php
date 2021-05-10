@@ -4,14 +4,14 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Shelly
+ * @package Shoppe
  */
 
 if ( ! is_active_sidebar( 'sidebar-1' ) && ! is_active_sidebar( 'sidebar-2' ) ) {
 	return;
 }
 
-if ( shelly_is_woocommerce_activated() && is_woocommerce() ) :
+if ( shoppe_is_woocommerce_activated() && is_woocommerce() ) :
 
     if (get_theme_mod('shop_layout', 'left') != 'center') :
 	?>

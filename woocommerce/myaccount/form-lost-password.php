@@ -22,11 +22,11 @@ do_action( 'woocommerce_before_lost_password_form' );
     <div class="c-account c-account--reset-password">
         <form method="post" class="c-account__reset-password woocommerce-ResetPassword lost_reset_password">
 
-            <p><?php echo apply_filters( 'woocommerce_lost_password_message', esc_html__( 'Lost your password? Please enter your username or email address. You will receive a link to create a new password via email.', 'shelly' ) ); ?></p><?php // @codingStandardsIgnoreLine ?>
+            <p><?php echo apply_filters( 'woocommerce_lost_password_message', esc_html__( 'Lost your password? Please enter your username or email address. You will receive a link to create a new password via email.', 'shoppe' ) ); ?></p><?php // @codingStandardsIgnoreLine ?>
 
             <p class="woocommerce-form-row woocommerce-form-row--first form-row form-row-first">
-                <label for="user_login" class="screen-reader-text"><?php esc_html_e( 'Username or email', 'shelly' ); ?></label>
-                <input class="woocommerce-Input woocommerce-Input--text input-text" placeholder="<?php esc_attr_e( 'Username or email', 'shelly' ); ?>" type="text" name="user_login" id="user_login" autocomplete="username"/>
+                <label for="user_login" class="screen-reader-text"><?php esc_html_e( 'Username or email', 'shoppe' ); ?></label>
+                <input class="woocommerce-Input woocommerce-Input--text input-text" placeholder="<?php esc_attr_e( 'Username or email', 'shoppe' ); ?>" type="text" name="user_login" id="user_login" autocomplete="username"/>
             </p>
 
             <div class="clear"></div>
@@ -36,7 +36,7 @@ do_action( 'woocommerce_before_lost_password_form' );
             <p class="woocommerce-form-row form-row">
                 <input type="hidden" name="wc_reset_password" value="true"/>
                 <button type="submit" class="c-account__btn woocommerce-Button button" value="<?php esc_attr_e( 'Reset password',
-					'shelly' ); ?>"><?php esc_html_e( 'Reset password', 'shelly' ); ?></button>
+					'shoppe' ); ?>"><?php esc_html_e( 'Reset password', 'shoppe' ); ?></button>
             </p>
 
 			<?php wp_nonce_field( 'lost_password', 'woocommerce-lost-password-nonce' ); ?>

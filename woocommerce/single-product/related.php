@@ -24,7 +24,7 @@ if ( $related_products ) : ?>
 	<section class="related products o-col-12">
 
 		<?php
-		$heading = apply_filters( 'woocommerce_product_related_products_heading', __( 'Related products', 'shelly' ) );
+		$heading = apply_filters( 'woocommerce_product_related_products_heading', __( 'Related products', 'shoppe' ) );
 
 		if ( $heading ) :
 			?>

@@ -9,24 +9,24 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Shelly
+ * @package Shoppe
  */
 
 get_header();
 ?>
 
     <main id="primary" class="o-page">
-        <div class="<?php echo esc_attr(shelly_container_classes_layout()) ?>">
+        <div class="<?php echo esc_attr(shoppe_container_classes_layout()) ?>">
             <div class="o-page__header">
-                <h2 class="o-page__header__title h1"><?php esc_html_e('Blog', 'shelly'); ?></h2>
+                <h2 class="o-page__header__title h1"><?php esc_html_e('Blog', 'shoppe'); ?></h2>
             </div>
-            <div class="<?php echo esc_attr(shelly_page_classes_layout()); ?>">
+            <div class="<?php echo esc_attr(shoppe_page_classes_layout()); ?>">
 				<?php
-				if ( shelly_has_sidebar() ) {
+				if ( shoppe_has_sidebar() ) {
 					get_sidebar();
 				} ?>
                 <div class="o-page__main">
-                    <div class="o-grid-1_md-2<?php echo esc_attr(shelly_blog_grid_classes()); ?>">
+                    <div class="o-grid-1_md-2<?php echo esc_attr(shoppe_blog_grid_classes()); ?>">
 						<?php
 						if ( have_posts() ) :
 
@@ -52,7 +52,7 @@ get_header();
 							endwhile;
 							?>
                             <div class="c-pagination s-pagination">
-								<?php shelly_posts_pagination(); ?>
+								<?php shoppe_posts_pagination(); ?>
                             </div>
 						<?php
 						else :

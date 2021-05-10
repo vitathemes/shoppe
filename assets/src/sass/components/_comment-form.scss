@@ -16,19 +16,19 @@
     font-size: rem(14px) !important;
     letter-spacing: 0.025em;
     text-transform: uppercase;
-    background: $shelly_neutral_black;
-    color: $shelly_neutral_white;
+    background: $shoppe_neutral_black;
+    color: $shoppe_neutral_white;
     box-sizing: border-box;
-    border-radius: $shelly_global_radius;
-    transition: $shelly_global_transition;
+    border-radius: $shoppe_global_radius;
+    transition: $shoppe_global_transition;
     padding: rem(14px) rem(32px);
     cursor: pointer;
     font-weight: 500;
-    border: 1px solid $shelly_neutral_black;
+    border: 1px solid $shoppe_neutral_black;
 
     &:hover {
-      background-color: $shelly_neutral_white;
-      color: $shelly_neutral_black;
+      background-color: $shoppe_neutral_white;
+      color: $shoppe_neutral_black;
     }
   }
 
@@ -42,10 +42,10 @@
 }
 
 #cancel-comment-reply-link {
-  color: $shelly_branding_color;
+  color: $shoppe_branding_color;
   text-decoration: none;
 
   &:hover {
-    color: $shelly_neutral_black;
+    color: $shoppe_neutral_black;
   }
 }

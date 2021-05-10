@@ -8,11 +8,13 @@ const openPopup = () => {
     popup.classList.add('is-open');
 };
 
-const shelly_searchBtnToggle = document.querySelector('.js-search-btn');
-const shelly_searchBtnClose = document.querySelector('.js-popup-close');
+if (document.querySelector('.js-search-btn')) {
+    const shoppe_searchBtnToggle = document.querySelector('.js-search-btn');
+    const shoppe_searchBtnClose = document.querySelector('.js-popup-close');
 
-shelly_searchBtnToggle.addEventListener('click', openPopup);
-shelly_searchBtnClose.addEventListener('click', closePopup);
+    shoppe_searchBtnToggle.addEventListener('click', openPopup);
+    shoppe_searchBtnClose.addEventListener('click', closePopup);
+}
 
 const selectCarouselSlide = (carousel, index) => {
     const flkty = Flickity.data(carousel);
@@ -34,5 +36,19 @@ document.querySelectorAll('.js-account-carousel-btn').forEach((el) => {
 });
 
 if (document.querySelectorAll('.js-woocommerce-review-form').length) {
-    var sticky = new Sticky('.js-woocommerce-review-form');
+    const reviewsStickyForm = new Sticky('.js-woocommerce-review-form');
 }
+
+if (document.querySelectorAll('.js-cart-total').length) {
+    const cartTotalSticky = new Sticky('.js-cart-total');
+}
+
+const closeFiltersPopup = () => {
+    const popup = document.querySelector('.js-popup-filters');
+    popup.classList.remove('is-open');
+};
+
+const openFiltersPopup = () => {
+    const popup = document.querySelector('.js-popup-filters');
+    popup.classList.add('is-open');
+};

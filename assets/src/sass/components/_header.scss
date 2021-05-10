@@ -19,7 +19,7 @@
 }
 
 .c-header__branding__title {
-  color: $shelly_headings_color;
+  color: $shoppe_headings_color;
   text-decoration: none;
   margin: 0;
 }
@@ -30,7 +30,7 @@
   font-size: inherit;
 
   &:hover {
-    color: $shelly_branding_color;
+    color: $shoppe_branding_color;
   }
 }
 
@@ -50,7 +50,7 @@
 
   &:hover {
     .c-header__link__icon {
-      fill: $shelly_branding_color;
+      fill: $shoppe_branding_color;
     }
   }
 
@@ -64,8 +64,8 @@
 }
 
 .c-header__link__icon {
-  fill: $shelly_headings_color;
-  transition: $shelly_global_transition;
+  fill: $shoppe_headings_color;
+  transition: $shoppe_global_transition;
 }
 
 .c-header__icons {
@@ -78,7 +78,7 @@
   content: '';
   width: rem(1px);
   height: rem(17px);
-  background-color: $shelly_neutral_primary_color;
+  background-color: $shoppe_neutral_primary_color;
   display: none;
   margin-left: rem(32px);
 
@@ -107,7 +107,7 @@
   }
 
   .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-    background: $shelly_neutral_black;
+    background: $shoppe_neutral_black;
   }
 
 

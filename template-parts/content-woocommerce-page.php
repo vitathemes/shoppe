@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Shelly
+ * @package Shoppe
  */
 
 ?>
@@ -14,7 +14,7 @@
 		<?php the_title( '<h1 class="o-page__title">', '</h1>' ); ?>
 	</header>
 
-			<?php shelly_post_thumbnail(); ?>
+			<?php shoppe_post_thumbnail(); ?>
 
 			<div class="entry-content">
 				<?php
@@ -22,7 +22,7 @@
 
 				wp_link_pages(
 					array(
-						'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'shelly' ),
+						'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'shoppe' ),
 						'after'  => '</div>',
 					)
 				);
@@ -36,7 +36,7 @@
 					sprintf(
 						wp_kses(
 						/* translators: %s: Name of current post. Only visible to screen readers */
-							__( 'Edit <span class="screen-reader-text">%s</span>', 'shelly' ),
+							__( 'Edit <span class="screen-reader-text">%s</span>', 'shoppe' ),
 							array(
 								'span' => array(
 									'class' => array(),

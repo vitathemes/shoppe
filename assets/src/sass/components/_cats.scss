@@ -17,7 +17,7 @@
   font-size: rem(13px);
   line-height: rem(17px);
   text-transform: capitalize;
-  color: $shelly_neutral_primary_color;
+  color: $shoppe_neutral_primary_color;
 
   &:not(&:last-child) {
     margin-right: rem(5px);
@@ -33,7 +33,7 @@
   font-size: rem(12px);
   line-height: rem(17px);
   text-transform: capitalize;
-  color: $shelly_neutral_primary_color;
+  color: $shoppe_neutral_primary_color;
   text-decoration: none;
 
   @include mq(tablet) {
@@ -41,6 +41,6 @@
   }
 
   &:hover {
-    color: $shelly_headings_color;
+    color: $shoppe_headings_color;
   }
 }

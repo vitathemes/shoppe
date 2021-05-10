@@ -23,8 +23,8 @@ if ( ! wc_ship_to_billing_address_only() && wc_shipping_enabled() ) {
 	$get_addresses = apply_filters(
 		'woocommerce_my_account_get_addresses',
 		array(
-			'billing'  => __( 'Billing address', 'shelly' ),
-			'shipping' => __( 'Shipping address', 'shelly' ),
+			'billing'  => __( 'Billing address', 'shoppe' ),
+			'shipping' => __( 'Shipping address', 'shoppe' ),
 		),
 		$customer_id
 	);
@@ -32,7 +32,7 @@ if ( ! wc_ship_to_billing_address_only() && wc_shipping_enabled() ) {
 	$get_addresses = apply_filters(
 		'woocommerce_my_account_get_addresses',
 		array(
-			'billing' => __( 'Billing address', 'shelly' ),
+			'billing' => __( 'Billing address', 'shoppe' ),
 		),
 		$customer_id
 	);
@@ -43,7 +43,7 @@ $col    = 1;
 ?>
 
 <p>
-	<?php echo apply_filters( 'woocommerce_my_account_my_address_description', esc_html__( 'The following addresses will be used on the checkout page by default.', 'shelly' ) ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+	<?php echo apply_filters( 'woocommerce_my_account_my_address_description', esc_html__( 'The following addresses will be used on the checkout page by default.', 'shoppe' ) ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 </p>
 
 <?php if ( ! wc_ship_to_billing_address_only() && wc_shipping_enabled() ) : ?>
@@ -60,11 +60,11 @@ $col    = 1;
 	<div class="o-col-12_md-6 woocommerce-Address">
 		<header class="woocommerce-Address-title title">
 			<h3 class="h3"><?php echo esc_html( $address_title ); ?></h3>
-			<a href="<?php echo esc_url( wc_get_endpoint_url( 'edit-address', $name ) ); ?>" class="button"><?php echo $address ? esc_html__( 'Edit', 'shelly' ) : esc_html__( 'Add', 'shelly' ); ?></a>
+			<a href="<?php echo esc_url( wc_get_endpoint_url( 'edit-address', $name ) ); ?>" class="button"><?php echo $address ? esc_html__( 'Edit', 'shoppe' ) : esc_html__( 'Add', 'shoppe' ); ?></a>
 		</header>
 		<address>
 			<?php
-				echo $address ? wp_kses_post( $address ) : esc_html_e( 'You have not set up this type of address yet.', 'shelly' );
+				echo $address ? wp_kses_post( $address ) : esc_html_e( 'You have not set up this type of address yet.', 'shoppe' );
 			?>
 		</address>
 	</div>

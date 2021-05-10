@@ -103,77 +103,77 @@
 }());
 
 
-var shelly_menuToggle = document.querySelector('.js-header-menu-toggle');
-var shelly_menuSearch = document.querySelector('.c-search-form__label__field');
-var shelly_menuSearchBtn = document.querySelector('.c-search-form__submit');
-var shelly_menu = document.querySelector('.js-header-nav');
-var shelly_menuLinks = shelly_menu.getElementsByTagName('a');
-var shelly_menuListItems = shelly_menu.querySelectorAll('li');
+var shoppe_menuToggle = document.querySelector('.js-header-menu-toggle');
+var shoppe_menuSearch = document.querySelector('.c-search-form__label__field');
+var shoppe_menuSearchBtn = document.querySelector('.c-search-form__submit');
+var shoppe_menu = document.querySelector('.js-header-nav');
+var shoppe_menuLinks = shoppe_menu.getElementsByTagName('a');
+var shoppe_menuListItems = shoppe_menu.querySelectorAll('li');
 
-var shelly_focus, shelly_isToggleItem, shelly_isBackward;
-var shelly_lastIndex = shelly_menuListItems.length - 1;
-var shelly_lastParentIndex = document.querySelectorAll('.js-header-nav > ul > li').length - 1;
+var shoppe_focus, shoppe_isToggleItem, shoppe_isBackward;
+var shoppe_lastIndex = shoppe_menuListItems.length - 1;
+var shoppe_lastParentIndex = document.querySelectorAll('.js-header-nav > ul > li').length - 1;
 document.addEventListener('focusin', function () {
-    shelly_focus = document.activeElement;
-    if (shelly_isToggleItem && shelly_focus !== shelly_menuLinks[0]) {
-        document.querySelectorAll('.js-header-nav > ul > li')[shelly_lastParentIndex].querySelector('a').focus();
+    shoppe_focus = document.activeElement;
+    if (shoppe_isToggleItem && shoppe_focus !== shoppe_menuLinks[0]) {
+        document.querySelectorAll('.js-header-nav > ul > li')[shoppe_lastParentIndex].querySelector('a').focus();
     }
 
-    if (shelly_focus === shelly_menuToggle) {
-        shelly_isToggleItem = true;
+    if (shoppe_focus === shoppe_menuToggle) {
+        shoppe_isToggleItem = true;
     } else {
-        shelly_isToggleItem = false;
+        shoppe_isToggleItem = false;
     }
 }, true);
 
 document.addEventListener('keydown', function (e) {
     if (e.shiftKey && e.keyCode == 9) {
-        shelly_isBackward = true;
+        shoppe_isBackward = true;
     } else {
-        shelly_isBackward = false;
+        shoppe_isBackward = false;
     }
 });
 
-for (el of shelly_menuLinks) {
+for (el of shoppe_menuLinks) {
     el.addEventListener('blur', function (e) {
-        if (shelly_isBackward) {
-            if (e.target === shelly_menuLinks[0]) {
-                shelly_menuSearchBtn.focus();
+        if (shoppe_isBackward) {
+            if (e.target === shoppe_menuLinks[0]) {
+                shoppe_menuSearchBtn.focus();
             }
         } else {
-			if (e.target === shelly_menuLinks[shelly_lastIndex]) {
-				shelly_menuToggle.focus();
+			if (e.target === shoppe_menuLinks[shoppe_lastIndex]) {
+				shoppe_menuToggle.focus();
 			}
 		}
     });
 }
 
-shelly_menuSearch.addEventListener('blur', function (e) {
-    if (shelly_isBackward) {
-        shelly_menuToggle.focus();
+shoppe_menuSearch.addEventListener('blur', function (e) {
+    if (shoppe_isBackward) {
+        shoppe_menuToggle.focus();
     } else {
         if (document.querySelector('.js-header-menu.is-open')) {
-            shelly_menuSearchBtn.focus();
+            shoppe_menuSearchBtn.focus();
         }
     }
 });
 
-shelly_menuSearchBtn.addEventListener('blur', function (e) {
-    if (shelly_isBackward) {
-        shelly_menuSearch.focus();
+shoppe_menuSearchBtn.addEventListener('blur', function (e) {
+    if (shoppe_isBackward) {
+        shoppe_menuSearch.focus();
     } else {
         if (document.querySelector('.js-header-menu.is-open')) {
-            shelly_menuLinks[0].focus();
+            shoppe_menuLinks[0].focus();
         }
     }
 });
 
-shelly_menuToggle.addEventListener('blur', function (e) {
-    if (shelly_isBackward) {
-        shelly_menuLinks[shelly_lastIndex].focus();
+shoppe_menuToggle.addEventListener('blur', function (e) {
+    if (shoppe_isBackward) {
+        shoppe_menuLinks[shoppe_lastIndex].focus();
     } else {
         console.log(document.querySelector('.js-header-menu.is-open'));
-        console.log(shelly_menuSearch.focus());
+        console.log(shoppe_menuSearch.focus());
         if (document.querySelector('.js-header-menu.is-open')) {
 
         }

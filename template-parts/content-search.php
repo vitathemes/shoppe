@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Shelly
+ * @package Shoppe
  */
 
 ?>
@@ -12,18 +12,18 @@
     <article id="post-<?php the_ID(); ?>" <?php post_class( 'c-post c-post--archive c-post--blog' ); ?>>
 		<?php
 		if ( get_theme_mod( 'show_posts_thumbnail_archive', true ) ) {
-			shelly_post_thumbnail();
+			shoppe_post_thumbnail();
 		} ?>
         <div class="c-post__meta">
 			<?php
 			if ( get_theme_mod( 'show_cat_archive', true ) ) {
-				shelly_post_categories();
+				shoppe_post_categories();
 			}
 			if ( get_theme_mod( 'show_cat_archive', true ) && get_theme_mod( 'show_date_archive', true ) ) {
-				shelly_separator();
+				shoppe_separator();
 			}
 			if ( get_theme_mod( 'show_date_archive', true ) ) {
-				shelly_posted_on();
+				shoppe_posted_on();
 			}
 			?>
         </div>

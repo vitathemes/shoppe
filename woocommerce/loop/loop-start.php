@@ -19,4 +19,4 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 ?>
-<div class="o-grid-2_md-3 <?php echo esc_attr(shelly_shop_grid_classes()); ?> products columns-<?php echo esc_attr( wc_get_loop_prop( 'columns' ) ); ?>">
+<div class="o-grid-2_md-3 <?php echo esc_attr(shoppe_shop_grid_classes()); ?> products columns-<?php echo esc_attr( wc_get_loop_prop( 'columns' ) ); ?>">

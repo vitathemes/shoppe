@@ -2,7 +2,7 @@
 /**
  * Functions which enhance the theme by hooking into WordPress
  *
- * @package Shelly
+ * @package Shoppe
  */
 
 define( 'SITE_LAYOUT', get_theme_mod( 'blog_layout', 'left' ) );
@@ -15,7 +15,7 @@ define( 'SHOP_LAYOUT', get_theme_mod( 'shop_layout', 'left' ) );
  *
  * @return array
  */
-function shelly_body_classes( $classes ) {
+function shoppe_body_classes( $classes ) {
 	// Adds a class of hfeed to non-singular pages.
 	if ( ! is_singular() ) {
 		$classes[] = 'hfeed';
@@ -29,27 +29,27 @@ function shelly_body_classes( $classes ) {
 	return $classes;
 }
 
-add_filter( 'body_class', 'shelly_body_classes' );
+add_filter( 'body_class', 'shoppe_body_classes' );
 
 /**
  * Add a pingback url auto-discovery header for single posts, pages, or attachments.
  */
-function shelly_pingback_header() {
+function shoppe_pingback_header() {
 	if ( is_singular() && pings_open() ) {
 		printf( '<link rel="pingback" href="%s">', esc_url( get_bloginfo( 'pingback_url' ) ) );
 	}
 }
 
-add_action( 'wp_head', 'shelly_pingback_header' );
+add_action( 'wp_head', 'shoppe_pingback_header' );
 
 
-if ( ! function_exists( 'shelly_branding' ) ) {
+if ( ! function_exists( 'shoppe_branding' ) ) {
 	/**
 	 * Displays branding
 	 *
 	 * If there is not any custom logo the function will show site title
 	 */
-	function shelly_branding() {
+	function shoppe_branding() {
 		if ( has_custom_logo() ) {
 			the_custom_logo();
 		} else {
@@ -71,28 +71,28 @@ if ( ! function_exists( 'shelly_branding' ) ) {
 
 	}
 
-	add_action( 'shelly_branding_hook', 'shelly_branding' );
+	add_action( 'shoppe_branding_hook', 'shoppe_branding' );
 }
 
-if ( ! function_exists( 'shelly_header' ) ) {
+if ( ! function_exists( 'shoppe_header' ) ) {
 	/**
 	 * Displays header nav
 	 *
 	 * This function will show header nav
 	 */
-	function shelly_header() {
-		shelly_header_nav();
-		shelly_show_header_icons();
+	function shoppe_header() {
+		shoppe_header_nav();
+		shoppe_show_header_icons();
 	}
 
-	add_action( 'shelly_header_hook', 'shelly_header' );
+	add_action( 'shoppe_header_hook', 'shoppe_header' );
 }
 
-if ( ! function_exists( 'shelly_is_blog_page' ) ) {
+if ( ! function_exists( 'shoppe_is_blog_page' ) ) {
 	/**
 	 * Check if we are in blog page.
 	 */
-	function shelly_is_blog_page() {
+	function shoppe_is_blog_page() {
 
 		global $post;
 
@@ -108,57 +108,57 @@ if ( ! function_exists( 'shelly_is_blog_page' ) ) {
 
 	}
 }
-if ( ! function_exists( 'shelly_page_classes_layout' ) ) {
+if ( ! function_exists( 'shoppe_page_classes_layout' ) ) {
 	/**
 	 * Generate page classes according to layout.
 	 */
-	function shelly_page_classes_layout() {
-		$shelly_page_classes = "o-page__grid";
+	function shoppe_page_classes_layout() {
+		$shoppe_page_classes = "o-page__grid";
 
-		if ( shelly_is_blog_page() && SITE_LAYOUT !== "center" ) {
-			$shelly_page_classes .= " o-page__grid--has-sidebar o-page__grid--sidebar-" . SITE_LAYOUT;
+		if ( shoppe_is_blog_page() && SITE_LAYOUT !== "center" ) {
+			$shoppe_page_classes .= " o-page__grid--has-sidebar o-page__grid--sidebar-" . SITE_LAYOUT;
 		}
 
-		if ( shelly_is_woocommerce_activated() ) {
+		if ( shoppe_is_woocommerce_activated() ) {
 			if ( is_shop() && SHOP_LAYOUT !== "center" ) {
-				$shelly_page_classes .= " o-page__grid--has-sidebar o-page__grid--sidebar-" . SHOP_LAYOUT;
+				$shoppe_page_classes .= " o-page__grid--has-sidebar o-page__grid--sidebar-" . SHOP_LAYOUT;
 			}
 		}
 
-		return $shelly_page_classes;
+		return $shoppe_page_classes;
 	}
 }
-if ( ! function_exists( 'shelly_container_classes_layout' ) ) {
+if ( ! function_exists( 'shoppe_container_classes_layout' ) ) {
 	/**
 	 * Generate container classes according to layout.
 	 */
-	function shelly_container_classes_layout() {
-		$shelly_container_classes = "o-container";
+	function shoppe_container_classes_layout() {
+		$shoppe_container_classes = "o-container";
 
-		if ( shelly_is_blog_page() && SITE_LAYOUT !== "center" ) {
-			$shelly_container_classes .= "--half-padding";
+		if ( shoppe_is_blog_page() && SITE_LAYOUT !== "center" ) {
+			$shoppe_container_classes .= "--half-padding";
 		}
 
-		if ( shelly_is_woocommerce_activated() ) {
+		if ( shoppe_is_woocommerce_activated() ) {
 			if ( is_shop() && SHOP_LAYOUT !== "center" ) {
-				$shelly_container_classes .= "--half-padding";
+				$shoppe_container_classes .= "--half-padding";
 			}
 		}
 
-		return $shelly_container_classes;
+		return $shoppe_container_classes;
 	}
 }
-if ( ! function_exists( 'shelly_has_sidebar' ) ) {
+if ( ! function_exists( 'shoppe_has_sidebar' ) ) {
 	/**
 	 * Generate page classes according to layout.
 	 */
-	function shelly_has_sidebar() {
+	function shoppe_has_sidebar() {
 
-		if ( shelly_is_blog_page() && SITE_LAYOUT !== "center" ) {
+		if ( shoppe_is_blog_page() && SITE_LAYOUT !== "center" ) {
 			return true;
 		}
 
-		if ( shelly_is_woocommerce_activated() ) {
+		if ( shoppe_is_woocommerce_activated() ) {
 			if ( is_shop() && SHOP_LAYOUT !== "center" ) {
 				return true;
 			}
@@ -167,11 +167,11 @@ if ( ! function_exists( 'shelly_has_sidebar' ) ) {
 		return false;
 	}
 }
-if ( ! function_exists( 'shelly_shop_grid_classes' ) ) {
+if ( ! function_exists( 'shoppe_shop_grid_classes' ) ) {
 	/**
 	 * Generate shop classes according to layout.
 	 */
-	function shelly_shop_grid_classes() {
+	function shoppe_shop_grid_classes() {
 
 		if ( is_singular( 'product' ) ) {
 			return " o-grid--larger-gap";
@@ -185,11 +185,11 @@ if ( ! function_exists( 'shelly_shop_grid_classes' ) ) {
 		return null;
 	}
 }
-if ( ! function_exists( 'shelly_blog_grid_classes' ) ) {
+if ( ! function_exists( 'shoppe_blog_grid_classes' ) ) {
 	/**
 	 * Generate shop classes according to layout.
 	 */
-	function shelly_blog_grid_classes() {
+	function shoppe_blog_grid_classes() {
 
 		if ( SITE_LAYOUT === "center" ) {
 			return " o-grid--larger-gap";
@@ -203,8 +203,8 @@ if ( ! function_exists( 'shelly_blog_grid_classes' ) ) {
  * Remove Woocommerce labels
  */
 
-if ( ! function_exists( 'shelly_shipping_fields' ) ) {
-	function shelly_shipping_fields( $fields ) {
+if ( ! function_exists( 'shoppe_shipping_fields' ) ) {
+	function shoppe_shipping_fields( $fields ) {
 
 		$fields['shipping_first_name']['placeholder'] = "First Name*";
 		$fields['shipping_first_name']['label']       = "";
@@ -237,14 +237,14 @@ if ( ! function_exists( 'shelly_shipping_fields' ) ) {
 		return $fields;
 	}
 }
-add_filter( 'woocommerce_shipping_fields', 'shelly_shipping_fields' );
+add_filter( 'woocommerce_shipping_fields', 'shoppe_shipping_fields' );
 
 
-if ( ! function_exists( 'shelly_billing_fields' ) ) {
+if ( ! function_exists( 'shoppe_billing_fields' ) ) {
 	/**
 	 * Remove Woocommerce labels
 	 */
-	function shelly_billing_fields( $fields ) {
+	function shoppe_billing_fields( $fields ) {
 
 		$fields['billing_first_name']['placeholder'] = "First Name*";
 		$fields['billing_first_name']['label']       = "";
@@ -277,14 +277,14 @@ if ( ! function_exists( 'shelly_billing_fields' ) ) {
 		return $fields;
 	}
 }
-add_filter( 'woocommerce_billing_fields', 'shelly_billing_fields' );
+add_filter( 'woocommerce_billing_fields', 'shoppe_billing_fields' );
 
 
-if ( ! function_exists( 'shelly_remove_billing_fields' ) ) {
+if ( ! function_exists( 'shoppe_remove_billing_fields' ) ) {
 	/**
 	 * Remove Woocommerce labels
 	 */
-	function shelly_remove_billing_fields( $fields ) {
+	function shoppe_remove_billing_fields( $fields ) {
 
 
 		//$fields[ 'shipping_postcode' ]['placeholder'] = "Postcode*";
@@ -309,15 +309,15 @@ if ( ! function_exists( 'shelly_remove_billing_fields' ) ) {
 
 	}
 }
-add_filter( 'woocommerce_billing_fields', 'shelly_remove_billing_fields' );
+add_filter( 'woocommerce_billing_fields', 'shoppe_remove_billing_fields' );
 
-if ( ! function_exists( 'shelly_empty_cart_message' ) ) {
+if ( ! function_exists( 'shoppe_empty_cart_message' ) ) {
 
-	function shelly_empty_cart_message() {
+	function shoppe_empty_cart_message() {
 		echo '	<div class="c-notice s-notice"' . esc_html(wc_get_notice_data_attr( $notice )) .
 		'
 		<div class="c-notice__main">' .
-		     esc_html__( "Your cart is currently empty.", 'shelly' )
+		     esc_html__( "Your cart is currently empty.", 'shoppe' )
 		     . '</div>
 	</div>';
 	}
@@ -325,18 +325,18 @@ if ( ! function_exists( 'shelly_empty_cart_message' ) ) {
 
 remove_action( 'woocommerce_cart_is_empty', 'wc_empty_cart_message', 10, 0 );
 
-add_action( 'woocommerce_cart_is_empty', 'shelly_empty_cart_message', 10, 0 );
+add_action( 'woocommerce_cart_is_empty', 'shoppe_empty_cart_message', 10, 0 );
 
 
-if ( ! function_exists( 'shelly_theme_settings' ) ) {
-	function shelly_theme_settings() {
+if ( ! function_exists( 'shoppe_theme_settings' ) ) {
+	function shoppe_theme_settings() {
 		$vars = ':root {	
-	            --shelly-branding-color: ' . get_theme_mod( "color_primary_color", "#A18A68" ) . ';
-	            --shelly-primary-color: ' . get_theme_mod( "color_1", "#000000" ) . ';
-	            --shelly-secondary-color: ' . get_theme_mod( "color_2", "#707070" ) . ';
-	            --shelly-tertiary-color: ' . get_theme_mod( "color_3", "#D8D8D8" ) . ';
-	            --shelly-quaternary-color: ' . get_theme_mod( "color_4", "#EFEFEF" ) . ';
-	            --shelly-quinary-color: ' . get_theme_mod( "color_5", "#F9F9F9" ) . ';
+	            --shoppe-branding-color: ' . get_theme_mod( "color_primary_color", "#A18A68" ) . ';
+	            --shoppe-primary-color: ' . get_theme_mod( "color_1", "#000000" ) . ';
+	            --shoppe-secondary-color: ' . get_theme_mod( "color_2", "#707070" ) . ';
+	            --shoppe-tertiary-color: ' . get_theme_mod( "color_3", "#D8D8D8" ) . ';
+	            --shoppe-quaternary-color: ' . get_theme_mod( "color_4", "#EFEFEF" ) . ';
+	            --shoppe-quinary-color: ' . get_theme_mod( "color_5", "#F9F9F9" ) . ';
 	        
 			}';
 
@@ -347,14 +347,14 @@ if ( ! function_exists( 'shelly_theme_settings' ) ) {
 		<?php
 	}
 }
-add_action( 'wp_head', 'shelly_theme_settings' );
+add_action( 'wp_head', 'shoppe_theme_settings' );
 
-if ( ! function_exists( 'shelly_is_woocommerce_page' ) ) {
+if ( ! function_exists( 'shoppe_is_woocommerce_page' ) ) {
 	/**
 	 * Check if we are in a woocommerce page
 	 */
-	function shelly_is_woocommerce_page() {
-		if ( shelly_is_woocommerce_activated() ) {
+	function shoppe_is_woocommerce_page() {
+		if ( shoppe_is_woocommerce_activated() ) {
 			if ( is_woocommerce() || is_cart() || is_checkout() || is_product() || is_shop() || is_product_category() || is_product_tag() || is_account_page() || is_wc_endpoint_url() ) {
 				return true;
 			}
@@ -394,27 +394,27 @@ if ( ! function_exists( 'add_percentage_to_sale_badge' ) ) {
 }
 add_filter( 'woocommerce_sale_flash', 'add_percentage_to_sale_badge', 20, 3 );
 
-if ( ! function_exists( 'shelly_add_placeholder_comment_form' ) ) {
+if ( ! function_exists( 'shoppe_add_placeholder_comment_form' ) ) {
 	/**
 	 * Comment Form Placeholder Author, Email, URL
 	 */
-	function shelly_add_placeholder_comment_form( $fields ) {
-		$replace_author = __( 'Your Name', 'shelly' );
-		$replace_email  = __( 'Your Email', 'shelly' );
-		$replace_url    = __( 'Your Website', 'shelly' );
+	function shoppe_add_placeholder_comment_form( $fields ) {
+		$replace_author = __( 'Your Name', 'shoppe' );
+		$replace_email  = __( 'Your Email', 'shoppe' );
+		$replace_url    = __( 'Your Website', 'shoppe' );
 
 		$fields['author'] = '<p class="comment-form-author">' . '<label class="screen-reader-text" for="author">' . esc_html__( 'Name',
-				'shelly' ) . '</label> ' . ( $req ? '<span class="required">*</span>' : '' ) .
+				'shoppe' ) . '</label> ' . ( $req ? '<span class="required">*</span>' : '' ) .
 		                    '<input id="author" name="author" type="text" placeholder="' . $replace_author . '" value="' . esc_attr( $commenter['comment_author'] ) . '" size="20"' . $aria_req . ' /></p>';
 
 		$fields['email'] = '<p class="comment-form-email"><label class="screen-reader-text" for="email">' . esc_html__( 'Email',
-				'shelly' ) . '</label> ' .
+				'shoppe' ) . '</label> ' .
 		                   ( $req ? '<span class="required">*</span>' : '' ) .
 		                   '<input id="email" name="email" type="text" placeholder="' . $replace_email . '" value="' . esc_attr( $commenter['comment_author_email'] ) .
 		                   '" size="30"' . $aria_req . ' /></p>';
 
 		$fields['url'] = '<p class="comment-form-url"><label class="screen-reader-text" for="url">' . esc_html__( 'Website',
-				'shelly' ) . '</label>' .
+				'shoppe' ) . '</label>' .
 		                 '<input id="url" name="url" type="text" placeholder="' . $replace_url . '" value="' . esc_attr( $commenter['comment_author_url'] ) .
 		                 '" size="30" /></p>';
 
@@ -422,15 +422,15 @@ if ( ! function_exists( 'shelly_add_placeholder_comment_form' ) ) {
 	}
 }
 
-add_filter( 'comment_form_default_fields', 'shelly_add_placeholder_comment_form' );
+add_filter( 'comment_form_default_fields', 'shoppe_add_placeholder_comment_form' );
 
 
-if ( ! function_exists( 'shelly_reply_title' ) ) {
-	function shelly_reply_title( $defaults ) {
+if ( ! function_exists( 'shoppe_reply_title' ) ) {
+	function shoppe_reply_title( $defaults ) {
 		$defaults['title_reply_before'] = '<h3 id="reply-title" class="h2 comment-reply-title">';
 		$defaults['title_reply_after']  = '</h3>';
 
 		return $defaults;
 	}
 }
-add_filter( 'comment_form_defaults', 'shelly_reply_title' );
+add_filter( 'comment_form_defaults', 'shoppe_reply_title' );

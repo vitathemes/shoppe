@@ -25,8 +25,8 @@ if ( post_password_required() ) {
 	<?php
 	if ( comments_open() ) :
 		comment_form( array(
-			'label_submit'  => __('Post Comment', 'shelly'),
-			'title_reply'   => __('Leave a reply', 'shelly'),
+			'label_submit'  => __('Post Comment', 'shoppe'),
+			'title_reply'   => __('Leave a reply', 'shoppe'),
 			'comment_field' => '<p class="comment-form-comment"><label class="screen-reader-text" for="comment">Comment*</label> <textarea id="comment" placeholder="Comment*" name="comment" cols="45" rows="3" maxlength="20000" required="required" spellcheck="false"></textarea></p>'
 		) );
 		?>
@@ -35,7 +35,7 @@ if ( post_password_required() ) {
 		<?php if ( have_comments() ) : ?>
         <h2 class="comments-title">
 			<?php
-			esc_html_e( 'Comments', 'shelly' )
+			esc_html_e( 'Comments', 'shoppe' )
 			?>
         </h2><!-- .comments-title -->
 
@@ -43,7 +43,7 @@ if ( post_password_required() ) {
 			<?php
 			wp_list_comments(
 				array(
-					'walker'      => new Shelly_walker_comment(),
+					'walker'      => new Shoppe_walker_comment(),
 					'style'       => 'ol',
 					'short_ping'  => true,
 					'avatar_size' => 70,

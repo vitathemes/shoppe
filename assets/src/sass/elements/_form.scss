@@ -1,10 +1,10 @@
 input, select, textarea {
   border: none;
-  border-bottom: 1px solid $shelly_neutral_secondary_color;
+  border-bottom: 1px solid $shoppe_neutral_secondary_color;
   padding: rem(16px) 0;
   margin: rem(4px) 0;
   font-family: inherit;
-  transition: $shelly_global_transition;
+  transition: $shoppe_global_transition;
   width: 100%;
   font-size: rem(12px);
 
@@ -13,7 +13,7 @@ input, select, textarea {
   }
 
   &::placeholder {
-    color: $shelly_neutral_primary_color;
+    color: $shoppe_neutral_primary_color;
     opacity: 1;
     font-size: rem(12px);
 
