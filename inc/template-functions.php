@@ -317,8 +317,7 @@ if ( ! function_exists( 'shoppe_empty_cart_message' ) ) {
 
 	function shoppe_empty_cart_message() {
 		echo '	<div class="c-notice s-notice"' . esc_html(wc_get_notice_data_attr( $notice )) .
-		'
-		<div class="c-notice__main">' .
+             '><div class="c-notice__main">' .
 		     esc_html__( "Your cart is currently empty.", 'shoppe' )
 		     . '</div>
 	</div>';

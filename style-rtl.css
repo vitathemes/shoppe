@@ -870,7 +870,7 @@ body.admin-bar .c-nav {
     .c-post__excerpt {
       font-size: 1rem; } }
   .c-post__excerpt p {
-    margin: 0; }
+    margin-top: 0; }
 
 .c-post__read-more__link {
   font-size: 0.875rem;
