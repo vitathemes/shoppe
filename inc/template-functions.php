@@ -404,6 +404,10 @@ if ( ! function_exists( 'shoppe_add_placeholder_comment_form' ) ) {
 		$replace_email  = __( 'Your Email', 'shoppe' );
 		$replace_url    = __( 'Your Website', 'shoppe' );
 
+		if (isset($req)) {
+			$req = false;
+        }
+
 		$fields['author'] = '<p class="comment-form-author">' . '<label class="screen-reader-text" for="author">' . esc_html__( 'Name',
 				'shoppe' ) . '</label> ' . ( $req ? '<span class="required">*</span>' : '' ) .
 		                    '<input id="author" name="author" type="text" placeholder="' . $replace_author . '" value="' . ($commenter ? esc_attr( $commenter['comment_author'] ) : '') . '" size="20"' . $aria_req . ' /></p>';
