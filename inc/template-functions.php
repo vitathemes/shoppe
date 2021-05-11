@@ -404,7 +404,7 @@ if ( ! function_exists( 'shoppe_add_placeholder_comment_form' ) ) {
 		$replace_email  = __( 'Your Email', 'shoppe' );
 		$replace_url    = __( 'Your Website', 'shoppe' );
 
-		if (isset($req)) {
+		if (!isset($req)) {
 			$req = false;
         }
 
