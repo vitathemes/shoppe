@@ -1581,7 +1581,8 @@ body.admin-bar .c-nav {
 
 .comments-title {
   margin: 0 0 28px;
-  line-height: 1.75; }
+  line-height: 1.75;
+  width: 100%; }
 
 .comments-header {
   margin-bottom: 48px; }

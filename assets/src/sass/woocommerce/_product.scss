@@ -132,6 +132,15 @@
     transition: $shoppe_global_transition ease-out;
   }
 
+  & > .wp-post-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+  }
+
   &:hover {
 
     img {

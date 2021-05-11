@@ -100,12 +100,12 @@ if ( ! function_exists( 'shoppe_is_blog_page' ) ) {
 
 		//Check all blog-related conditional tags, as well as the current post type,
 		//to determine if we're viewing a blog page.
-        if (is_search()) {
-            return true;
-        }
+		if ( is_search() ) {
+			return true;
+		}
 
 		return (
-			( is_home() || is_archive() || is_single() && ( $post_type == 'post' ))
+		( is_home() || is_archive() || is_single() && ( $post_type == 'post' ) )
 		) ? true : false;
 
 	}
@@ -316,8 +316,8 @@ add_filter( 'woocommerce_billing_fields', 'shoppe_remove_billing_fields' );
 if ( ! function_exists( 'shoppe_empty_cart_message' ) ) {
 
 	function shoppe_empty_cart_message() {
-		echo '	<div class="c-notice s-notice"' . esc_html(wc_get_notice_data_attr( $notice )) .
-             '><div class="c-notice__main">' .
+		echo '	<div class="c-notice s-notice"' .
+		     '><div class="c-notice__main">' .
 		     esc_html__( "Your cart is currently empty.", 'shoppe' )
 		     . '</div>
 	</div>';
@@ -406,17 +406,17 @@ if ( ! function_exists( 'shoppe_add_placeholder_comment_form' ) ) {
 
 		$fields['author'] = '<p class="comment-form-author">' . '<label class="screen-reader-text" for="author">' . esc_html__( 'Name',
 				'shoppe' ) . '</label> ' . ( $req ? '<span class="required">*</span>' : '' ) .
-		                    '<input id="author" name="author" type="text" placeholder="' . $replace_author . '" value="' . esc_attr( $commenter['comment_author'] ) . '" size="20"' . $aria_req . ' /></p>';
+		                    '<input id="author" name="author" type="text" placeholder="' . $replace_author . '" value="' . ($commenter ? esc_attr( $commenter['comment_author'] ) : '') . '" size="20"' . $aria_req . ' /></p>';
 
 		$fields['email'] = '<p class="comment-form-email"><label class="screen-reader-text" for="email">' . esc_html__( 'Email',
 				'shoppe' ) . '</label> ' .
 		                   ( $req ? '<span class="required">*</span>' : '' ) .
-		                   '<input id="email" name="email" type="text" placeholder="' . $replace_email . '" value="' . esc_attr( $commenter['comment_author_email'] ) .
+		                   '<input id="email" name="email" type="text" placeholder="' . $replace_email . '" value="' . ($commenter ? esc_attr( $commenter['comment_author_email'] ) : '') .
 		                   '" size="30"' . $aria_req . ' /></p>';
 
 		$fields['url'] = '<p class="comment-form-url"><label class="screen-reader-text" for="url">' . esc_html__( 'Website',
 				'shoppe' ) . '</label>' .
-		                 '<input id="url" name="url" type="text" placeholder="' . $replace_url . '" value="' . esc_attr( $commenter['comment_author_url'] ) .
+		                 '<input id="url" name="url" type="text" placeholder="' . $replace_url . '" value="' . ($commenter ? esc_attr( $commenter['comment_author_url'] ) : '') .
 		                 '" size="30" /></p>';
 
 		return $fields;

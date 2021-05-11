@@ -1581,7 +1581,8 @@ body.admin-bar .c-nav {
 
 .comments-title {
   margin: 0 0 28px;
-  line-height: 1.75; }
+  line-height: 1.75;
+  width: 100%; }
 
 .comments-header {
   margin-bottom: 48px; }
@@ -4411,6 +4412,13 @@ https://flickity.metafizzy.co
     z-index: 1; }
   .product__header img {
     transition: 0.25s ease-out; }
+  .product__header > .wp-post-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0; }
   .product__header:hover img {
     transform: scale(1.03); }
 
