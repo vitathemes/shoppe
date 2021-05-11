@@ -23,7 +23,7 @@ Shoppe is a Shopping theme and ready to use WooCommerce as your e-commerce WordP
 * GNU GPL version 2.0 licensed
 * …and much more
 
-See a working example at [https://demo.vitathemes.com/meliora/](https://demo.vitathemes.com/meliora/).
+See a working example at [https://demo.vitathemes.com/shoppe/](https://demo.vitathemes.com/shoppe/).
 
 ## Theme installation
 1. Simply install as a normal WordPress theme and activate.
@@ -40,15 +40,15 @@ themes/Shoppe/        # → Root of your theme
 ├── languages/            # → Theme Language files
 ├── template-parts/       # → Theme Part files (Include)
 ├── node_modules/         # → Node.js packages
-├── vendor/               # → Third Party Packages (Managed by Composer, Currently we use [Kirki Framework](https://github.com/aristath/kirki) for customizer)
 ├── package.json          # → Node.js dependencies and scripts
 │── classes/              # → Custom PHP classes
 ├── inc/                  # → Theme functions
-│   ├── kirki/            # → Kirki Customization framework
+│   ├── TGMPA/            # → TGMPA library
 │   ├── customizer.php    # → All codes related to WordPress Customizer (We use Kirki Framework)
 │   ├── template-functions.php    # → Custom template tweaks
 │   └── template-tags.php         # → Custom template tags
 │   └── hooks.php         # → Theme custom hooks
+│   └── tgmpa-config.php         # → Configuration file for TGMPA
 └── page-templates/       # → Page Templates
 ```
 
@@ -64,10 +64,6 @@ Edit `functions.php` to enable or disable theme features, setup navigation menus
 ## Contributing
 
 Contributions are welcome from everyone. We have [contributing guidelines](CONTRIBUTING.md) to help you get started.
-
-## Changelog
-
-See the [Changelog](CHANGELOG.md)
 
 ## License
 
