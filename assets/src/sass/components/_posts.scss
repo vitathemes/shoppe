@@ -114,6 +114,10 @@
   @include mq(tablet) {
     font-size: rem(16px);
   }
+
+  p {
+    margin: 0;
+  }
 }
 
 .c-post__read-more__link {
