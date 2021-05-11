@@ -1,0 +1,51 @@
+.comments-area {
+
+  .comment-form-comment {
+    label {
+
+    }
+
+    textarea {
+      width: 100%;
+      height: 50px !important;
+    }
+  }
+
+  .submit {
+    @include h6;
+    font-size: rem(14px) !important;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    background: $shoppe_neutral_black;
+    color: $shoppe_neutral_white;
+    box-sizing: border-box;
+    border-radius: $shoppe_global_radius;
+    transition: $shoppe_global_transition;
+    padding: rem(14px) rem(32px);
+    cursor: pointer;
+    font-weight: 500;
+    border: 1px solid $shoppe_neutral_black;
+
+    &:hover {
+      background-color: $shoppe_neutral_white;
+      color: $shoppe_neutral_black;
+    }
+  }
+
+  .comment-list {
+    list-style: none;
+
+    ul, ol {
+      list-style: none;
+    }
+  }
+}
+
+#cancel-comment-reply-link {
+  color: $shoppe_branding_color;
+  text-decoration: none;
+
+  &:hover {
+    color: $shoppe_neutral_black;
+  }
+}

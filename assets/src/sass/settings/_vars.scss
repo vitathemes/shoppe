@@ -1,0 +1,30 @@
+// Globals
+$global_media_queries: (
+        xs: 36em,
+        sm: 48em,
+        md: 64em,
+        lg: 80em
+) !default;
+$shoppe_global_transition: 0.25s !default;
+$shoppe_global_radius: 0.25rem !default;
+$shoppe_global_radius2x: 0.5rem !default;
+
+// Colors
+$shoppe_headings_color: var(--shoppe-primary-color);
+$shoppe_neutral_primary_color: var(--shoppe-secondary-color);
+$shoppe_neutral_secondary_color: var(--shoppe-tertiary-color);
+$shoppe_neutral_tertiary_color: var(--shoppe-quaternary-color);
+$shoppe_neutral_quaternary_color: var(--shoppe-quinary-color);
+$shoppe_neutral_white: #fff;
+$shoppe_neutral_black: var(--shoppe-primary-color);
+
+$shoppe_branding_color: var(--shoppe-branding-color);
+
+$shoppe_error_color: #D82700;
+
+// Typography (Fallback)
+$shoppe_default_font_family: 'DM Sans', Arial;
+$shoppe_default_font_size: 16px;
+$shoppe_default_line_height: 1.563;
+
+

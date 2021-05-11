@@ -1,0 +1,1973 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-25 17:12+0430\n"
+"PO-Revision-Date: 2021-04-25 17:13+0300\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Eazy Po 0.9.5.3\n"
+
+#: 404.php:21
+msgid "404 ERROR"
+msgstr ""
+
+#: 404.php:22
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:27
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+
+#: 404.php:31 inc/customizer.php:133
+msgid "Homepage"
+msgstr ""
+
+#: comments.php:28
+msgid "Post Comment"
+msgstr ""
+
+#: comments.php:29
+msgid "Leave a reply"
+msgstr ""
+
+#: comments.php:38
+msgid "Comments"
+msgstr ""
+
+#: functions.php:52
+msgid "Header Menu"
+msgstr ""
+
+#: functions.php:148
+msgid "Blog Sidebar"
+msgstr ""
+
+#: functions.php:150 functions.php:162 functions.php:174 functions.php:186
+msgid "Add widgets here."
+msgstr ""
+
+#: functions.php:160
+msgid "Shop Sidebar"
+msgstr ""
+
+#: functions.php:172
+msgid "Footer Sidebar - Left"
+msgstr ""
+
+#: functions.php:184
+msgid "Footer sidebar - Right"
+msgstr ""
+
+#: header.php:29
+msgid "Skip to content"
+msgstr ""
+
+#: header.php:49 woocommerce/archive-product.php:55
+msgid "Close popup"
+msgstr ""
+
+#: index.php:21
+msgid "Blog"
+msgstr ""
+
+#: product-searchform.php:3 searchform.php:3
+msgid "Search for:"
+msgstr ""
+
+#: search.php:17
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: single.php:27
+msgid "Previous:"
+msgstr ""
+
+#: single.php:28
+msgid "Next:"
+msgstr ""
+
+#: classes/class_shoppe_walker_comment.php:68
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: classes/class_shoppe_walker_comment.php:76
+#: woocommerce/myaccount/my-address.php:63
+msgid "Edit"
+msgstr ""
+
+#: classes/class_shoppe_walker_nav_menu.php:27
+msgid "Toggle sub menu"
+msgstr ""
+
+#: inc/customizer.php:104 inc/customizer.php:105
+msgid "Elements"
+msgstr ""
+
+#: inc/customizer.php:115
+msgid "Header"
+msgstr ""
+
+#: inc/customizer.php:124
+msgid "Colors"
+msgstr ""
+
+#: inc/customizer.php:141
+msgid "Typography"
+msgstr ""
+
+#: inc/customizer.php:150
+msgid "Layout"
+msgstr ""
+
+#: inc/customizer.php:158
+msgid "Single Options"
+msgstr ""
+
+#: inc/customizer.php:165
+msgid "Archive Options"
+msgstr ""
+
+#: inc/customizer.php:172
+msgid "Products Single Options"
+msgstr ""
+
+#: inc/customizer.php:179
+msgid "Products Archive Options"
+msgstr ""
+
+#: inc/customizer.php:186
+msgid "Social Networks"
+msgstr ""
+
+#: inc/customizer.php:199
+msgid "Display Search"
+msgstr ""
+
+#: inc/customizer.php:210
+msgid "Display Cart"
+msgstr ""
+
+#: inc/customizer.php:220
+msgid "Display Profile"
+msgstr ""
+
+#: inc/customizer.php:234
+msgid "Use google Fonts"
+msgstr ""
+
+#: inc/customizer.php:251
+msgid "H1"
+msgstr ""
+
+#: inc/customizer.php:301
+msgid "H2"
+msgstr ""
+
+#: inc/customizer.php:351
+msgid "H3"
+msgstr ""
+
+#: inc/customizer.php:401
+msgid "H4"
+msgstr ""
+
+#: inc/customizer.php:451
+msgid "H5"
+msgstr ""
+
+#: inc/customizer.php:501
+msgid "H6"
+msgstr ""
+
+#: inc/customizer.php:554
+msgid "Base font"
+msgstr ""
+
+#: inc/customizer.php:605
+msgid "Buttons styles"
+msgstr ""
+
+#: inc/customizer.php:654
+msgid "Facebook"
+msgstr ""
+
+#: inc/customizer.php:663
+msgid "Twitter"
+msgstr ""
+
+#: inc/customizer.php:672
+msgid "Instagram"
+msgstr ""
+
+#: inc/customizer.php:681
+msgid "Linkedin"
+msgstr ""
+
+#: inc/customizer.php:694
+msgid "Primary Color"
+msgstr ""
+
+#: inc/customizer.php:703
+msgid "Color #1"
+msgstr ""
+
+#: inc/customizer.php:712
+msgid "Color #2"
+msgstr ""
+
+#: inc/customizer.php:721
+msgid "Color #3"
+msgstr ""
+
+#: inc/customizer.php:730
+msgid "Color #4"
+msgstr ""
+
+#: inc/customizer.php:739
+msgid "Color #5"
+msgstr ""
+
+#: inc/customizer.php:753
+msgid "Blog Layout"
+msgstr ""
+
+#: inc/customizer.php:768
+msgid "Shop Layout"
+msgstr ""
+
+#: inc/customizer.php:786 inc/customizer.php:796
+msgid "Show posts thumbnail"
+msgstr ""
+
+#: inc/customizer.php:806
+msgid "Show share buttons"
+msgstr ""
+
+#: inc/customizer.php:816
+msgid "Show published date"
+msgstr ""
+
+#: inc/customizer.php:826
+msgid "Show author name"
+msgstr ""
+
+#: inc/customizer.php:836
+msgid "Show post tags"
+msgstr ""
+
+#: inc/customizer.php:848
+msgid "Show categories"
+msgstr ""
+
+#: inc/customizer.php:858
+msgid "Show publish date"
+msgstr ""
+
+#: inc/customizer.php:868
+msgid "Show posts excerpt"
+msgstr ""
+
+#: inc/customizer.php:880
+msgid "Show Slider Menu on Home/Blog page"
+msgstr ""
+
+#: inc/customizer.php:890
+msgid "Show Slider Menu on Category pages"
+msgstr ""
+
+#: inc/customizer.php:900
+msgid "Show Slider Menu on Tags pages"
+msgstr ""
+
+#: inc/customizer.php:910
+msgid "Show Slider Menu on Author pages"
+msgstr ""
+
+#: inc/template-functions.php:320
+msgid "Your cart is currently empty."
+msgstr ""
+
+#: inc/template-functions.php:402
+msgid "Your Name"
+msgstr ""
+
+#: inc/template-functions.php:403
+msgid "Your Email"
+msgstr ""
+
+#: inc/template-functions.php:404
+msgid "Your Website"
+msgstr ""
+
+#: inc/template-functions.php:406 woocommerce/single-product-reviews.php:95
+msgid "Name"
+msgstr ""
+
+#: inc/template-functions.php:410 woocommerce/single-product-reviews.php:101
+msgid "Email"
+msgstr ""
+
+#: inc/template-functions.php:416
+msgid "Website"
+msgstr ""
+
+#: inc/template-tags.php:37
+#, php-format
+msgctxt "post author"
+msgid "by %s"
+msgstr ""
+
+#: inc/template-tags.php:54
+msgid ", "
+msgstr ""
+
+#: inc/template-tags.php:57
+#, php-format
+msgid "Posted in %1$s"
+msgstr ""
+
+#: inc/template-tags.php:62
+msgctxt "list item separator"
+msgid ", "
+msgstr ""
+
+#: inc/template-tags.php:65
+#, php-format
+msgid "Tagged %1$s"
+msgstr ""
+
+#: inc/template-tags.php:76
+#, php-format
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#: inc/template-tags.php:93 template-parts/content-page.php:41
+#: template-parts/content-woocommerce-page.php:39
+#, php-format
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr ""
+
+#: inc/template-tags.php:206
+msgid "Search"
+msgstr ""
+
+#: inc/template-tags.php:239
+msgid "Cart"
+msgstr ""
+
+#: inc/template-tags.php:247
+msgid "Account"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:327
+msgid "Install Required Plugins"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:328
+msgid "Install Plugins"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:330
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:332
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:333
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:336
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:342
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:348
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:354
+#, php-format
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:360
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:366
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:371
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:376
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:381
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:385
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:386
+#: inc/tgmpa/class-tgm-plugin-activation.php:827
+#: inc/tgmpa/class-tgm-plugin-activation.php:2533
+#: inc/tgmpa/class-tgm-plugin-activation.php:3580
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:387
+#: inc/tgmpa/class-tgm-plugin-activation.php:3159
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:388
+#: inc/tgmpa/class-tgm-plugin-activation.php:2952
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:390
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:392
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:394
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:395
+msgid "Dismiss this notice"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:396
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:397
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:522
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:523
+msgid "Update Required"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:934
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:934
+#: inc/tgmpa/class-tgm-plugin-activation.php:937
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:937
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:1121
+#: inc/tgmpa/class-tgm-plugin-activation.php:2948
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:1982
+#, php-format
+msgid "TGMPA v%s"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2273
+msgid "Required"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2276
+msgid "Recommended"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2292
+msgid "WordPress Repository"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2295
+msgid "External Source"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2298
+msgid "Pre-Packaged"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2315
+msgid "Not Installed"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2319
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2321
+msgid "Active"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2327
+msgid "Required Update not Available"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2330
+msgid "Requires Update"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2333
+msgid "Update recommended"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2342
+#, php-format
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2388
+#, php-format
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2392
+#, php-format
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2396
+#, php-format
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2400
+#, php-format
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2482
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2490
+msgid "Installed version:"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2498
+msgid "Minimum required version:"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2510
+msgid "Available version:"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2533
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2547
+msgid "Plugin"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2548
+msgid "Source"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2549
+msgid "Type"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2553
+msgid "Version"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2554
+#: woocommerce/myaccount/my-orders.php:16
+msgid "Status"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2603
+#, php-format
+msgid "Install %2$s"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2608
+#, php-format
+msgid "Update %2$s"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2614
+#, php-format
+msgid "Activate %2$s"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2684
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2717
+msgid "Install"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2723
+#: woocommerce/cart/shipping-calculator.php:86
+msgid "Update"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2726
+msgid "Activate"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2757
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2759
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2800
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2802
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2908
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2934
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3158
+msgid "Plugin activation failed."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3498
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3501
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3503
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3507
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3509
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3509
+#: inc/tgmpa/class-tgm-plugin-activation.php:3517
+msgid "Show Details"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3509
+#: inc/tgmpa/class-tgm-plugin-activation.php:3517
+msgid "Hide Details"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3510
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3512
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3515
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3517
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3518
+msgid "All installations have been completed."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3520
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/easy_xml.py:51
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/easy_xml.py:52
+msgid "\n"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/easy_xml.py:78
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/easy_xml.py:81
+msgid "<"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/easy_xml.py:84
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/easy_xml.py:87
+#, python-format
+msgid " %s=\"%s\""
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/easy_xml.py:87
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/easy_xml.py:90
+msgid ">"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/easy_xml.py:101
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/easy_xml.py:104
+#, python-format
+msgid "</%s>%s"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/easy_xml.py:103
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/easy_xml.py:106
+#, python-format
+msgid "/>%s"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/input.py:1837
+#: node_modules/node-gyp/gyp/pylib/gyp/input.py:1898
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/input.py:2011
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/input.py:2073
+#, python-format
+msgid "Cycle: %s"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/msvs_emulation.py:358
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/msvs_emulation.py:401
+msgid "_MBCS"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/msvs_emulation.py:423
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/msvs_emulation.py:470
+msgid "/safeseh"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/msvs_emulation.py:473
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/msvs_emulation.py:546
+msgid "/FS"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/msvs_emulation.py:543
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/msvs_emulation.py:628
+#, python-format
+msgid "/DEF:\"%s\""
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/msvs_emulation.py:575
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/msvs_emulation.py:677
+msgid "/OUT:"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/msvs_emulation.py:578
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/msvs_emulation.py:680
+msgid "/PDB:"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/msvs_emulation.py:581
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/msvs_emulation.py:683
+msgid "/PGD:"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/msvs_emulation.py:604
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/msvs_emulation.py:712
+#, python-format
+msgid "/STACK:%s%s"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/msvs_emulation.py:643
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/msvs_emulation.py:750
+msgid "/DYNAMICBASE"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/msvs_emulation.py:650
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/msvs_emulation.py:757
+msgid "/NXCOMPAT"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/msvs_emulation.py:692
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/msvs_emulation.py:808
+msgid "/MANIFESTUAC:NO"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/msvs_emulation.py:740
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/msvs_emulation.py:863
+msgid "/ALLOWISOLATION"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/msvs_emulation.py:785
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/msvs_emulation.py:911
+msgid "/I"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/ninja_syntax.py:72
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/ninja_syntax.py:84
+msgid "|"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/ninja_syntax.py:76
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/ninja_syntax.py:88
+msgid "||"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/xcodeproj_file.py:276
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/xcodeproj_file.py:277
+#, python-format
+msgid "\\U%04x"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/xcodeproj_file.py:988
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/xcodeproj_file.py:1046
+msgid ".name"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/xcodeproj_file.py:999
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/xcodeproj_file.py:1057
+msgid ".path"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/xcodeproj_file.py:1066
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/xcodeproj_file.py:1130
+msgid "$("
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:481
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:585
+#, python-format
+msgid "-isysroot %s"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:484
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:591
+msgid "-Wconstant-conversion"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:487
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:594
+msgid "-funsigned-char"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:490
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:597
+msgid "-fasm-blocks"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:494
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:601
+msgid "-mdynamic-no-pic"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:502
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:609
+msgid "-mpascal-strings"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:509
+#: node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:513
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:616
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:620
+msgid "-gdwarf-2"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:518
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:625
+msgid "-fstrict-aliasing"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:520
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:627
+msgid "-fno-strict-aliasing"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:523
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:630
+msgid "-fvisibility=hidden"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:526
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:633
+msgid "-Werror"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:529
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:636
+msgid "-Wnewline-eof"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:536
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:643
+msgid "-flto"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:559
+#: node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:822
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:666
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:950
+msgid "-arch "
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:563
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:670
+msgid "-msse3"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:566
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:674
+msgid "-mssse3"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:568
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:676
+msgid "-msse4.1"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:570
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:678
+msgid "-msse4.2"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:577
+#: node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:586
+#: node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:840
+#: node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:845
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:685
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:694
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:969
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:974
+msgid "-F"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:596
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:704
+msgid "-ansi"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:613
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:722
+#, python-format
+msgid "-std=%s"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:618
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:727
+msgid "-fno-rtti"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:620
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:729
+msgid "-fno-exceptions"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:622
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:731
+msgid "-fvisibility-inlines-hidden"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:624
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:733
+msgid "-fno-threadsafe-statics"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:627
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:736
+msgid "-Wno-invalid-offsetof"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:647
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:756
+msgid "-fobjc-gc"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:649
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:758
+msgid "-fobjc-gc-only"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:653
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:762
+msgid "-fobjc-arc"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:658
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:768
+msgid "-Wobjc-missing-property-synthesis"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:678
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:788
+msgid "-fobjc-call-cxx-cdtors"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:790
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:916
+msgid "-Wl,-dead_strip"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:793
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:919
+msgid "-Wl,-prebind"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:803
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:929
+msgid "-isysroot "
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:806
+#: node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:825
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:932
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:954
+msgid "-L"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:809
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:936
+msgid "-Wl,-order_file "
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:829
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:958
+msgid "-install_name "
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:832
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:961
+msgid "-Wl,-rpath,"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:853
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:985
+msgid "-lpkstart"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:856
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:988
+msgid "/System/Library/PrivateFrameworks/PlugInKit.framework/PlugInKit"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:857
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:992
+msgid "-fapplication-extension"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:858
+msgid "-Xlinker -rpath -Xlinker @executable_path/../../Frameworks"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:950
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:1085
+#, python-format
+msgid "echo STRIP\\(%s\\)"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:951
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:1086
+#, python-format
+msgid "strip %s %s"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:969
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:1107
+#, python-format
+msgid "echo DSYMUTIL\\(%s\\)"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:970
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:1108
+#, python-format
+msgid "dsymutil %s -o %s"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:1618
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:1903
+#, python-format
+msgid "echo POSTBUILD\\(%s\\) %s"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/__init__.py:364
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/__init__.py:478
+msgid "USERPROFILE"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/generator/analyzer.py:663
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/generator/analyzer.py:717
+msgid "all"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/generator/android.py:450
+#: node_modules/node-gyp/gyp/pylib/gyp/generator/make.py:982
+#: node_modules/node-gyp/gyp/pylib/gyp/generator/make.py:1108
+#: node_modules/node-gyp/gyp/pylib/gyp/generator/make.py:1150
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/generator/android.py:499
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/generator/make.py:1026
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/generator/make.py:1168
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/generator/make.py:1210
+#, python-format
+msgid "$(%s)"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/generator/cmake.py:376
+#: node_modules/node-gyp/gyp/pylib/gyp/generator/cmake.py:377
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/generator/cmake.py:393
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/generator/cmake.py:394
+msgid "${"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/generator/eclipse.py:223
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/generator/eclipse.py:234
+msgid "1"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/generator/make.py:1279
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/generator/make.py:1371
+msgid "$(OBJS)"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/generator/make.py:1501
+#, python-format
+msgid "-Wl,-rpath=\\$$ORIGIN/lib.%s/"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/generator/make.py:1502
+#, python-format
+msgid "-Wl,-rpath-link=\\$(builddir)/lib.%s/"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/generator/make.py:1530
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/generator/make.py:1658
+msgid "$(TARGET_POSTBUILDS_$(BUILDTYPE))"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/generator/make.py:1994
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/generator/make.py:2221
+msgid "BUILDTYPE="
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/generator/msvs.py:2946
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/generator/msvs.py:3271
+msgid "Label"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/generator/msvs.py:3109
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/generator/msvs.py:3456
+#, python-format
+msgid "%%(%s)"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/generator/ninja.py:1181
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/generator/ninja.py:1477
+#, python-format
+msgid "-Wl,-rpath=\\$$ORIGIN/%s"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/generator/ninja.py:1182
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/generator/ninja.py:1480
+#, python-format
+msgid "-Wl,-rpath-link=%s"
+msgstr ""
+
+#: node_modules/node-gyp/gyp/pylib/gyp/generator/ninja.py:1415
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/generator/ninja.py:1784
+#, python-format
+msgid "export %s=%s;"
+msgstr ""
+
+#: node_modules/node-sass/node_modules/node-gyp/gyp/test_gyp.py:220
+#, python-format
+msgid "(%s) %s"
+msgstr ""
+
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:588
+#, python-format
+msgid "-I%s"
+msgstr ""
+
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:975
+msgid "-framework XCTest"
+msgstr ""
+
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py:991
+msgid "-e _NSExtensionMain"
+msgstr ""
+
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/generator/make.py:1624
+msgid "-Wl,-rpath=\\$$ORIGIN/"
+msgstr ""
+
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/generator/make.py:1625
+msgid "-Wl,-rpath-link=\\$(builddir)/"
+msgstr ""
+
+#: node_modules/node-sass/node_modules/node-gyp/gyp/pylib/gyp/generator/ninja.py:1479
+#, python-format
+msgid "-Wl,-rpath=%s"
+msgstr ""
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#: template-parts/content-none.php:24
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:37
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:44
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: template-parts/content-page.php:27
+#: template-parts/content-woocommerce-page.php:25
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/content.php:71
+msgid "Tags"
+msgstr ""
+
+#: template-parts/content.php:78 woocommerce/single-product/photoswipe.php:35
+msgid "Share"
+msgstr ""
+
+#: woocommerce/archive-product.php:52
+msgid "Filters"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:35
+#, php-format
+msgid "%1$s review for %2$s"
+msgid_plural "%1$s reviews for %2$s"
+msgstr[0] ""
+msgstr[1] ""
+
+#: woocommerce/single-product-reviews.php:38
+msgid "Reviews"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:67
+msgid "There are no reviews yet."
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:74
+msgid "Add a Review"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:88
+msgid "Submit"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:123
+#, php-format
+msgid "You must be %1$slogged in%2$s to post a review."
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:127
+msgid "Your rating"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:128
+msgid "Rate&hellip;"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:129
+msgid "Perfect"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:130
+msgid "Good"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:131
+msgid "Average"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:132
+msgid "Not that bad"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:133
+msgid "Very poor"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:137
+msgid "Your review*"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:146
+msgid ""
+"Only logged in customers who have purchased this product may leave a review."
+msgstr ""
+
+#: woocommerce/cart/cart-empty.php:35
+msgid "Return to shop"
+msgstr ""
+
+#: woocommerce/cart/cart-shipping.php:51
+#, php-format
+msgid "Shipping to %s."
+msgstr ""
+
+#: woocommerce/cart/cart-shipping.php:52
+msgid "Change address"
+msgstr ""
+
+#: woocommerce/cart/cart-shipping.php:54
+msgid "Shipping options will be updated during checkout."
+msgstr ""
+
+#: woocommerce/cart/cart-shipping.php:62
+msgid "Shipping costs are calculated during checkout."
+msgstr ""
+
+#: woocommerce/cart/cart-shipping.php:64
+msgid "Enter your address to view shipping options."
+msgstr ""
+
+#: woocommerce/cart/cart-shipping.php:67
+msgid ""
+"There are no shipping options available. Please ensure that your address has "
+"been entered correctly, or contact us if you need any help."
+msgstr ""
+
+#: woocommerce/cart/cart-shipping.php:70
+#, php-format
+msgid "No shipping options were found for %s."
+msgstr ""
+
+#: woocommerce/cart/cart-shipping.php:71
+msgid "Enter a different address"
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:25
+msgid "Cart totals"
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:30 woocommerce/cart/cart-totals.php:31
+#: woocommerce/checkout/review-order.php:24
+#: woocommerce/checkout/review-order.php:64
+msgid "Subtotal"
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:52 woocommerce/cart/cart-totals.php:53
+msgid "Shipping"
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:72
+#, php-format
+msgid "(estimated for %s)"
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:98 woocommerce/cart/cart-totals.php:99
+#: woocommerce/checkout/review-order.php:111
+#: woocommerce/myaccount/my-orders.php:17
+msgid "Total"
+msgstr ""
+
+#: woocommerce/cart/cart.php:31 woocommerce/cart/cart.php:81
+#: woocommerce/checkout/form-pay.php:27
+#: woocommerce/checkout/review-order.php:23
+msgid "Product"
+msgstr ""
+
+#: woocommerce/cart/cart.php:33 woocommerce/cart/cart.php:116
+msgid "Quantity"
+msgstr ""
+
+#: woocommerce/cart/cart.php:105
+msgid "Available on backorder"
+msgstr ""
+
+#: woocommerce/cart/cart.php:111
+msgid "Price"
+msgstr ""
+
+#: woocommerce/cart/cart.php:146 woocommerce/cart/mini-cart.php:47
+msgid "Remove this item"
+msgstr ""
+
+#: woocommerce/cart/cart.php:164 woocommerce/cart/cart.php:165
+msgid "Update cart"
+msgstr ""
+
+#: woocommerce/cart/cart.php:168
+msgid "Coupon:"
+msgstr ""
+
+#: woocommerce/cart/cart.php:169 woocommerce/checkout/form-coupon.php:34
+msgid "Coupon code"
+msgstr ""
+
+#: woocommerce/cart/cart.php:171 woocommerce/cart/cart.php:172
+#: woocommerce/checkout/form-coupon.php:38
+msgid "Apply coupon"
+msgstr ""
+
+#: woocommerce/cart/cross-sells.php:24
+msgid "You may be interested in&hellip;"
+msgstr ""
+
+#: woocommerce/cart/mini-cart.php:114
+msgid "No products in the cart."
+msgstr ""
+
+#: woocommerce/cart/proceed-to-checkout-button.php:26
+msgid "Proceed to checkout"
+msgstr ""
+
+#: woocommerce/cart/shipping-calculator.php:24
+msgid "Calculate shipping"
+msgstr ""
+
+#: woocommerce/cart/shipping-calculator.php:31
+msgid "Select a country / region&hellip;"
+msgstr ""
+
+#: woocommerce/cart/shipping-calculator.php:50
+#: woocommerce/cart/shipping-calculator.php:55
+#: woocommerce/cart/shipping-calculator.php:67
+msgid "State / County"
+msgstr ""
+
+#: woocommerce/cart/shipping-calculator.php:56
+msgid "Select an option&hellip;"
+msgstr ""
+
+#: woocommerce/cart/shipping-calculator.php:76
+msgid "City"
+msgstr ""
+
+#: woocommerce/cart/shipping-calculator.php:82
+msgid "Postcode / ZIP"
+msgstr ""
+
+#: woocommerce/checkout/form-billing.php:24
+msgid "Billing &amp; Shipping"
+msgstr ""
+
+#: woocommerce/checkout/form-billing.php:28
+msgid "Billing details"
+msgstr ""
+
+#: woocommerce/checkout/form-billing.php:53
+msgid "Create an account?"
+msgstr ""
+
+#: woocommerce/checkout/form-checkout.php:27
+msgid "You must be logged in to checkout."
+msgstr ""
+
+#: woocommerce/checkout/form-checkout.php:50
+msgid "Your order"
+msgstr ""
+
+#: woocommerce/checkout/form-coupon.php:26
+msgid "Have a coupon?"
+msgstr ""
+
+#: woocommerce/checkout/form-coupon.php:26
+msgid "Click here to enter your code"
+msgstr ""
+
+#: woocommerce/checkout/form-coupon.php:31
+msgid "If you have a coupon code, please apply it below."
+msgstr ""
+
+#: woocommerce/checkout/form-login.php:26
+msgid "Returning customer?"
+msgstr ""
+
+#: woocommerce/checkout/form-login.php:26
+msgid "Click here to login"
+msgstr ""
+
+#: woocommerce/checkout/form-login.php:33
+msgid ""
+"If you have shopped with us before, please enter your details below. If you "
+"are a new customer, please proceed to the Billing section."
+msgstr ""
+
+#: woocommerce/checkout/form-pay.php:28
+msgid "Qty"
+msgstr ""
+
+#: woocommerce/checkout/form-pay.php:29
+msgid "Totals"
+msgstr ""
+
+#: woocommerce/checkout/form-pay.php:79
+msgid ""
+"Sorry, it seems that there are no available payment methods for your "
+"location. Please contact us if you require assistance or wish to make "
+"alternate arrangements."
+msgstr ""
+
+#: woocommerce/checkout/form-shipping.php:26
+msgid "Ship to a different address?"
+msgstr ""
+
+#: woocommerce/checkout/form-shipping.php:57
+#: woocommerce/single-product/tabs/additional-information.php:22
+msgid "Additional information"
+msgstr ""
+
+#: woocommerce/checkout/payment.php:33
+msgid ""
+"Sorry, it seems that there are no available payment methods for your state. "
+"Please contact us if you require assistance or wish to make alternate "
+"arrangements."
+msgstr ""
+
+#: woocommerce/checkout/payment.php:33
+msgid "Please fill in your details above to see available payment methods."
+msgstr ""
+
+#: woocommerce/checkout/payment.php:42
+#, php-format
+msgid ""
+"Since your browser does not support JavaScript, or it is disabled, please "
+"ensure you click the %1$sUpdate Totals%2$s button before placing your order. "
+"You may be charged more than the amount stated above if you fail to do so."
+msgstr ""
+
+#: woocommerce/checkout/payment.php:44
+msgid "Update totals"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:31
+msgid ""
+"Unfortunately your order cannot be processed as the originating bank/"
+"merchant has declined your transaction. Please attempt your purchase again."
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:34
+msgid "Pay"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:36
+msgid "My account"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:42 woocommerce/checkout/thankyou.php:84
+msgid "Thank you. Your order has been received."
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:47
+msgid "Order number:"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:52
+msgid "Date:"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:58
+msgid "Email:"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:64
+msgid "Total:"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:70
+msgid "Payment method:"
+msgstr ""
+
+#: woocommerce/loop/result-count.php:28
+msgid "Showing the single result"
+msgstr ""
+
+#: woocommerce/loop/result-count.php:31
+#, php-format
+msgid "All %d items"
+msgid_plural "All %d items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: woocommerce/loop/result-count.php:36
+#, php-format
+msgctxt "with first and last result"
+msgid "%1$d&ndash;%2$d of %3$d items"
+msgid_plural "%1$d&ndash;%2$d of %3$d items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: woocommerce/myaccount/downloads.php:40
+msgid "No downloads available yet."
+msgstr ""
+
+#: woocommerce/myaccount/downloads.php:42 woocommerce/myaccount/orders.php:102
+msgid "Browse products"
+msgstr ""
+
+#: woocommerce/myaccount/form-add-payment-method.php:54
+msgid "Add payment method"
+msgstr ""
+
+#: woocommerce/myaccount/form-add-payment-method.php:60
+msgid ""
+"New payment methods can only be added during checkout. Please contact us if "
+"you require assistance."
+msgstr ""
+
+#: woocommerce/myaccount/form-edit-account.php:27
+#: woocommerce/myaccount/form-edit-account.php:28
+msgid "First name"
+msgstr ""
+
+#: woocommerce/myaccount/form-edit-account.php:31
+#: woocommerce/myaccount/form-edit-account.php:32
+msgid "Last name"
+msgstr ""
+
+#: woocommerce/myaccount/form-edit-account.php:37
+#: woocommerce/myaccount/form-edit-account.php:38
+msgid "Display name"
+msgstr ""
+
+#: woocommerce/myaccount/form-edit-account.php:38
+msgid ""
+"This will be how your name will be displayed in the account section and in "
+"reviews"
+msgstr ""
+
+#: woocommerce/myaccount/form-edit-account.php:43
+#: woocommerce/myaccount/form-edit-account.php:44
+#: woocommerce/myaccount/form-login.php:96
+#: woocommerce/myaccount/form-login.php:98
+msgid "Email address"
+msgstr ""
+
+#: woocommerce/myaccount/form-edit-account.php:48
+msgid "Password change"
+msgstr ""
+
+#: woocommerce/myaccount/form-edit-account.php:51
+#: woocommerce/myaccount/form-edit-account.php:52
+msgid "Current password (leave blank to leave unchanged)"
+msgstr ""
+
+#: woocommerce/myaccount/form-edit-account.php:55
+#: woocommerce/myaccount/form-edit-account.php:56
+msgid "New password (leave blank to leave unchanged)"
+msgstr ""
+
+#: woocommerce/myaccount/form-edit-account.php:59
+#: woocommerce/myaccount/form-edit-account.php:60
+msgid "Confirm new password"
+msgstr ""
+
+#: woocommerce/myaccount/form-edit-account.php:69
+msgid "Save changes"
+msgstr ""
+
+#: woocommerce/myaccount/form-edit-address.php:20
+#: woocommerce/myaccount/my-address.php:26
+#: woocommerce/myaccount/my-address.php:35
+msgid "Billing address"
+msgstr ""
+
+#: woocommerce/myaccount/form-edit-address.php:20
+#: woocommerce/myaccount/my-address.php:27
+msgid "Shipping address"
+msgstr ""
+
+#: woocommerce/myaccount/form-edit-address.php:47
+msgid "Save address"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:44
+#: woocommerce/myaccount/form-login.php:46
+msgid "Username or email address"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:50
+#: woocommerce/myaccount/form-login.php:52
+#: woocommerce/myaccount/form-login.php:105
+#: woocommerce/myaccount/form-login.php:107
+msgid "Password"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:60
+msgid "Remember me"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:63
+#: woocommerce/myaccount/form-login.php:64
+msgid "Log in"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:67
+msgid "Have you forgotten your password?"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:87
+#: woocommerce/myaccount/form-login.php:89
+msgid "Username"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:113
+msgid "A password will be sent to your email address."
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:121
+#: woocommerce/myaccount/form-login.php:122
+msgid "Register"
+msgstr ""
+
+#: woocommerce/myaccount/form-lost-password.php:25
+msgid ""
+"Lost your password? Please enter your username or email address. You will "
+"receive a link to create a new password via email."
+msgstr ""
+
+#: woocommerce/myaccount/form-lost-password.php:28
+#: woocommerce/myaccount/form-lost-password.php:29
+msgid "Username or email"
+msgstr ""
+
+#: woocommerce/myaccount/form-lost-password.php:38
+#: woocommerce/myaccount/form-lost-password.php:39
+msgid "Reset password"
+msgstr ""
+
+#: woocommerce/myaccount/form-reset-password.php:25
+msgid "Enter a new password below."
+msgstr ""
+
+#: woocommerce/myaccount/form-reset-password.php:28
+msgid "New password"
+msgstr ""
+
+#: woocommerce/myaccount/form-reset-password.php:33
+msgid "Re-enter new password"
+msgstr ""
+
+#: woocommerce/myaccount/form-reset-password.php:47
+#: woocommerce/myaccount/form-reset-password.php:48
+msgid "Save"
+msgstr ""
+
+#: woocommerce/myaccount/lost-password-confirmation.php:20
+msgid "Password reset email has been sent."
+msgstr ""
+
+#: woocommerce/myaccount/lost-password-confirmation.php:25
+msgid ""
+"A password reset email has been sent to the email address on file for your "
+"account, but may take several minutes to show up in your inbox. Please wait "
+"at least 10 minutes before attempting another reset."
+msgstr ""
+
+#: woocommerce/myaccount/my-address.php:46
+msgid "The following addresses will be used on the checkout page by default."
+msgstr ""
+
+#: woocommerce/myaccount/my-address.php:63
+msgid "Add"
+msgstr ""
+
+#: woocommerce/myaccount/my-address.php:67
+msgid "You have not set up this type of address yet."
+msgstr ""
+
+#: woocommerce/myaccount/my-orders.php:14
+msgid "Order"
+msgstr ""
+
+#: woocommerce/myaccount/my-orders.php:15
+msgid "Date"
+msgstr ""
+
+#: woocommerce/myaccount/my-orders.php:37
+msgid "Recent orders"
+msgstr ""
+
+#: woocommerce/myaccount/my-orders.php:63 woocommerce/myaccount/orders.php:49
+msgctxt "hash before order number"
+msgid "#"
+msgstr ""
+
+#: woocommerce/myaccount/my-orders.php:75 woocommerce/myaccount/orders.php:61
+#, php-format
+msgid "%1$s for %2$s item"
+msgid_plural "%1$s for %2$s items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: woocommerce/myaccount/orders.php:89
+msgid "Previous"
+msgstr ""
+
+#: woocommerce/myaccount/orders.php:93
+msgid "Next"
+msgstr ""
+
+#: woocommerce/myaccount/orders.php:101
+msgid "No order has been made yet."
+msgstr ""
+
+#: woocommerce/single-product/photoswipe.php:34
+msgid "Close (Esc)"
+msgstr ""
+
+#: woocommerce/single-product/photoswipe.php:36
+msgid "Toggle fullscreen"
+msgstr ""
+
+#: woocommerce/single-product/photoswipe.php:37
+msgid "Zoom in/out"
+msgstr ""
+
+#: woocommerce/single-product/photoswipe.php:49
+msgid "Previous (arrow left)"
+msgstr ""
+
+#: woocommerce/single-product/photoswipe.php:50
+msgid "Next (arrow right)"
+msgstr ""
+
+#: woocommerce/single-product/rating.php:38
+#, php-format
+msgid "%s customer review"
+msgid_plural "%s customer reviews"
+msgstr[0] ""
+msgstr[1] ""
+
+#: woocommerce/single-product/related.php:27
+msgid "Related products"
+msgstr ""
+
+#: woocommerce/single-product/review-meta.php:27
+msgid "Your review is awaiting approval"
+msgstr ""
+
+#: woocommerce/single-product/review-meta.php:37
+msgid "verified owner"
+msgstr ""
+
+#: woocommerce/single-product/sale-flash.php:27
+msgid "Sale!"
+msgstr ""
+
+#: woocommerce/single-product/up-sells.php:26
+msgid "You may also like&hellip;"
+msgstr ""
+
+#: woocommerce/single-product/tabs/description.php:22
+msgid "Description"
+msgstr ""

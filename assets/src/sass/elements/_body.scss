@@ -1,0 +1,11 @@
+body {
+  font: 12px/#{$shoppe_default_line_height} $shoppe_default_font_family;
+
+  @include mq(tablet) {
+    font: 14px/#{$shoppe_default_line_height} $shoppe_default_font_family;
+  }
+
+  @include mq(desktop) {
+    font: #{$shoppe_default_font_size}/#{$shoppe_default_line_height} $shoppe_default_font_family;
+  }
+}

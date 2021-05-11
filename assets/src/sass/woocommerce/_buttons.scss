@@ -1,0 +1,30 @@
+.woocommerce #respond input#submit, .woocommerce button.button, .woocommerce input.button {
+  @include h6;
+  font-weight: 700;
+  font-size: rem(12px);
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  background: $shoppe_neutral_white;
+  border: rem(1px) solid $shoppe_neutral_black;
+  color: $shoppe_neutral_black;
+  box-sizing: border-box;
+  border-radius: $shoppe_global_radius;
+  transition: $shoppe_global_transition;
+
+  @include mq(tablet) {
+    font-size: rem(14px);
+  }
+
+  &:hover {
+    background-color: $shoppe_neutral_black;
+    color: $shoppe_neutral_white;
+  }
+}
+
+.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button {
+  padding: rem(8px 16px);
+
+  @include mq(desktop) {
+    padding: rem(16px 16px);
+  }
+}
