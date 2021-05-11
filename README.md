@@ -3,8 +3,6 @@ Shoppe is a Shopping theme and ready to use WooCommerce as your e-commerce WordP
 
 ![Home Page](screenshot.png)
 
-![Single Page](screenshot-2.png)
-
 ## Features
 * WooCoomerce Support
 * No additional JS
