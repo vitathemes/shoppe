@@ -74,6 +74,7 @@
 
   .comment-respond {
     margin-top: 40px;
+    width: 100%;
 
     .comment-form {
       margin-bottom: 24px;
@@ -163,6 +164,9 @@
   }
 }
 
+.comment-respond {
+  width: 100%;
+}
 
 ol.children {
   list-style: none;

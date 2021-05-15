@@ -2,7 +2,7 @@
 
 Contributors: vitathemes, kashani, mrmolaei, mostafas1990
 Requires at least: 5.6
-Tested up to: 5.7.1
+Tested up to: 5.7.2
 Requires PHP: 5.6
 Stable tag: 1.0.0
 License: GPL-2.0-or-later

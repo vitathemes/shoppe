@@ -24,9 +24,9 @@ if ( ! function_exists( 'wc_get_gallery_image_html' ) ) {
 
 global $product;
 
-$columns = apply_filters( 'woocommerce_product_thumbnails_columns', 4 );
+$columns           = apply_filters( 'woocommerce_product_thumbnails_columns', 4 );
 $post_thumbnail_id = $product->get_image_id();
-$wrapper_classes = apply_filters(
+$wrapper_classes   = apply_filters(
 	'woocommerce_single_product_image_gallery_classes',
 	array(
 		'woocommerce-product-gallery',
@@ -36,7 +36,8 @@ $wrapper_classes = apply_filters(
 	)
 );
 
-$attachment_ids = $product->get_gallery_image_ids();
+$attachment_ids    = $product->get_gallery_image_ids();
+$post_thumbnail_id = $product->get_image_id();
 
 $images_count = count( $attachment_ids );
 ?>
@@ -61,13 +62,14 @@ $images_count = count( $attachment_ids );
 					} ?>
             }'>
 				<?php
-
-				foreach ( $attachment_ids as $attachment_id ) {
-					$image_link = wp_get_attachment_image_src( $attachment_id, 'woocommerce_gallery_thumbnail' )[0];
-					$alt_text   = get_post_meta( $attachment_id, '_wp_attachment_image_alt', true );
-					echo "<div class='carousel-cell'>" . sprintf( '<img src="%s" alt="%s" class="wp-post-image" />',
-							$image_link,
-							$alt_text ) . "</div>"; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+				if ( $attachment_ids ) {
+					foreach ( $attachment_ids as $attachment_id ) {
+						$image_link = wp_get_attachment_image_src( $attachment_id, 'woocommerce_gallery_thumbnail' )[0];
+						$alt_text   = get_post_meta( $attachment_id, '_wp_attachment_image_alt', true );
+						echo "<div class='carousel-cell'>" . sprintf( '<img src="%s" alt="%s" class="wp-post-image" />',
+								$image_link,
+								$alt_text ) . "</div>"; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+					}
 				}
 				?>
             </div>
@@ -83,31 +85,45 @@ $images_count = count( $attachment_ids );
 					} ?>
            }'>
 				<?php
-				$attachment_ids = $product->get_gallery_image_ids();
 
-				foreach ( $attachment_ids as $attachment_id ) {
-					$image_link = wp_get_attachment_url( $attachment_id );
-					$alt_text   = get_post_meta( $attachment_id, '_wp_attachment_image_alt', true );
-					echo "<div class='carousel-cell'>" . sprintf( '<img src="%s" alt="%s" class="wp-post-image" />',
-							$image_link,
-							$alt_text ) . "</div>"; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+				if ( $attachment_ids ) {
+					foreach ( $attachment_ids as $attachment_id ) {
+						$image_link = wp_get_attachment_url( $attachment_id );
+						$alt_text   = get_post_meta( $attachment_id, '_wp_attachment_image_alt', true );
+						echo "<div class='carousel-cell'>" . sprintf( '<img src="%s" alt="%s" class="wp-post-image" />',
+								$image_link,
+								$alt_text ) . "</div>"; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+					}
 				}
-				if (has_post_thumbnail()) {
-					echo apply_filters( 'woocommerce_single_product_image_thumbnail_html',
-						$html,
-						$post_thumbnail_id ); // phpcs:disable WordPress.XSS.EscapeOutput.OutputNotEscaped
+
+				//				if ( $post_thumbnail_id ) {
+				//					$html = wc_get_gallery_image_html( $post_thumbnail_id, true );
+				//				} else {
+				//					$html  = '<div class="woocommerce-product-gallery__image--placeholder">';
+				//					$html .= sprintf( '<img src="%s" alt="%s" class="wp-post-image" />', esc_url( wc_placeholder_img_src( 'woocommerce_single' ) ), esc_html__( 'Awaiting product image', 'woocommerce' ) );
+				//					$html .= '</div>';
+				//				}
+				//
+				//				if ( has_post_thumbnail() ) {
+				//					echo apply_filters( 'woocommerce_single_product_image_thumbnail_html',
+				//						$html,
+				//						$post_thumbnail_id ); // phpcs:disable WordPress.XSS.EscapeOutput.OutputNotEscaped
+				//				}
+
+				if ( ! $attachment_ids && get_the_post_thumbnail_url( $product->get_id()) ) {
+					echo sprintf( '<div class="carousel-cell"><img src="%s" alt="%s" class="wp-post-image" /></div>',
+						esc_url( get_the_post_thumbnail_url( $product->get_id() ) ),
+						esc_attr( get_the_title() ) ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 				}
-                    if (!$attachment_ids && has_post_thumbnail()) {
-	                    echo "<div class='carousel-cell'>" . sprintf( '<img src="%s" alt="%s" class="wp-post-image" />',
-			                    get_the_post_thumbnail_url(),
-			                    get_the_title() ) . "</div>"; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-                    }
-				if (!$attachment_ids && !has_post_thumbnail()) {
-					echo "<div class='carousel-cell'>" . sprintf( '<img src="%s" alt="%s" class="wp-post-image" />',
-							wc_placeholder_img_src('woocommerce_get_image_size_single'),
-							get_the_title() ) . "</div>"; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+
+				if ( ! $attachment_ids && ! get_the_post_thumbnail_url( $product->get_id()) ) {
+
+					echo sprintf( '<div class="carousel-cell"><img src="%s" alt="%s" class="wp-post-image" /></div>',
+						esc_url( wc_placeholder_img_src( 'woocommerce_get_image_size_single' ) ),
+						esc_attr( get_the_title() ) ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 				}
 				?>
+
             </div>
         </div>
     </figure>

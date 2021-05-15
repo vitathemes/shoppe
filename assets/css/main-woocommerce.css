@@ -1618,7 +1618,8 @@ body.admin-bar .c-nav {
   padding: 0;
   margin: 24px 0; }
   .comment .comment-respond {
-    margin-top: 40px; }
+    margin-top: 40px;
+    width: 100%; }
     .comment .comment-respond .comment-form {
       margin-bottom: 24px; }
   .comment > li > ol.children {
@@ -1676,6 +1677,9 @@ body.admin-bar .c-nav {
     @media (min-width: 64em) {
       .comment .comment-author, .comment .comment-author a {
         font-size: 1em; } }
+
+.comment-respond {
+  width: 100%; }
 
 ol.children {
   list-style: none;
