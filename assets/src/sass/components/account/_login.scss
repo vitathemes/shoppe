@@ -12,6 +12,8 @@
 
 
   .c-account__login-form, .c-account__register-form, .c-account__reset-password {
+    width: 100%;
+
     .c-account__btn {
       font-weight: 500;
       line-height: rem(21px);
@@ -99,6 +101,7 @@
   cursor: pointer;
   transition: $shoppe_global_transition;
   font-size: rem(12px);
+  flex-grow: 1;
 
   @include mq(desktop) {
     padding: rem(12px);

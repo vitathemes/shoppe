@@ -25,7 +25,9 @@ do_action( 'woocommerce_before_customer_login_form' ); ?>
     <div class="c-account__nav">
         <div class="c-account__nav__items">
             <button class="c-account__nav__btn js-account-carousel-btn h3 is-active" onclick="selectCarouselSlide('.js-account-carousel', 0)">Sign In</button>
+	        <?php if ( 'yes' === get_option( 'woocommerce_enable_myaccount_registration' ) ) : ?>
             <button class="c-account__nav__btn js-account-carousel-btn h3" onclick="selectCarouselSlide('.js-account-carousel', 1)">Register</button>
+            <?php endif; ?>
         </div>
     </div>
     <div class="c-account__carousel js-account-carousel" data-flickity='{ "cellAlign": "left", "contain": false, "draggable": false, "pageDots": false, "prevNextButtons": false }'>
