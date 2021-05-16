@@ -73,7 +73,9 @@ do_action( 'woocommerce_before_cart' ); ?>
 								if ( ! $product_permalink ) {
 									echo $thumbnail; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 								} else {
-									printf( '<a href="%s">%s</a>', esc_url( $product_permalink ), $thumbnail ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+									printf( '<a href="%s">%s</a>',
+										esc_url( $product_permalink ),
+										$thumbnail ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 								}
 								?>
                             </td>
@@ -82,14 +84,14 @@ do_action( 'woocommerce_before_cart' ); ?>
 								<?php
 								if ( ! $product_permalink ) {
 									echo wp_kses_post( apply_filters( 'woocommerce_cart_item_name',
-											$_product->get_title(),
+											$_product->get_name(),
 											$cart_item,
 											$cart_item_key ) . '&nbsp;' );
 								} else {
 									echo wp_kses_post( apply_filters( 'woocommerce_cart_item_name',
 										sprintf( '<a class="product-link" href="%s">%s</a>',
 											esc_url( $product_permalink ),
-											$_product->get_title() ),
+											$_product->get_name() ),
 										$cart_item,
 										$cart_item_key ) );
 								}
@@ -107,9 +109,11 @@ do_action( 'woocommerce_before_cart' ); ?>
 										$product_id ) );
 								}
 								?>
-                                <span class="product-variations"><?php echo esc_html($_product->attribute_summary); ?></span>
                                 <span class="product-price" data-title="<?php esc_attr_e( 'Price', 'shoppe' ); ?>"><?php
-									echo apply_filters( 'woocommerce_cart_item_price', WC()->cart->get_product_price( $_product ), $cart_item, $cart_item_key ); // phpcs:disable WordPress.XSS.EscapeOutput.OutputNotEscaped
+									echo apply_filters( 'woocommerce_cart_item_price',
+										WC()->cart->get_product_price( $_product ),
+										$cart_item,
+										$cart_item_key ); // phpcs:disable WordPress.XSS.EscapeOutput.OutputNotEscaped
 									?></span>
                             </td>
 
@@ -132,7 +136,10 @@ do_action( 'woocommerce_before_cart' ); ?>
 									);
 								}
 
-								echo apply_filters( 'woocommerce_cart_item_quantity', $product_quantity, $cart_item_key, $cart_item ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+								echo apply_filters( 'woocommerce_cart_item_quantity',
+									$product_quantity,
+									$cart_item_key,
+									$cart_item ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 								?>
                             </td>
 

@@ -168,6 +168,7 @@ td.product-name {
 
   td.product-name {
     vertical-align: top !important;
+    padding-left: rem(8px) !important;
 
     @include mq(tablet) {
       padding-left: rem(32px);

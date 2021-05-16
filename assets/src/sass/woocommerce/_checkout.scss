@@ -434,6 +434,7 @@ p.lost_password {
 .select2-container--default .select2-selection--single .select2-selection__rendered {
   padding-left: 0;
   color: $shoppe_neutral_black !important;
+  font-size: rem(12px);
 }
 
 .woocommerce table.shop_table th {
@@ -486,5 +487,12 @@ p.lost_password {
 tr.cart-subtotal {
   td {
     border-bottom: 0 !important;
+  }
+}
+
+.woocommerce-checkout-payment .wc_payment_methods {
+
+  &::before, .c-notice::before {
+    content: unset !important;
   }
 }

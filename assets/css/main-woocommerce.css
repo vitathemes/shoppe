@@ -5328,7 +5328,8 @@ td.product-name {
     .woocommerce table.shop_table.cart tbody tr:first-child td {
       padding-top: 0; } }
   .woocommerce table.shop_table.cart td.product-name {
-    vertical-align: top !important; }
+    vertical-align: top !important;
+    padding-left: 0.5rem !important; }
     @media (min-width: 48em) {
       .woocommerce table.shop_table.cart td.product-name {
         padding-left: 2rem; } }
@@ -5801,7 +5802,8 @@ p.lost_password {
 
 .select2-container--default .select2-selection--single .select2-selection__rendered {
   padding-left: 0;
-  color: var(--shoppe-primary-color) !important; }
+  color: var(--shoppe-primary-color) !important;
+  font-size: 0.75rem; }
 
 .woocommerce table.shop_table th {
   font-weight: inherit; }
@@ -5835,3 +5837,6 @@ p.lost_password {
 
 tr.cart-subtotal td {
   border-bottom: 0 !important; }
+
+.woocommerce-checkout-payment .wc_payment_methods::before, .woocommerce-checkout-payment .wc_payment_methods .c-notice::before {
+  content: unset !important; }
