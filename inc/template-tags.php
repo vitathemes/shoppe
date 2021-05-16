@@ -182,7 +182,7 @@ if ( ! function_exists( 'shoppe_header_nav' ) ) {
 	 */
 	function shoppe_header_nav() {
 		$shoppe_header_menu_args = array(
-			'location'   => 'menu-1',
+			'theme_location'   => 'menu-1',
 			'menu_class' => 'c-nav s-nav',
 			'container'  => '',
 		);

@@ -34,10 +34,11 @@
 .woocommerce div.product p.price, .woocommerce div.product span.price {
   @include h7;
   color: $shoppe_branding_color;
-  font-weight: 400;
+  font-weight: 500;
 
   @include mq(desktop) {
     @include h3;
+    font-weight: 500;
   }
 
   del {

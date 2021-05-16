@@ -1679,7 +1679,7 @@ body.admin-bar .c-nav {
         font-size: 1em; } }
 
 .comment-respond {
-  width: 100%; }
+  width: 100% !important; }
 
 ol.children {
   list-style: none;
@@ -2024,7 +2024,7 @@ ol.children {
     .c-account__login-form, .c-account__register-form {
       padding-top: 8rem !important; } }
 
-.c-notice, .woocommerce-info {
+.c-notice, .woocommerce-info, .cart-empty.woocommerce-info {
   background-color: var(--shoppe-quaternary-color);
   border-top: 2px solid var(--shoppe-branding-color);
   padding: 0.75rem 0.75rem;
@@ -2033,10 +2033,10 @@ ol.children {
   margin-bottom: 1.5rem;
   font-size: 0.75rem; }
   @media (min-width: 48em) {
-    .c-notice, .woocommerce-info {
+    .c-notice, .woocommerce-info, .cart-empty.woocommerce-info {
       font-size: 1rem;
       padding: 1.5rem 2.5rem; } }
-  .c-notice::before, .woocommerce-info::before {
+  .c-notice::before, .woocommerce-info::before, .cart-empty.woocommerce-info::before {
     content: '';
     fill: var(--shoppe-branding-color);
     width: 1.75rem;
@@ -2044,7 +2044,7 @@ ol.children {
     margin-right: 0.625rem;
     background: center center/100% no-repeat; }
     @media (min-width: 48em) {
-      .c-notice::before, .woocommerce-info::before {
+      .c-notice::before, .woocommerce-info::before, .cart-empty.woocommerce-info::before {
         width: 2rem;
         height: 2rem;
         margin-right: 1rem; } }
@@ -4309,6 +4309,17 @@ https://flickity.metafizzy.co
 .woocommerce .products .star-rating {
   margin-bottom: 0.75rem; }
 
+.woocommerce .widget_price_filter .price_slider_amount .price_label {
+  float: left;
+  font-size: 0.875rem; }
+
+.woocommerce .widget_price_filter .price_slider_amount .button {
+  font-size: 0.875rem;
+  margin-top: 0; }
+  @media (min-width: 48em) {
+    .woocommerce .widget_price_filter .price_slider_amount .button {
+      margin-top: 0.625rem; } }
+
 .woocommerce div.product {
   margin-bottom: 2.5rem; }
   @media (min-width: 64em) {
@@ -4344,12 +4355,13 @@ https://flickity.metafizzy.co
   line-height: 1.4;
   font-weight: 400;
   color: var(--shoppe-branding-color);
-  font-weight: 400; }
+  font-weight: 500; }
   @media (min-width: 64em) {
     .woocommerce div.product p.price, .woocommerce div.product span.price {
       font-size: 1.25rem;
       line-height: 1.4;
-      font-weight: 400; } }
+      font-weight: 400;
+      font-weight: 500; } }
   .woocommerce div.product p.price del, .woocommerce div.product span.price del {
     color: #D82700;
     opacity: 1;
@@ -4814,6 +4826,9 @@ https://flickity.metafizzy.co
       right: 0;
       top: 0; } }
 
+.woocommerce .product-single .quantity {
+  background-color: transparent; }
+
 .woocommerce .woocommerce-Tabs-panel--reviews .comments-title {
   margin-bottom: 0; }
   @media (min-width: 64em) {
@@ -5206,6 +5221,12 @@ form.edit-account .form-row {
   .woocommerce table.shop_table td[data-title]::before {
     text-transform: uppercase; }
 
+.woocommerce-EditAccountForm {
+  font-size: 0.75rem; }
+  .woocommerce-EditAccountForm em {
+    display: block;
+    margin-top: 0.3125rem; }
+
 @media (min-width: 48em) {
   #add_payment_method table.cart .product-thumbnail, .woocommerce-cart table.cart .product-thumbnail, .woocommerce-checkout table.cart .product-thumbnail {
     min-width: 15%; } }
@@ -5329,7 +5350,7 @@ td.product-name {
       padding-top: 0; } }
   .woocommerce table.shop_table.cart td.product-name {
     vertical-align: top !important;
-    padding-left: 0.5rem !important; }
+    padding-right: 0.5rem !important; }
     @media (min-width: 48em) {
       .woocommerce table.shop_table.cart td.product-name {
         padding-left: 2rem; } }
@@ -5381,8 +5402,9 @@ td.product-name {
     background-color: var(--shoppe-primary-color);
     color: #fff;
     width: 45%;
-    font-size: 0.75rem !important;
-    border: 1px solid var(--shoppe-primary-color); }
+    font-size: 0.875rem !important;
+    border: 1px solid var(--shoppe-primary-color);
+    padding: 0.75rem; }
     .woocommerce #content table.cart td.actions .coupon .button:hover, .woocommerce table.cart td.actions .coupon .button:hover, .woocommerce-page #content table.cart td.actions .coupon .button:hover, .woocommerce-page table.cart td.actions .coupon .button:hover {
       background-color: #fff;
       color: var(--shoppe-primary-color); }

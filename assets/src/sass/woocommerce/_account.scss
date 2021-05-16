@@ -326,3 +326,12 @@ form.edit-account {
     text-transform: uppercase;
   }
 }
+
+.woocommerce-EditAccountForm {
+  font-size: rem(12px);
+
+  em {
+    display: block;
+    margin-top: rem(5px);
+  }
+}

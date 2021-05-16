@@ -27,7 +27,7 @@ if ( post_password_required() ) {
 		comment_form( array(
 			'label_submit'  => __('Post Comment', 'shoppe'),
 			'title_reply'   => __('Leave a reply', 'shoppe'),
-			'comment_field' => '<p class="comment-form-comment"><label class="screen-reader-text" for="comment">Comment*</label> <textarea id="comment" placeholder="Comment*" name="comment" cols="45" rows="3" maxlength="20000" required="required" spellcheck="false"></textarea></p>'
+			'comment_field' => '<p class="comment-form-comment"><label class="screen-reader-text" for="comment">Comment *</label> <textarea id="comment" placeholder="Comment *" name="comment" cols="45" rows="3" maxlength="20000" required="required" spellcheck="false"></textarea></p>'
 		) );
 		?>
 

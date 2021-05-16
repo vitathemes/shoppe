@@ -8,11 +8,10 @@ Stable tag: 1.0.0
 License: GPL-2.0-or-later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Shoppe is a WordPress minimal & Fast-loading theme for people who want to have a simple blog & introduce themselves.
 
 == Description ==
 
-Shoppe is a WordPress minimal & Fast-loading theme for people who want to have a simple blog & introduce themselves.
+Shoppe, is a quick-loading, lightweight, and RTL-ready WordPress theme, that helps you power your e-commerce projects. This flexible theme is fully compatible with WooCommerce. You also can have full control over the look of your store and product pages by using dedicated WordPress and WooCommerce widgets.
 
 == Features ==
 * No additional JS

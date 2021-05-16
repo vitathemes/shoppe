@@ -96,3 +96,20 @@
 .woocommerce .products .star-rating {
   margin-bottom: rem(12px);
 }
+
+.woocommerce .widget_price_filter .price_slider_amount {
+
+  .price_label {
+    float: left;
+    font-size: rem(14px);
+  }
+
+  .button {
+    font-size: rem(14px);
+    margin-top: 0;
+
+    @include mq(tablet) {
+      margin-top: rem(10px);
+    }
+  }
+}

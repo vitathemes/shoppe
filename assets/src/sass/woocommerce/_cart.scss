@@ -168,7 +168,7 @@ td.product-name {
 
   td.product-name {
     vertical-align: top !important;
-    padding-left: rem(8px) !important;
+    padding-right: rem(8px) !important;
 
     @include mq(tablet) {
       padding-left: rem(32px);
@@ -240,8 +240,9 @@ td.product-name {
     background-color: $shoppe_neutral_black;
     color: $shoppe_neutral_white;
     width: 45%;
-    font-size: rem(12px) !important;
+    font-size: rem(14px) !important;
     border: 1px solid $shoppe_neutral_black;
+    padding: rem(12px);
 
     &:hover {
       background-color: $shoppe_neutral_white;
