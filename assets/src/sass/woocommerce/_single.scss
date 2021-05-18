@@ -40,6 +40,7 @@
 
   table {
     border-collapse: collapse;
+    border-top: 0 !important;
   }
 }
 
@@ -461,6 +462,7 @@
   justify-content: center;
   border-radius: $shoppe_global_radius;
   z-index: 2;
+  padding: rem(4px 4px);
 
   @include mq(tablet) {
     left: 1rem;

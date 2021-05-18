@@ -350,36 +350,6 @@ if ( ! function_exists( 'shoppe_is_woocommerce_page' ) ) {
 	}
 }
 
-
-if ( ! function_exists( 'add_percentage_to_sale_badge' ) ) {
-	function add_percentage_to_sale_badge( $html, $post, $product ) {
-		if ( $product->is_type( 'variable' ) ) {
-			$percentages = array();
-
-			// Get all variation prices
-			$prices = $product->get_variation_prices();
-
-			// Loop through variation prices
-			foreach ( $prices['price'] as $key => $price ) {
-				// Only on sale variations
-				if ( $prices['regular_price'][ $key ] !== $price ) {
-					// Calculate and set in the array the percentage for each variation on sale
-					$percentages[] = round( 100 - ( $prices['sale_price'][ $key ] / $prices['regular_price'][ $key ] * 100 ) );
-				}
-			}
-			$percentage = max( $percentages ) . '%';
-		} else {
-			$regular_price = (float) $product->get_regular_price();
-			$sale_price    = (float) $product->get_sale_price();
-
-			$percentage = round( 100 - ( $sale_price / $regular_price * 100 ) ) . '%';
-		}
-
-		return '<span class="onsale">- ' . $percentage . '</span>';
-	}
-}
-add_filter( 'woocommerce_sale_flash', 'add_percentage_to_sale_badge', 20, 3 );
-
 if ( ! function_exists( 'shoppe_add_placeholder_comment_form' ) ) {
 	/**
 	 * Comment Form Placeholder Author, Email, URL
@@ -389,26 +359,26 @@ if ( ! function_exists( 'shoppe_add_placeholder_comment_form' ) ) {
 		$replace_email  = __( 'Your Email *', 'shoppe' );
 		$replace_url    = __( 'Your Website', 'shoppe' );
 
-		if (!isset($req)) {
+		if ( ! isset( $req ) ) {
 			$req = false;
-        }
+		}
 
-		if (!isset($commenter)) {
+		if ( ! isset( $commenter ) ) {
 			$commenter = false;
-        }
+		}
 
 		$fields['author'] = '<p class="comment-form-author">' . '<label class="screen-reader-text" for="author">' . esc_html__( 'Name',
 				'shoppe' ) . '</label>' .
-		                    '<input required="required" id="author" name="author" type="text" placeholder="' . $replace_author . '" value="' . ($commenter ? esc_attr( $commenter['comment_author'] ) : '') . '" size="20" /></p>';
+		                    '<input required="required" id="author" name="author" type="text" placeholder="' . $replace_author . '" value="' . ( $commenter ? esc_attr( $commenter['comment_author'] ) : '' ) . '" size="20" /></p>';
 
 		$fields['email'] = '<p class="comment-form-email"><label class="screen-reader-text" for="email">' . esc_html__( 'Email',
-				'shoppe' ) . '</label>'.
-		                   '<input  required="required"  id="email" name="email" type="text" placeholder="' . $replace_email . '" value="' . ($commenter ? esc_attr( $commenter['comment_author_email'] ) : '') .
+				'shoppe' ) . '</label>' .
+		                   '<input  required="required"  id="email" name="email" type="text" placeholder="' . $replace_email . '" value="' . ( $commenter ? esc_attr( $commenter['comment_author_email'] ) : '' ) .
 		                   '" size="30"/></p>';
 
 		$fields['url'] = '<p class="comment-form-url"><label class="screen-reader-text" for="url">' . esc_html__( 'Website',
 				'shoppe' ) . '</label>' .
-		                 '<input id="url" name="url" type="text" placeholder="' . $replace_url . '" value="' . ($commenter ? esc_attr( $commenter['comment_author_url'] ) : '') .
+		                 '<input id="url" name="url" type="text" placeholder="' . $replace_url . '" value="' . ( $commenter ? esc_attr( $commenter['comment_author_url'] ) : '' ) .
 		                 '" size="30" /></p>';
 
 		return $fields;

@@ -64,10 +64,12 @@
         .select2-selection__rendered {
           padding-left: rem(12px);
           color: $shoppe_headings_color;
+          font-size: rem(14px);
         }
 
         .select2-selection__placeholder {
           color: $shoppe_headings_color;
+          font-size: rem(14px);
         }
       }
     }
@@ -140,5 +142,19 @@
       margin-left: 1.25rem;
       margin-right: 0;
     }
+  }
+}
+
+.c-widget {
+
+  .select2-selection__rendered {
+    padding-left: rem(12px);
+    color: $shoppe_headings_color;
+    font-size: rem(14px);
+  }
+
+  .select2-selection__placeholder {
+    color: $shoppe_headings_color;
+    font-size: rem(14px);
   }
 }

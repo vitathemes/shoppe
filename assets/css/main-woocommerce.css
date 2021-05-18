@@ -2022,10 +2022,17 @@ ol.children {
   width: 100%; }
 
 .c-account__login-form, .c-account__register-form {
-  padding-top: 4rem !important; }
+  padding-top: 4rem !important;
+  padding-left: 0.25rem !important;
+  padding-right: 0.25rem !important; }
   @media (min-width: 48em) {
     .c-account__login-form, .c-account__register-form {
       padding-top: 8rem !important; } }
+  .c-account__login-form input, .c-account__login-form .c-account__btn, .c-account__register-form input, .c-account__register-form .c-account__btn {
+    max-width: calc(100% - 0.5rem);
+    font-size: 0.875rem; }
+    .c-account__login-form input::placeholder, .c-account__login-form .c-account__btn::placeholder, .c-account__register-form input::placeholder, .c-account__register-form .c-account__btn::placeholder {
+      font-size: 0.875rem; }
 
 .c-notice, .woocommerce-info, .cart-empty.woocommerce-info {
   background-color: var(--shoppe-quaternary-color);
@@ -2300,9 +2307,11 @@ ol.children {
     display: none; }
   .s-filters form .select2 .select2-container--default .select2-selection__rendered, .s-filters form .select2 .select2-selection--single .select2-selection__rendered, .s-filters .woocommerce-widget-layered-nav-dropdown .select2 .select2-container--default .select2-selection__rendered, .s-filters .woocommerce-widget-layered-nav-dropdown .select2 .select2-selection--single .select2-selection__rendered {
     padding-left: 0.75rem;
-    color: var(--shoppe-primary-color); }
+    color: var(--shoppe-primary-color);
+    font-size: 0.875rem; }
   .s-filters form .select2 .select2-container--default .select2-selection__placeholder, .s-filters form .select2 .select2-selection--single .select2-selection__placeholder, .s-filters .woocommerce-widget-layered-nav-dropdown .select2 .select2-container--default .select2-selection__placeholder, .s-filters .woocommerce-widget-layered-nav-dropdown .select2 .select2-selection--single .select2-selection__placeholder {
-    color: var(--shoppe-primary-color); }
+    color: var(--shoppe-primary-color);
+    font-size: 0.875rem; }
 
 .s-filters .widget_product_categories ul, .s-filters .widget_rating_filter ul, .s-filters .woocommerce-widget-layered-nav ul {
   list-style: none;
@@ -2345,6 +2354,15 @@ ol.children {
 .rtl form .select2-selection__clear, .rtl .woocommerce-widget-layered-nav-dropdown .select2-selection__clear {
   margin-left: 1.25rem;
   margin-right: 0; }
+
+.c-widget .select2-selection__rendered {
+  padding-left: 0.75rem;
+  color: var(--shoppe-primary-color);
+  font-size: 0.875rem; }
+
+.c-widget .select2-selection__placeholder {
+  color: var(--shoppe-primary-color);
+  font-size: 0.875rem; }
 
 /* Objects */
 /* ==========================================================================
@@ -3758,7 +3776,7 @@ ol.children {
       margin: 6rem 0 6rem; } }
 
 .single-product .o-page {
-  margin: 4rem 0 1rem; }
+  margin: 0 0 1rem; }
   @media (min-width: 64em) {
     .single-product .o-page {
       margin: 6rem 0 6rem; } }
@@ -3839,13 +3857,14 @@ ol.children {
 .o-popup--filters {
   padding: 4rem 1rem 1rem;
   overflow-y: scroll;
-  background-color: white; }
+  background-color: white;
+  max-width: calc(100% - 2rem); }
   .o-popup--filters .o-popup__close {
     top: 1rem;
     width: 1.5rem;
     height: 1.5rem;
     padding: 0;
-    right: 3rem; }
+    right: 1.5rem; }
   .o-popup--filters .o-popup__close__icon {
     width: 1.75rem;
     height: 1.75rem; }
@@ -3951,6 +3970,12 @@ ol.children {
         width: 30%;
         margin-right: 0;
         margin-left: 2.25rem; } }
+
+.o-sidebar--shop {
+  display: none; }
+  @media (min-width: 64em) {
+    .o-sidebar--shop {
+      display: block; } }
 
 .o-separator {
   margin: 0 0.5rem;
@@ -4501,7 +4526,8 @@ https://flickity.metafizzy.co
         color: var(--shoppe-primary-color); }
 
 .woocommerce-Tabs-panel--additional_information table {
-  border-collapse: collapse; }
+  border-collapse: collapse;
+  border-top: 0 !important; }
 
 .woocommerce-tabs {
   font-size: 0.75rem; }
@@ -4807,7 +4833,8 @@ https://flickity.metafizzy.co
   align-items: center;
   justify-content: center;
   border-radius: 0.25rem;
-  z-index: 2; }
+  z-index: 2;
+  padding: 0.25rem 0.25rem; }
   @media (min-width: 48em) {
     .woocommerce span.onsale {
       left: 1rem;
@@ -5374,11 +5401,20 @@ td.product-name {
   background-color: transparent !important;
   position: relative;
   border-bottom: none;
-  padding-top: 6.875rem; }
+  padding-top: 1.5rem;
+  padding-right: 0;
+  padding-left: 0; }
   .woocommerce table.cart td.actions .update-card-btn {
-    position: absolute;
     top: 1rem;
-    right: 0; }
+    right: 0;
+    display: block;
+    width: 100%;
+    height: 2rem; }
+    @media (min-width: 64em) {
+      .woocommerce table.cart td.actions .update-card-btn {
+        width: 10.5rem;
+        display: inline-block;
+        height: 3.3125rem; } }
 
 .woocommerce #content table.cart td.actions .coupon, .woocommerce table.cart td.actions .coupon, .woocommerce-page #content table.cart td.actions .coupon, .woocommerce-page table.cart td.actions .coupon {
   float: unset;
@@ -5386,7 +5422,16 @@ td.product-name {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  display: flex; }
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 3.375rem; }
+  @media (min-width: 64em) {
+    .woocommerce #content table.cart td.actions .coupon, .woocommerce table.cart td.actions .coupon, .woocommerce-page #content table.cart td.actions .coupon, .woocommerce-page table.cart td.actions .coupon {
+      margin-top: 2rem;
+      flex-wrap: nowrap; } }
+  @media (min-width: 48em) {
+    .woocommerce #content table.cart td.actions .coupon, .woocommerce table.cart td.actions .coupon, .woocommerce-page #content table.cart td.actions .coupon, .woocommerce-page table.cart td.actions .coupon {
+      max-width: 100%; } }
   .woocommerce #content table.cart td.actions .coupon .input-text, .woocommerce table.cart td.actions .coupon .input-text, .woocommerce-page #content table.cart td.actions .coupon .input-text, .woocommerce-page table.cart td.actions .coupon .input-text {
     flex-grow: 1;
     margin-right: 1.5rem;
@@ -5397,23 +5442,30 @@ td.product-name {
     font-size: 0.875rem; }
     @media (min-width: 48em) {
       .woocommerce #content table.cart td.actions .coupon .input-text, .woocommerce table.cart td.actions .coupon .input-text, .woocommerce-page #content table.cart td.actions .coupon .input-text, .woocommerce-page table.cart td.actions .coupon .input-text {
-        margin-right: 3.125rem; } }
+        margin-right: 4.75rem; } }
     .woocommerce #content table.cart td.actions .coupon .input-text:focus, .woocommerce table.cart td.actions .coupon .input-text:focus, .woocommerce-page #content table.cart td.actions .coupon .input-text:focus, .woocommerce-page table.cart td.actions .coupon .input-text:focus {
       border-bottom-color: var(--shoppe-branding-color); }
   .woocommerce #content table.cart td.actions .coupon .button, .woocommerce table.cart td.actions .coupon .button, .woocommerce-page #content table.cart td.actions .coupon .button, .woocommerce-page table.cart td.actions .coupon .button {
     white-space: nowrap;
     background-color: var(--shoppe-primary-color);
     color: #fff;
-    width: 45%;
-    font-size: 0.875rem !important;
+    font-size: 0.75rem !important;
     border: 1px solid var(--shoppe-primary-color);
-    padding: 0.75rem; }
+    padding: 0.375rem;
+    display: block;
+    width: 100%;
+    margin-top: 1.5rem;
+    height: 2rem; }
+    @media (min-width: 64em) {
+      .woocommerce #content table.cart td.actions .coupon .button, .woocommerce table.cart td.actions .coupon .button, .woocommerce-page #content table.cart td.actions .coupon .button, .woocommerce-page table.cart td.actions .coupon .button {
+        font-size: 0.875rem !important;
+        width: 10.5rem;
+        display: inline-block;
+        height: 3.3125rem;
+        margin-top: 0; } }
     .woocommerce #content table.cart td.actions .coupon .button:hover, .woocommerce table.cart td.actions .coupon .button:hover, .woocommerce-page #content table.cart td.actions .coupon .button:hover, .woocommerce-page table.cart td.actions .coupon .button:hover {
       background-color: #fff;
       color: var(--shoppe-primary-color); }
-  @media (min-width: 48em) {
-    .woocommerce #content table.cart td.actions .coupon, .woocommerce table.cart td.actions .coupon, .woocommerce-page #content table.cart td.actions .coupon, .woocommerce-page table.cart td.actions .coupon {
-      max-width: 80%; } }
 
 td.product-remove {
   vertical-align: top !important; }

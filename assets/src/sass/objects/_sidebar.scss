@@ -84,3 +84,11 @@
     }
   }
 }
+
+.o-sidebar--shop {
+  display: none;
+
+  @include mq(desktop) {
+    display: block;
+  }
+}

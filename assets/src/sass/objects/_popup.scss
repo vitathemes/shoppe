@@ -44,13 +44,14 @@
   padding: rem(64px 16px 16px);
   overflow-y: scroll;
   background-color: rgba(255,255,255, 1);
+  max-width: calc(100% - 2rem);
 
   .o-popup__close {
     top: rem(16px);
     width: 1.5rem;
     height: 1.5rem;
     padding: 0;
-    right: rem(48px);
+    right: rem(24px);
   }
 
   .o-popup__close__icon {

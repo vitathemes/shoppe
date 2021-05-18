@@ -50,7 +50,7 @@ const concatRtl = (cb) => {
 
 function liveServer(cb) {
     browserSync.init({
-        proxy: 'shop.local'
+        proxy: 'shoppe.local'
     });
     watch(['./assets/src/sass/**/*.scss']).on('change', gulp.series(compileSass));
 

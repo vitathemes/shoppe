@@ -130,8 +130,19 @@
 
 .c-account__login-form, .c-account__register-form {
   padding-top: rem(64px) !important;
+  padding-left: rem(4px) !important;
+  padding-right: rem(4px) !important;
 
   @include mq(tablet) {
     padding-top: rem(128px) !important;
+  }
+
+  input, .c-account__btn {
+    max-width: calc(100% - 0.5rem);
+    font-size: rem(14px);
+
+    &::placeholder {
+      font-size: rem(14px);
+    }
   }
 }

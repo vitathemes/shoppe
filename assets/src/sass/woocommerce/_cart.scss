@@ -198,12 +198,22 @@ td.product-name {
   background-color: transparent !important;
   position: relative;
   border-bottom: none;
-  padding-top: rem(110px);
+  padding-top: rem(24px);
+  padding-right: 0;
+  padding-left: 0;
 
   .update-card-btn {
-    position: absolute;
     top: rem(16px);
     right: 0;
+    display: block;
+    width: 100%;
+    height: rem(32px);
+
+    @include mq(desktop) {
+      width: rem(168px);
+      display: inline-block;
+      height: rem(53px);
+    }
   }
 }
 
@@ -215,7 +225,17 @@ td.product-name {
   margin-right: auto;
   margin-left: auto;
   display: flex;
+  flex-wrap: wrap;
+  margin-top: rem(54px);
 
+  @include mq(desktop) {
+    margin-top: rem(32px);
+    flex-wrap: nowrap;
+  }
+
+  @include mq(tablet) {
+    max-width: 100%;
+  }
 
   .input-text {
     flex-grow: 1;
@@ -227,7 +247,7 @@ td.product-name {
     font-size: rem(14px);
 
     @include mq(tablet) {
-      margin-right: rem(50px);
+      margin-right: rem(76px);
     }
 
     &:focus {
@@ -239,19 +259,26 @@ td.product-name {
     white-space: nowrap;
     background-color: $shoppe_neutral_black;
     color: $shoppe_neutral_white;
-    width: 45%;
-    font-size: rem(14px) !important;
+    font-size: rem(12px) !important;
     border: 1px solid $shoppe_neutral_black;
-    padding: rem(12px);
+    padding: rem(6px);
+    display: block;
+    width: 100%;
+    margin-top: rem(24px);
+    height: rem(32px);
+
+    @include mq(desktop) {
+      font-size: rem(14px) !important;
+      width: rem(168px);
+      display: inline-block;
+      height: rem(53px);
+      margin-top: 0;
+    }
 
     &:hover {
       background-color: $shoppe_neutral_white;
       color: $shoppe_neutral_black;
     }
-  }
-
-  @include mq(tablet) {
-    max-width: 80%;
   }
 }
 
@@ -453,10 +480,10 @@ form.woocommerce-shipping-calculator {
         }
 
         &::before {
-          content:  unset;
+          content: unset;
         }
 
-        .product-variations ,.product-price {
+        .product-variations, .product-price {
           font-size: rem(12px);
         }
       }
@@ -467,7 +494,7 @@ form.woocommerce-shipping-calculator {
         width: calc(55% - 1.5rem);
 
         &::before {
-          content:  unset;
+          content: unset;
         }
       }
     }

@@ -63,15 +63,7 @@ do_action( 'woocommerce_before_main_content' );
                             </svg>
                         </button>
                         <div class="c-filters s-filters">
-                            <div class="c-filters__widgets">
-								<?php
-								the_widget( 'WC_Widget_Product_Search' );
-								the_widget( 'WC_Widget_Price_Filter' );
-								the_widget( 'WC_Widget_Layered_Nav' );
-								the_widget( 'WC_Widget_Product_Categories' );
-								the_widget( 'WC_Widget_Rating_Filter' );
-								?>
-                            </div>
+	                        <?php dynamic_sidebar( 'sidebar-2' ); ?>
                         </div>
                     </div>
                 </div>
