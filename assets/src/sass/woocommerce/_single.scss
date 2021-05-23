@@ -462,7 +462,7 @@
   justify-content: center;
   border-radius: $shoppe_global_radius;
   z-index: 2;
-  padding: rem(4px 4px);
+  padding: rem(4px 7px);
 
   @include mq(tablet) {
     left: 1rem;

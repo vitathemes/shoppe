@@ -36,3 +36,15 @@
     }
   }
 }
+
+.c-footer__widget {
+  margin-bottom: rem(48px);
+
+  @include mq(desktop) {
+    margin-bottom: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

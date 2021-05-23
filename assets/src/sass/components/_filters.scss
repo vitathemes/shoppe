@@ -36,8 +36,12 @@
     }
 
     .price_slider_amount .button {
-      margin-top: rem(16px);
       float: right;
+      margin-top: rem(16px);
+
+      @include mq(tablet) {
+        margin-top: 0;
+      }
     }
   }
 

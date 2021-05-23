@@ -1058,6 +1058,14 @@ body.admin-bar .c-nav {
     .s-footer-copyright a:hover {
       color: var(--shoppe-primary-color); }
 
+.c-footer__widget {
+  margin-bottom: 3rem; }
+  @media (min-width: 64em) {
+    .c-footer__widget {
+      margin-bottom: 0; } }
+  .c-footer__widget:last-child {
+    margin-bottom: 0; }
+
 .c-widget {
   margin-bottom: 3rem; }
 
@@ -1097,7 +1105,8 @@ body.admin-bar .c-nav {
   float: right;
   border: none;
   font-weight: inherit;
-  font-size: 0.875rem; }
+  font-size: 0.875rem;
+  margin-top: 0; }
   .c-widget.woocommerce.widget_price_filter .price_slider_amount .button:hover {
     background-color: transparent;
     color: var(--shoppe-primary-color); }
@@ -2290,8 +2299,11 @@ ol.children {
   border-radius: 0; }
 
 .s-filters .price_slider_wrapper .price_slider_amount .button {
-  margin-top: 1rem;
-  float: right; }
+  float: right;
+  margin-top: 1rem; }
+  @media (min-width: 48em) {
+    .s-filters .price_slider_wrapper .price_slider_amount .button {
+      margin-top: 0; } }
 
 .s-filters form .select2 .select2-container--default, .s-filters form .select2 .select2-selection--single, .s-filters .woocommerce-widget-layered-nav-dropdown .select2 .select2-container--default, .s-filters .woocommerce-widget-layered-nav-dropdown .select2 .select2-selection--single {
   border-radius: 0.25rem;
