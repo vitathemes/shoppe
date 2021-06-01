@@ -157,7 +157,7 @@
 
 .woocommerce div.product form.cart .button {
   border: 1px solid $shoppe_headings_color;
-  color: $shoppe_headings_color;
+  color: $shoppe_neutral_black !important;
   background-color: transparent;
   flex-grow: 1;
   text-align: center;
@@ -174,7 +174,7 @@
 
   &:hover {
     background-color: $shoppe_headings_color;
-    color: $shoppe_neutral_white;
+    color: $shoppe_neutral_white !important;
   }
 }
 

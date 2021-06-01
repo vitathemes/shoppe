@@ -563,4 +563,14 @@ tr.cart-subtotal {
       margin: 0 0 rem(40px);
     }
   }
+
+  .woocommerce-form-login__submit {
+    background-color: $shoppe_neutral_black;
+    color: $shoppe_neutral_white;
+
+    &:hover {
+      background-color: $shoppe_neutral_white;
+      color: $shoppe_neutral_black;
+    }
+  }
 }

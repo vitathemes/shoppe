@@ -13,10 +13,10 @@
   @include mq(tablet) {
     width: 100%;
     max-width: 100%;
-    font-size: 2.5rem;
+    font-size: 4rem;
 
     &::placeholder {
-      font-size: 2.5rem;
+      font-size: 4rem;
     }
   }
 }
@@ -24,13 +24,14 @@
 .c-search-form__submit {
   border: none;
   background-color: transparent;
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 4rem;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   right: 0;
   cursor: pointer;
+  padding: 0;
 
   &:hover {
 
@@ -42,8 +43,8 @@
 
 
 .c-search-form__submit__icon {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
   fill: $shoppe_headings_color;
   transition: $shoppe_global_transition;
 }

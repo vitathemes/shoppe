@@ -39,15 +39,17 @@ $wrapper_classes   = apply_filters(
 $attachment_ids    = $product->get_gallery_image_ids();
 $post_thumbnail_id = $product->get_image_id();
 
+
 $images_count = count( $attachment_ids );
 ?>
 <div class="<?php echo esc_attr( implode( ' ',
 	array_map( 'sanitize_html_class',
 		$wrapper_classes ) ) ); ?>" data-columns="<?php echo esc_attr( $columns ); ?>" style="opacity: 0; transition: opacity .25s ease-in-out;">
     <figure class="woocommerce-product-gallery__wrapper o-grid-noGutter">
-        <div class="o-col product-thumbnails">
-            <div class="carousel carousel-nav"
-                    data-flickity='{
+		<?php if ( $images_count != 0 ): ?>
+            <div class="o-col product-thumbnails">
+                <div class="carousel carousel-nav"
+                        data-flickity='{
               "asNavFor": ".carousel-main",
               "draggable": false,
               "prevNextButtons": false,
@@ -56,26 +58,29 @@ $images_count = count( $attachment_ids );
               "cellAlign": "left",
               "freeScroll": true
               <?php if ( $images_count > 4 ) {
-						echo ',"wrapAround": true';
-					} else {
-						echo ',"groupCells": "100%"';
-					} ?>
+							echo ',"wrapAround": true';
+						} else {
+							echo ',"groupCells": "100%"';
+						} ?>
             }'>
-				<?php
-				if ( $attachment_ids ) {
-					foreach ( $attachment_ids as $attachment_id ) {
-						$image_link = wp_get_attachment_image_src( $attachment_id, 'woocommerce_gallery_thumbnail' )[0];
-						$alt_text   = get_post_meta( $attachment_id, '_wp_attachment_image_alt', true );
-						echo "<div class='carousel-cell'>" . sprintf( '<img src="%s" alt="%s" class="wp-post-image" />',
-								$image_link,
-								$alt_text ) . "</div>"; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+					<?php
+					if ( $attachment_ids ) {
+						foreach ( $attachment_ids as $attachment_id ) {
+							$image_link = wp_get_attachment_image_src( $attachment_id,
+								'woocommerce_gallery_thumbnail' )[0];
+							$alt_text   = get_post_meta( $attachment_id, '_wp_attachment_image_alt', true );
+							echo "<div class='carousel-cell'>" . sprintf( '<img src="%s" alt="%s" class="wp-post-image" />',
+									$image_link,
+									$alt_text ) . "</div>"; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+						}
 					}
-				}
-				?>
+					?>
+                </div>
             </div>
-        </div>
+		<?php endif; ?>
         <div class="o-col product-slider">
             <div class="carousel carousel-main"
+				<?php if ( $images_count != 0 ): ?>
                     data-flickity='{
              "contain": true,
              "pageDots": true,
@@ -83,7 +88,8 @@ $images_count = count( $attachment_ids );
              <?php if ( $images_count > 4 ) {
 						echo ',"wrapAround": true';
 					} ?>
-           }'>
+           }'
+				<?php endif; ?>>
 				<?php
 
 				if ( $attachment_ids ) {
@@ -110,13 +116,13 @@ $images_count = count( $attachment_ids );
 				//						$post_thumbnail_id ); // phpcs:disable WordPress.XSS.EscapeOutput.OutputNotEscaped
 				//				}
 
-				if ( ! $attachment_ids && get_the_post_thumbnail_url( $product->get_id()) ) {
+				if ( ! $attachment_ids && get_the_post_thumbnail_url( $product->get_id() ) ) {
 					echo sprintf( '<div class="carousel-cell"><img src="%s" alt="%s" class="wp-post-image" /></div>',
 						esc_url( get_the_post_thumbnail_url( $product->get_id() ) ),
 						esc_attr( get_the_title() ) ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 				}
 
-				if ( ! $attachment_ids && ! get_the_post_thumbnail_url( $product->get_id()) ) {
+				if ( ! $attachment_ids && ! get_the_post_thumbnail_url( $product->get_id() ) ) {
 
 					echo sprintf( '<div class="carousel-cell"><img src="%s" alt="%s" class="wp-post-image" /></div>',
 						esc_url( wc_placeholder_img_src( 'woocommerce_get_image_size_single' ) ),

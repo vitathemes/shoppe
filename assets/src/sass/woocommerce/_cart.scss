@@ -208,6 +208,15 @@ td.product-name {
     display: block;
     width: 100%;
     height: rem(32px);
+    color: $shoppe_neutral_black !important;
+
+    &:hover {
+      color: $shoppe_neutral_white !important;
+    }
+
+    &[disabled]:hover {
+      color: $shoppe_neutral_black !important;
+    }
 
     @include mq(desktop) {
       width: rem(168px);
