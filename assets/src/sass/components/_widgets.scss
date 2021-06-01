@@ -11,6 +11,19 @@
     &:last-child {
       margin-bottom: 0;
     }
+
+    p {
+      color: $shoppe_neutral_black;
+    }
+
+    a {
+      color: $shoppe_neutral_primary_color;
+      text-decoration: none;
+
+      &:hover {
+        color: $shoppe_branding_color;
+      }
+    }
   }
 }
 

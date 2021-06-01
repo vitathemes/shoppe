@@ -2,7 +2,7 @@
   padding: 0 0 1rem;
 
   @include mq(desktop) {
-    padding: 3rem 0 0;
+    padding: rem(21px) 0 0;
   }
 }
 
@@ -113,5 +113,13 @@
 
   @include mq(desktop) {
     display: none;
+  }
+}
+
+.s-header-branding {
+
+  .custom-logo {
+    max-height: 25px;
+    width: auto;
   }
 }

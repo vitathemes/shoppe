@@ -32,14 +32,23 @@
     margin-bottom: rem(40px);
 
     .c-search-form__submit__icon {
-      width: rem(20px);
-      height: rem(20px);
+      width: rem(15px);
+      height: rem(15px);
+    }
+
+    .c-search-form__submit {
+      left: rem(10px);
+      right: unset;
+      padding: 0;
+      width: rem(16px);
+      height: rem(16px);
+      display: flex;
     }
 
     .c-search-form__label__field {
       font-size: rem(12px);
       line-height: 1.65;
-      padding: rem(6.1px 10px);
+      padding: rem(6.1px 10px 6.1px 34px);
       border: none;
       background-color: $shoppe_neutral_tertiary_color;
       border-radius: $shoppe_global_radius;

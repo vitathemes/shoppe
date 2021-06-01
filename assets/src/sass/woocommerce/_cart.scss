@@ -229,7 +229,7 @@ td.product-name {
   margin-top: rem(54px);
 
   @include mq(desktop) {
-    margin-top: rem(32px);
+    margin-top: rem(80px);
     flex-wrap: nowrap;
   }
 
@@ -499,4 +499,9 @@ form.woocommerce-shipping-calculator {
       }
     }
   }
+}
+
+.woocommerce-cart-form__cart-item .attachment-woocommerce_thumbnail {
+  min-width: rem(108px);
+  min-height: rem(108px);
 }

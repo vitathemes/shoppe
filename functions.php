@@ -101,8 +101,8 @@ if ( ! function_exists( 'shoppe_setup' ) ) :
 		add_theme_support(
 			'custom-logo',
 			array(
-				'height'      => 250,
-				'width'       => 62,
+				'height'      => 25,
+				'width'       => 150,
 				'flex-width'  => true,
 				'flex-height' => true,
 			)

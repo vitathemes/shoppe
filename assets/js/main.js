@@ -9,11 +9,11 @@ const openPopup = () => {
 };
 
 if (document.querySelector('.js-search-btn')) {
-const shoppe_searchBtnToggle = document.querySelector('.js-search-btn');
-const shoppe_searchBtnClose = document.querySelector('.js-popup-close');
+    const shoppe_searchBtnToggle = document.querySelector('.js-search-btn');
+    const shoppe_searchBtnClose = document.querySelector('.js-popup-close');
 
-shoppe_searchBtnToggle.addEventListener('click', openPopup);
-shoppe_searchBtnClose.addEventListener('click', closePopup);
+    shoppe_searchBtnToggle.addEventListener('click', openPopup);
+    shoppe_searchBtnClose.addEventListener('click', closePopup);
 }
 
 const selectCarouselSlide = (carousel, index) => {
@@ -52,3 +52,13 @@ const openFiltersPopup = () => {
     const popup = document.querySelector('.js-popup-filters');
     popup.classList.add('is-open');
 };
+
+document.querySelectorAll('.js-popup').forEach(popup => {
+    document.addEventListener('keydown', e => {
+        if (e.key === "Escape") {
+            document.querySelectorAll('.js-popup').forEach(popupEl => {
+                popupEl.classList.remove('is-open');
+            });
+        }
+    });
+});

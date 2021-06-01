@@ -364,8 +364,9 @@
       a {
         color: $shoppe_neutral_black;
         text-decoration: none;
-        font-weight: inherit;price_slider_amount
+        font-weight: inherit;
 
+        price_slider_amount
         &:hover {
           color: $shoppe_branding_color;
         }
@@ -396,7 +397,19 @@ p.lost_password {
 
   button.button {
     font-size: 1rem;
-    padding: rem(12px 32px);
+    padding: rem(12px);
+    background-color: $shoppe_neutral_black;
+    color: $shoppe_neutral_white;
+
+    &:hover {
+      background-color: $shoppe_neutral_white;
+      color: $shoppe_neutral_black;
+    }
+
+    @include mq(desktop) {
+      display: block;
+      width: 100%;
+    }
   }
 }
 
@@ -494,5 +507,60 @@ tr.cart-subtotal {
 
   &::before, .c-notice::before {
     content: unset !important;
+  }
+}
+
+.woocommerce .woocommerce-form-coupon {
+  max-width: rem(580px);
+  border: 1px solid $shoppe_neutral_primary_color;
+  padding: rem(16px);
+
+  p {
+    width: 100%;
+
+    &:first-child {
+      color: $shoppe_neutral_primary_color;
+      margin: 0 0 rem(40px);
+    }
+  }
+
+  @include mq(desktop) {
+    padding: rem(24px);
+    display: flex;
+    flex-wrap: wrap;
+
+    p {
+
+      &.form-row-first {
+        width: calc(70% - 31px);
+        padding-right: 28px;
+      }
+
+      &.form-row-last {
+        width: 30%;
+        padding: 0;
+      }
+    }
+  }
+}
+
+.woocommerce .checkout-login-form .woocommerce-form-login {
+  max-width: rem(580px);
+  border: 1px solid $shoppe_neutral_secondary_color;
+  padding: rem(16px);
+
+  @include mq(desktop) {
+    padding: rem(24px);
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  p {
+    width: 100%;
+
+    &:first-child {
+      color: $shoppe_neutral_primary_color;
+      margin: 0 0 rem(40px);
+    }
   }
 }

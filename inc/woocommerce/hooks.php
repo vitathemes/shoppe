@@ -59,10 +59,10 @@ if ( ! function_exists( 'shoppe_product_thumbnail_end' ) ) {
 }
 
 if ( ! function_exists( 'abChangeProductsTitle' ) ) {
-	remove_action( 'woocommerce_shop_loop_item_title','woocommerce_template_loop_product_title', 10 );
-	add_action('woocommerce_shop_loop_item_title', 'abChangeProductsTitle', 10 );
+	remove_action( 'woocommerce_shop_loop_item_title', 'woocommerce_template_loop_product_title', 10 );
+	add_action( 'woocommerce_shop_loop_item_title', 'abChangeProductsTitle', 10 );
 	function abChangeProductsTitle() {
-		echo '<a class="woocommerce-loop-product_title-link h3" href="'. esc_url(get_the_permalink()) .'"><h2 class="woocommerce-loop-product_title h3">' . esc_html(get_the_title()) . '</h2></a>';
+		echo '<a class="woocommerce-loop-product_title-link h3" href="' . esc_url( get_the_permalink() ) . '"><h2 class="woocommerce-loop-product_title h3">' . esc_html( get_the_title() ) . '</h2></a>';
 	}
 }
 
@@ -73,9 +73,26 @@ remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_singl
 add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_rating', 11 );
 
 
-remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart');
+remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart' );
 
-add_filter('wc_add_to_cart_message', 'shoppe_filter_add_to_cart_notice_success', 10, 2);
-function shoppe_filter_add_to_cart_notice_success($message, $product_id) {
-	return "The item added to your Shopping cart. <a class='button' href='". wc_get_cart_url() ."'>View Cart</a>";
+add_filter( 'wc_add_to_cart_message', 'shoppe_filter_add_to_cart_notice_success', 10, 2 );
+function shoppe_filter_add_to_cart_notice_success( $message, $product_id ) {
+	return "The item added to your Shopping cart. <a class='button' href='" . wc_get_cart_url() . "'>View Cart</a>";
+}
+
+
+/**
+ * WooCommerce Extra Feature
+ * --------------------------
+ *
+ * Change number of related products on product page
+ * Set your own value for 'posts_per_page'
+ *
+ */
+
+add_filter( 'woocommerce_output_related_products_args', 'shoppe_related_products_args' );
+function shoppe_related_products_args( $args ) {
+	$args['posts_per_page'] = 3;
+
+	return $args;
 }

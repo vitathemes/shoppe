@@ -572,7 +572,7 @@ blockquote {
   padding: 0 0 1rem; }
   @media (min-width: 64em) {
     .c-header {
-      padding: 3rem 0 0; } }
+      padding: 1.3125rem 0 0; } }
 
 .c-header__nav {
   display: flex;
@@ -653,6 +653,10 @@ blockquote {
   @media (min-width: 64em) {
     .c-header__menu-toggle {
       display: none; } }
+
+.s-header-branding .custom-logo {
+  max-height: 25px;
+  width: auto; }
 
 .c-nav {
   list-style: none;
@@ -1074,6 +1078,15 @@ body.admin-bar .c-nav {
 
 .s-footer-widgets .c-widget:last-child {
   margin-bottom: 0; }
+
+.s-footer-widgets .c-widget p {
+  color: var(--shoppe-primary-color); }
+
+.s-footer-widgets .c-widget a {
+  color: var(--shoppe-secondary-color);
+  text-decoration: none; }
+  .s-footer-widgets .c-widget a:hover {
+    color: var(--shoppe-branding-color); }
 
 .c-widget.woocommerce.widget_rating_filter ul li {
   margin-bottom: 0.5rem; }
@@ -2265,12 +2278,19 @@ ol.children {
     border: none;
     margin-bottom: 2.5rem; }
     .c-menu .c-search-form .c-search-form__submit__icon {
-      width: 1.25rem;
-      height: 1.25rem; }
+      width: 0.9375rem;
+      height: 0.9375rem; }
+    .c-menu .c-search-form .c-search-form__submit {
+      left: 0.625rem;
+      right: unset;
+      padding: 0;
+      width: 1rem;
+      height: 1rem;
+      display: flex; }
     .c-menu .c-search-form .c-search-form__label__field {
       font-size: 0.75rem;
       line-height: 1.65;
-      padding: 0.38125rem 0.625rem;
+      padding: 0.38125rem 0.625rem 0.38125rem 2.125rem;
       border: none;
       background-color: var(--shoppe-quaternary-color);
       border-radius: 0.25rem; }
@@ -4579,7 +4599,7 @@ https://flickity.metafizzy.co
   transition: 0.25s; }
   @media (min-width: 64em) {
     .woocommerce div.product .woocommerce-tabs ul.tabs li {
-      padding: 0 0 1.875rem;
+      padding: 0;
       margin: 0 6rem 0 0; } }
   .woocommerce div.product .woocommerce-tabs ul.tabs li:last-child {
     margin-right: 0; }
@@ -4587,7 +4607,7 @@ https://flickity.metafizzy.co
 .woocommerce div.product .woocommerce-tabs ul.tabs li a {
   font-size: 0.75rem;
   color: var(--shoppe-secondary-color);
-  padding: 0;
+  padding: 0 0 1.875rem;
   font-weight: inherit; }
   @media (min-width: 48em) {
     .woocommerce div.product .woocommerce-tabs ul.tabs li a {
@@ -4819,7 +4839,8 @@ https://flickity.metafizzy.co
     transition: 0.5s all; }
   .woocommerce .flickity-page-dots .dot.is-selected {
     height: 2px;
-    background: var(--shoppe-secondary-color); }
+    background: var(--shoppe-secondary-color);
+    opacity: 1; }
 
 .woocommerce-tabs {
   width: 100%;
@@ -5031,7 +5052,7 @@ table.woocommerce-product-attributes {
     .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button {
       padding: 1rem 1rem; } }
 
-.woocommerce form.checkout_coupon, .woocommerce form.login, .woocommerce form.register, .woocommerce form.lost_reset_password {
+.woocommerce form.login, .woocommerce form.register, .woocommerce form.lost_reset_password {
   border: none;
   padding: 0;
   margin: 0; }
@@ -5439,7 +5460,7 @@ td.product-name {
   margin-top: 3.375rem; }
   @media (min-width: 64em) {
     .woocommerce #content table.cart td.actions .coupon, .woocommerce table.cart td.actions .coupon, .woocommerce-page #content table.cart td.actions .coupon, .woocommerce-page table.cart td.actions .coupon {
-      margin-top: 2rem;
+      margin-top: 5rem;
       flex-wrap: nowrap; } }
   @media (min-width: 48em) {
     .woocommerce #content table.cart td.actions .coupon, .woocommerce table.cart td.actions .coupon, .woocommerce-page #content table.cart td.actions .coupon, .woocommerce-page table.cart td.actions .coupon {
@@ -5621,6 +5642,10 @@ form.woocommerce-shipping-calculator .button {
       width: calc(55% - 1.5rem); }
       .woocommerce .woocommerce-cart-form tr.woocommerce-cart-form__cart-item .product-thumbnail::before {
         content: unset; } }
+
+.woocommerce-cart-form__cart-item .attachment-woocommerce_thumbnail {
+  min-width: 6.75rem;
+  min-height: 6.75rem; }
 
 .woocommerce ul.order_details {
   padding: 0;
@@ -5865,7 +5890,16 @@ p.lost_password {
   margin-bottom: 2rem; }
   .checkout_coupon button.button {
     font-size: 1rem;
-    padding: 0.75rem 2rem; }
+    padding: 0.75rem;
+    background-color: var(--shoppe-primary-color);
+    color: #fff; }
+    .checkout_coupon button.button:hover {
+      background-color: #fff;
+      color: var(--shoppe-primary-color); }
+    @media (min-width: 64em) {
+      .checkout_coupon button.button {
+        display: block;
+        width: 100%; } }
 
 .checkout-login-form .woocommerce-form-login {
   margin-bottom: 2rem !important; }
@@ -5929,3 +5963,39 @@ tr.cart-subtotal td {
 
 .woocommerce-checkout-payment .wc_payment_methods::before, .woocommerce-checkout-payment .wc_payment_methods .c-notice::before {
   content: unset !important; }
+
+.woocommerce .woocommerce-form-coupon {
+  max-width: 36.25rem;
+  border: 1px solid var(--shoppe-secondary-color);
+  padding: 1rem; }
+  .woocommerce .woocommerce-form-coupon p {
+    width: 100%; }
+    .woocommerce .woocommerce-form-coupon p:first-child {
+      color: var(--shoppe-secondary-color);
+      margin: 0 0 2.5rem; }
+  @media (min-width: 64em) {
+    .woocommerce .woocommerce-form-coupon {
+      padding: 1.5rem;
+      display: flex;
+      flex-wrap: wrap; }
+      .woocommerce .woocommerce-form-coupon p.form-row-first {
+        width: calc(70% - 31px);
+        padding-right: 28px; }
+      .woocommerce .woocommerce-form-coupon p.form-row-last {
+        width: 30%;
+        padding: 0; } }
+
+.woocommerce .checkout-login-form .woocommerce-form-login {
+  max-width: 36.25rem;
+  border: 1px solid var(--shoppe-tertiary-color);
+  padding: 1rem; }
+  @media (min-width: 64em) {
+    .woocommerce .checkout-login-form .woocommerce-form-login {
+      padding: 1.5rem;
+      display: flex;
+      flex-wrap: wrap; } }
+  .woocommerce .checkout-login-form .woocommerce-form-login p {
+    width: 100%; }
+    .woocommerce .checkout-login-form .woocommerce-form-login p:first-child {
+      color: var(--shoppe-secondary-color);
+      margin: 0 0 2.5rem; }

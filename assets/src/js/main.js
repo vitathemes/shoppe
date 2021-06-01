@@ -52,3 +52,13 @@ const openFiltersPopup = () => {
     const popup = document.querySelector('.js-popup-filters');
     popup.classList.add('is-open');
 };
+
+document.querySelectorAll('.js-popup').forEach(popup => {
+    document.addEventListener('keydown', e => {
+        if (e.key === "Escape") {
+            document.querySelectorAll('.js-popup').forEach(popupEl => {
+                popupEl.classList.remove('is-open');
+            });
+        }
+    });
+});

@@ -97,7 +97,7 @@
   transition: $shoppe_global_transition;
 
   @include mq(desktop) {
-    padding: 0 0 rem(30px);
+    padding: 0;
     margin: 0 rem(96px) 0 0;
   }
 
@@ -109,7 +109,7 @@
 .woocommerce div.product .woocommerce-tabs ul.tabs li a {
   font-size: rem(12px);
   color: $shoppe_neutral_primary_color;
-  padding: 0;
+  padding: 0 0 rem(30px);
   font-weight: inherit;
 
   @include mq(tablet) {
@@ -421,13 +421,13 @@
       background: $shoppe_neutral_secondary_color;
       opacity: 0.25;
       cursor: pointer;
-
       transition: 0.5s all;
     }
 
     .dot.is-selected {
       height: 2px;
       background: $shoppe_neutral_primary_color;
+      opacity: 1;
     }
   }
 }
