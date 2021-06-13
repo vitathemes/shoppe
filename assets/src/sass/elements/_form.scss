@@ -1,24 +1,24 @@
 input, select, textarea {
   border: none;
   border-bottom: 1px solid $shoppe_neutral_secondary_color;
-  padding: rem(16px) 0;
+  padding: rem(12px 4px);
   margin: rem(4px) 0;
   font-family: inherit;
   transition: $shoppe_global_transition;
   width: 100%;
-  font-size: rem(12px);
+  font-size: rem(14px);
 
   @include mq(tablet) {
-    ont-size: rem(14px);
+    font-size: rem(14px);
   }
 
   &::placeholder {
     color: $shoppe_neutral_primary_color;
     opacity: 1;
-    font-size: rem(12px);
+    font-size: rem(14px);
 
     @include mq(tablet) {
-      ont-size: rem(14px);
+      font-size: rem(14px);
     }
   }
 }
@@ -37,7 +37,7 @@ select {
 button, input[type='submit'] {
   @include h6;
   font-weight: 700;
-  font-size: rem(12px);
+  font-size: rem(14px);
   letter-spacing: 0.025em;
   text-transform: uppercase;
   box-sizing: border-box;

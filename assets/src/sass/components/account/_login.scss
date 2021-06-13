@@ -29,7 +29,7 @@
       font-family: inherit;
       margin-top: rem(32px);
       border: 1px solid $shoppe_neutral_black;
-      font-size: rem(12px);
+      font-size: rem(14px);
 
       @include mq(desktop) {
         font-size: rem(16px);
@@ -93,15 +93,16 @@
 }
 
 .c-account__nav__btn {
-  width: 49%;
+  width: 49.5%;
   padding: rem(6px);
   background-color: transparent;
+  color: $shoppe_neutral_black !important;
   border-radius: $shoppe_global_radius;
   border: none;
   cursor: pointer;
   transition: $shoppe_global_transition;
-  font-size: rem(12px);
-  flex-grow: 1;
+  font-size: rem(14px);
+  //flex-grow: 1;
 
   @include mq(desktop) {
     padding: rem(12px);

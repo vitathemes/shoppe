@@ -144,6 +144,15 @@ if ( function_exists( 'Kirki' ) ) {
 					'capability' => 'edit_theme_options',
 				) );
 
+// Account
+			Kirki::add_section( 'account',
+				array(
+					'title'      => esc_html__( 'Account', 'shoppe' ),
+					'panel'      => 'woocommerce',
+					'priority'   => 4,
+					'capability' => 'edit_theme_options',
+				) );
+
 // Elements
 			Kirki::add_section( 'layout',
 				array(
@@ -276,7 +285,7 @@ if ( function_exists( 'Kirki' ) ) {
 					'output'          => array(
 						array(
 							'element' => array( 'h1', '.h1' ),
-						)
+						),
 					),
 				] );
 
@@ -326,7 +335,7 @@ if ( function_exists( 'Kirki' ) ) {
 					'output'          => array(
 						array(
 							'element' => array( 'h2', '.h2' ),
-						)
+						),
 					),
 				] );
 
@@ -376,7 +385,7 @@ if ( function_exists( 'Kirki' ) ) {
 					'output'          => array(
 						array(
 							'element' => array( 'h3', '.h3' ),
-						)
+						),
 					),
 				] );
 
@@ -426,7 +435,7 @@ if ( function_exists( 'Kirki' ) ) {
 					'output'          => array(
 						array(
 							'element' => array( 'h4', '.h4' ),
-						)
+						),
 					),
 				] );
 
@@ -476,7 +485,7 @@ if ( function_exists( 'Kirki' ) ) {
 					'output'          => array(
 						array(
 							'element' => array( 'h5', '.h5' ),
-						)
+						),
 					),
 				] );
 
@@ -526,11 +535,9 @@ if ( function_exists( 'Kirki' ) ) {
 					'output'          => array(
 						array(
 							'element' => array( 'h6', '.h6' ),
-						)
+						),
 					),
 				] );
-
-
 
 
 			Kirki::add_field( 'shoppe',
@@ -579,7 +586,7 @@ if ( function_exists( 'Kirki' ) ) {
 					'priority'        => 10,
 					'output'          => array(
 						array(
-							'element'       => 'body',
+							'element' => 'body',
 						),
 					),
 				] );
@@ -793,7 +800,6 @@ if ( function_exists( 'Kirki' ) ) {
 				] );
 
 
-
 			Kirki::add_field( 'shoppe',
 				[
 					'type'     => 'toggle',
@@ -879,6 +885,21 @@ if ( function_exists( 'Kirki' ) ) {
 					'priority' => 10,
 				] );
 			// Slider Menu
+
+			// Account
+			Kirki::add_field( 'shoppe', [
+				'type'        => 'switch',
+				'settings'    => 'account_navigation',
+				'label'       => esc_html__( 'Account page navigation', 'notation' ),
+				'section'     => 'account',
+				'default'     => 'on',
+				'priority'    => 10,
+				'choices'     => [
+					'on'  => esc_html__( 'Tabs', 'notation' ),
+					'off' => esc_html__( 'Sidebar', 'notation' ),
+				],
+			] );
+			// Account
 		} );
 
 

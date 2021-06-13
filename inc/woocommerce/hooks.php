@@ -62,7 +62,7 @@ if ( ! function_exists( 'abChangeProductsTitle' ) ) {
 	remove_action( 'woocommerce_shop_loop_item_title', 'woocommerce_template_loop_product_title', 10 );
 	add_action( 'woocommerce_shop_loop_item_title', 'abChangeProductsTitle', 10 );
 	function abChangeProductsTitle() {
-		echo '<a class="woocommerce-loop-product_title-link h3" href="' . esc_url( get_the_permalink() ) . '"><h2 class="woocommerce-loop-product_title h3">' . esc_html( get_the_title() ) . '</h2></a>';
+		echo '<a class="woocommerce-loop-product_title-link" href="' . esc_url( get_the_permalink() ) . '"><h2 class="woocommerce-loop-product_title">' . esc_html( get_the_title() ) . '</h2></a>';
 	}
 }
 

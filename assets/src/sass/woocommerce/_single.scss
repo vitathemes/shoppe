@@ -45,7 +45,7 @@
 }
 
 .woocommerce-tabs {
-  font-size: rem(12px);
+  font-size: rem(14px);
 
   @include mq(desktop) {
     font-size: rem(16px);
@@ -107,7 +107,7 @@
 }
 
 .woocommerce div.product .woocommerce-tabs ul.tabs li a {
-  font-size: rem(12px);
+  font-size: rem(14px);
   color: $shoppe_neutral_primary_color;
   padding: 0 0 rem(30px);
   font-weight: inherit;
@@ -186,7 +186,7 @@
   text-align: center;
   border-radius: rem(4px);
   padding: rem(4px) rem(6px);
-  font-size: rem(12px);
+  font-size: rem(14px);
   text-decoration: none;
   transition: $shoppe_global_transition;
 
@@ -210,7 +210,7 @@
   color: $shoppe_neutral_primary_color;
   margin-bottom: rem(48px);
   line-height: 1.6875em;
-  font-size: rem(12px);
+  font-size: rem(14px);
 
   @include mq(desktop) {
     font-size: rem(16px);
@@ -245,7 +245,7 @@
     margin: rem(8px) 0;
     display: block;
     width: 100%;
-    font-size: rem(12px);
+    font-size: rem(14px);
 
     @include mq(tablet) {
       font-size: rem(16px);
@@ -255,7 +255,7 @@
       color: $shoppe_neutral_primary_color;
       text-decoration: none;
       margin-left: rem(4px);
-      font-size: rem(12px);
+      font-size: rem(14px);
 
       @include mq(tablet) {
         font-size: rem(16px);
@@ -683,7 +683,7 @@ table.woocommerce-product-attributes {
 
 .woocommerce div.product form.cart .variations label {
   font-weight: inherit;
-  font-size: rem(12px);
+  font-size: rem(14px);
 
   @include mq(tablet) {
     font-size: rem(14px);

@@ -6,6 +6,7 @@
     flex-direction: column;
     padding: 1rem 0;
     display: flex;
+    flex-wrap: wrap;
     max-width: calc(100% - 2rem);
     margin: 0;
 
@@ -27,7 +28,7 @@
       }
 
       @include mq(desktop) {
-        margin: 0 1.25em !important;
+        margin: 0 1.25em 0.75em 0 !important;
         padding: rem(27px 0);
 
         &:first-child {
@@ -41,6 +42,7 @@
     }
 
     a {
+      white-space: nowrap;
       line-height: 1.2;
       text-decoration: none;
       color: $shoppe_headings_color;

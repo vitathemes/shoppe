@@ -30,7 +30,7 @@
 
   .price_slider_amount .button {
     padding: 0;
-    color: $shoppe_branding_color;
+    color: $shoppe_branding_color !important;
     float: right;
     border: none;
     font-weight: inherit;
@@ -39,7 +39,7 @@
 
     &:hover {
       background-color: transparent;
-      color: $shoppe_neutral_black;
+      color: $shoppe_neutral_black !important;
     }
   }
 

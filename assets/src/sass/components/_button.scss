@@ -1,7 +1,7 @@
 .c-btn {
   @include h6;
   font-weight: 700;
-  font-size: rem(12px);
+  font-size: rem(14px);
   letter-spacing: 0.025em;
   text-transform: uppercase;
   box-sizing: border-box;
@@ -63,13 +63,13 @@
 
 
 .c-btn--sm {
-  font-size: rem(12px) !important;
+  font-size: rem(14px) !important;
   padding: rem(7px 12px);
 }
 
 
 .c-btn.c-btn--lg {
-  font-size: rem(12px);
+  font-size: rem(14px);
   padding: rem(16px 32px);
 
   @include mq(desktop) {

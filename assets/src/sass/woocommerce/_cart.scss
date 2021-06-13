@@ -268,7 +268,7 @@ td.product-name {
     white-space: nowrap;
     background-color: $shoppe_neutral_black;
     color: $shoppe_neutral_white;
-    font-size: rem(12px) !important;
+    font-size: rem(14px) !important;
     border: 1px solid $shoppe_neutral_black;
     padding: rem(6px);
     display: block;
@@ -321,7 +321,7 @@ td.product-remove {
 #add_payment_method .wc-proceed-to-checkout a.checkout-button, .woocommerce-cart .wc-proceed-to-checkout a.checkout-button, .woocommerce-checkout .wc-proceed-to-checkout a.checkout-button {
   background-color: $shoppe_neutral_black;
   color: $shoppe_neutral_white;
-  font-size: rem(12px);
+  font-size: rem(14px);
   display: block;
   width: 100%;
   text-transform: uppercase;
@@ -493,7 +493,7 @@ form.woocommerce-shipping-calculator {
         }
 
         .product-variations, .product-price {
-          font-size: rem(12px);
+          font-size: rem(14px);
         }
       }
 

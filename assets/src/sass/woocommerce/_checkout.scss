@@ -222,7 +222,7 @@
   border-radius: $shoppe_global_radius;
   transition: $shoppe_global_transition;
   text-decoration: none;
-  font-size: rem(12px);
+  font-size: rem(14px);
   padding: rem(8px 32px);
   background: $shoppe_neutral_black;
   border: rem(1px) solid $shoppe_neutral_black;
@@ -262,7 +262,7 @@
 }
 
 #add_payment_method .wc-proceed-to-checkout a.checkout-button, .woocommerce-cart .wc-proceed-to-checkout a.checkout-button, .woocommerce-checkout .wc-proceed-to-checkout a.checkout-button {
-  font-size: rem(12px);
+  font-size: rem(14px);
   padding: rem(8px 32px);
   line-height: 1.315;
 
@@ -326,6 +326,13 @@
 
 .woocommerce #payment #place_order, .woocommerce-page #payment #place_order {
   float: unset;
+}
+
+.woocommerce-form-coupon {
+
+  .form-row {
+    margin: 0 !important;
+  }
 }
 
 .woocommerce-form-coupon-toggle {
@@ -397,7 +404,7 @@ p.lost_password {
 
   button.button {
     font-size: 1rem;
-    padding: rem(12px);
+    padding: rem(10px);
     background-color: $shoppe_neutral_black;
     color: $shoppe_neutral_white;
 
@@ -445,9 +452,9 @@ p.lost_password {
 }
 
 .select2-container--default .select2-selection--single .select2-selection__rendered {
-  padding-left: 0;
+  padding-left: rem(4px);
   color: $shoppe_neutral_black !important;
-  font-size: rem(12px);
+  font-size: rem(14px);
 }
 
 .woocommerce table.shop_table th {
@@ -466,7 +473,7 @@ p.lost_password {
   margin: 12px 0 24px;
 
   label {
-    font-size: rem(12px);
+    font-size: rem(14px);
     font-weight: inherit;
     cursor: pointer;
 
@@ -573,4 +580,9 @@ tr.cart-subtotal {
       color: $shoppe_neutral_black;
     }
   }
+}
+
+.woocommerce form .form-row-last, .woocommerce-page form .form-row-last {
+  float: unset;
+  clear: both;
 }

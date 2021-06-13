@@ -108,7 +108,7 @@
   }
 
   .comment-header .time, .comment-header .time * {
-    font-size: 12px;
+    font-size: rem(14px);
     color: $shoppe_neutral_primary_color;
     font-weight: var(--heading-typography-variant) !important;
   }

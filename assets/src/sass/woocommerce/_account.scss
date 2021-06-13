@@ -13,80 +13,81 @@
   }
 }
 
-.woocommerce-account .woocommerce-MyAccount-navigation {
-  width: 100%;
-  float: unset;
-  border-bottom: 1px solid $shoppe_neutral_secondary_color;
-  overflow-x: scroll;
-  @include mq(desktop) {
-    overflow: visible;
-  }
-
-  ul {
-    display: flex;
-    list-style: none;
-
-    padding: 0;
-    margin: 0;
-
-
-    li {
-      margin-right: rem(24px);
-      padding-bottom: rem(16px);
-      position: relative;
-      z-index: 1;
-      //transform: translateY(1px);
-
-
-      @include mq(tablet) {
-        margin-right: rem(32px);
-        padding-bottom: rem(30px);
-        border-bottom: 0;
-      }
-
-      @include mq(desktop) {
-        margin-right: rem(48px);
-      }
+.woocommerce-account .woocommerce-account-tabs {
+ .woocommerce-MyAccount-navigation {
+    width: 100%;
+    float: unset;
+    border-bottom: 1px solid $shoppe_neutral_secondary_color;
+    overflow-x: scroll;
+    @include mq(desktop) {
+      overflow: visible;
     }
 
-    a {
-      text-decoration: none;
-      color: $shoppe_neutral_primary_color;
-      word-break: keep-all;
-      white-space: nowrap;
+    ul {
+      display: flex;
+      list-style: none;
 
-      &:hover {
-        color: $shoppe_branding_color;
+      padding: 0;
+      margin: 0;
+
+
+      li {
+        margin-right: rem(24px);
+        padding-bottom: rem(16px);
+        position: relative;
+        z-index: 1;
+        //transform: translateY(1px);
+
+
+        @include mq(tablet) {
+          margin-right: rem(32px);
+          padding-bottom: rem(30px);
+          border-bottom: 0;
+        }
+
+        @include mq(desktop) {
+          margin-right: rem(48px);
+        }
       }
-    }
-
-    li.is-active {
-      border-bottom: 1px solid $shoppe_neutral_black;
 
       a {
-        color: $shoppe_headings_color;
+        text-decoration: none;
+        color: $shoppe_neutral_primary_color;
+        word-break: keep-all;
+        white-space: nowrap;
+
+        &:hover {
+          color: $shoppe_branding_color;
+        }
+      }
+
+      li.is-active {
+        border-bottom: 1px solid $shoppe_neutral_black;
+
+        a {
+          color: $shoppe_headings_color;
+        }
+      }
+
+      li.woocommerce-MyAccount-navigation-link--customer-logout a:hover {
+        color: $shoppe_error_color;
       }
     }
-
-    li.woocommerce-MyAccount-navigation-link--customer-logout a:hover {
-      color: $shoppe_error_color;
-    }
   }
-}
 
+ .woocommerce-MyAccount-content {
+    width: 100%;
+    float: unset;
+    padding-top: rem(40px);
 
-.woocommerce-account .woocommerce-MyAccount-content {
-  width: 100%;
-  float: unset;
-  padding-top: rem(40px);
+    a {
+      color: $shoppe_branding_color;
+      text-decoration: none;
+      font-size: inherit;
 
-  a {
-    color: $shoppe_branding_color;
-    text-decoration: none;
-    font-size: inherit;
-
-    &:hover {
-      color: $shoppe_headings_color;
+      &:hover {
+        color: $shoppe_headings_color;
+      }
     }
   }
 }
@@ -328,10 +329,87 @@ form.edit-account {
 }
 
 .woocommerce-EditAccountForm {
-  font-size: rem(12px);
+  font-size: rem(14px);
 
   em {
     display: block;
     margin-top: rem(5px);
+  }
+}
+
+.woocommerce-account-sidebar {
+  ul {
+    list-style: none;
+
+    padding: 0;
+    margin: 0;
+
+
+    li {
+      position: relative;
+      z-index: 1;
+
+      @include mq(tablet) {
+        margin-bottom: rem(20px);
+        border-bottom: 0;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: $shoppe_neutral_primary_color;
+      word-break: keep-all;
+      white-space: nowrap;
+      padding: rem(4px) 0;
+      font-size: rem(16px);
+
+      @include mq(desktop) {
+        font-size: rem(20px);
+      }
+
+      &:hover {
+        color: $shoppe_branding_color;
+      }
+    }
+
+    li.is-active {
+
+      a {
+        color: $shoppe_headings_color;
+      }
+    }
+
+    li.woocommerce-MyAccount-navigation-link--customer-logout a:hover {
+      color: $shoppe_error_color;
+    }
+  }
+
+  .woocommerce-MyAccount-navigation {
+    width: 100%;
+
+    @include mq(desktop) {
+      width: 25%;
+    }
+  }
+
+  .woocommerce-MyAccount-content {
+    width: 100%;
+
+    @include mq(desktop) {
+      width: 75%;
+    }
+  }
+}
+
+.woocommerce-MyAccount-content {
+
+  p:first-of-type {
+    margin-top: 0;
+  }
+}
+
+body.woocommerce-account {
+  .o-page__title {
+    text-align: left;
   }
 }
