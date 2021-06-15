@@ -16,7 +16,8 @@ Shoppe, is a quick-loading, lightweight, and RTL-ready WordPress theme, that hel
 == Features ==
 * No additional JS
 * Sass for stylesheets
-* Compatible with [Contact Form 7](https://wordpress.org/plugins/contact-form-7/)
+* Compatible with [Contact Form 7](https://wordpress.org/plugins/contact-form-7)
+* Compatible with [Newsletter](https://wordpress.org/plugins/newsletter)
 * Fast & lightweight (Google Speed: 99/100)
 * Theme options built directly into WordPress native live theme customizer
 * Responsive design

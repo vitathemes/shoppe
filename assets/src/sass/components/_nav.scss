@@ -8,6 +8,7 @@
     height: auto;
     width: auto;
     display: flex;
+    align-items: center;
     padding: 0;
     flex-direction: row;
   }
@@ -41,7 +42,7 @@
     font-size: rem(20px);
 
     @include mq(desktop) {
-      font-size: rem(16px);
+      font-size: inherit;
     }
 
     &:hover {

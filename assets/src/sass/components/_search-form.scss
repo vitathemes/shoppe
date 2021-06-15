@@ -65,7 +65,7 @@
     @include mq(tablet) {
 
       &::placeholder {
-        font-size: 1rem !important;
+        font-size: inherit;
       }
     }
   }

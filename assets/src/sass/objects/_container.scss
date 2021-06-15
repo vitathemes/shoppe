@@ -2,19 +2,19 @@
   @include container;
 
   @media (min-width: 36em) {
-    max-width: 35em;
+    max-width: 540px;
   }
 
   @media (min-width: 46em) {
-    max-width: 45em;
+    max-width: 720px;
   }
 
   @media (min-width: 61em) {
-    max-width: 60em;
+    max-width: 960px;
   }
 
   @media (min-width: 81em) {
-    max-width: 78.252em;
+    max-width: 1252px;
   }
 }
 
@@ -22,18 +22,18 @@
   @include container-half-padding;
 
   @media (min-width: 36em) {
-    max-width: 33.75em;
+    max-width: 540px;
   }
 
   @media (min-width: 46em) {
-    max-width: 45em;
+    max-width: 720px;
   }
 
   @media (min-width: 61em) {
-    max-width: 60em;
+    max-width: 960px;
   }
 
   @media (min-width: 81em) {
-    max-width: 78.252em;
+    max-width: 1252px;
   }
 }

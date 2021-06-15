@@ -112,7 +112,7 @@
   line-height: rem(27px);
 
   @include mq(tablet) {
-    font-size: rem(16px);
+    font-size: inherit;
   }
 
   p {

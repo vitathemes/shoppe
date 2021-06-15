@@ -1,5 +1,6 @@
 .c-header {
   padding: 0 0 1rem;
+  position: relative;
 
   @include mq(desktop) {
     padding: rem(21px) 0 0;
@@ -49,6 +50,8 @@
   }
 
   &:hover {
+    background-color: transparent;
+
     .c-header__link__icon {
       fill: $shoppe_branding_color;
     }
@@ -89,7 +92,7 @@
 }
 
 .c-header__grid {
-  border-bottom: 1px solid #D8D8D8;
+  border-bottom: 1px solid $shoppe_neutral_secondary_color;
   padding: 1rem 0 0.5rem;
 
   @include mq(desktop) {
@@ -122,4 +125,15 @@
     max-height: 25px;
     width: auto;
   }
+}
+
+.c-header__bg-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
+  z-index: -1;
+  top: 0;
+  left: 0;
 }

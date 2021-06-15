@@ -28,6 +28,7 @@ if ( function_exists( 'wp_body_open' ) ) {
 ?>
 <a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'shoppe' ); ?></a>
 <header class="c-header">
+    <?php notation_header_image(); ?>
     <div class="o-container--half-padding">
         <div class="c-header__grid">
             <div class="o-grid-middle">

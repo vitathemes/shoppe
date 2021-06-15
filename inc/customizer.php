@@ -249,6 +249,57 @@ if ( function_exists( 'Kirki' ) ) {
 						],
 					],
 					'type'            => 'typography',
+					'settings'        => 'text_typography',
+					'label'           => esc_html__( 'Base font', 'shoppe' ),
+					'section'         => 'typography',
+					'default'         => [
+						'font-family'    => 'DM Sans',
+						'variant'        => '400',
+						'font-size'      => '16px',
+						'line-height'    => '1.5',
+						'letter-spacing' => '0'
+						//'color'       => '#000',
+					],
+					'choices'         => [
+						'fonts' => [
+							'standard' => [
+								'Arial',
+								'sans-serif',
+								'sans',
+								'Helvetica',
+								'Verdana',
+								'Trebuchet',
+								'Georgia',
+								'Times New Roman',
+								'Palatino',
+								'Myriad Pro',
+								'Lucida',
+								'Gill Sans',
+								'Impact',
+								'monospace',
+								'Tahoma',
+							],
+						],
+					],
+					'transport'       => 'auto',
+					'priority'        => 10,
+					'output'          => array(
+						array(
+							'element' => 'html',
+						),
+					),
+				] );
+
+			Kirki::add_field( 'shoppe',
+				[
+					'active_callback' => [
+						[
+							'setting'  => 'use_google_fonts',
+							'operator' => '==',
+							'value'    => true,
+						],
+					],
+					'type'            => 'typography',
 					'settings'        => 'typography_h1',
 					'label'           => esc_html__( 'H1', 'shoppe' ),
 					'section'         => 'typography',
@@ -550,57 +601,6 @@ if ( function_exists( 'Kirki' ) ) {
 						],
 					],
 					'type'            => 'typography',
-					'settings'        => 'text_typography',
-					'label'           => esc_html__( 'Base font', 'shoppe' ),
-					'section'         => 'typography',
-					'default'         => [
-						'font-family'    => 'DM Sans',
-						'variant'        => '400',
-						'font-size'      => '16px',
-						'line-height'    => '1.5',
-						'letter-spacing' => '0'
-						//'color'       => '#000',
-					],
-					'choices'         => [
-						'fonts' => [
-							'standard' => [
-								'Arial',
-								'sans-serif',
-								'sans',
-								'Helvetica',
-								'Verdana',
-								'Trebuchet',
-								'Georgia',
-								'Times New Roman',
-								'Palatino',
-								'Myriad Pro',
-								'Lucida',
-								'Gill Sans',
-								'Impact',
-								'monospace',
-								'Tahoma',
-							],
-						],
-					],
-					'transport'       => 'auto',
-					'priority'        => 10,
-					'output'          => array(
-						array(
-							'element' => 'body',
-						),
-					),
-				] );
-
-			Kirki::add_field( 'shoppe',
-				[
-					'active_callback' => [
-						[
-							'setting'  => 'use_google_fonts',
-							'operator' => '==',
-							'value'    => true,
-						],
-					],
-					'type'            => 'typography',
 					'settings'        => 'buttons_typography',
 					'label'           => esc_html__( 'Buttons', 'shoppe' ),
 					'section'         => 'typography',
@@ -660,7 +660,7 @@ if ( function_exists( 'Kirki' ) ) {
 				[
 					'type'     => 'color',
 					'settings' => 'color_1',
-					'label'    => __( 'Color #1', 'shoppe' ),
+					'label'    => __( 'Primary Texts Color', 'shoppe' ),
 					'section'  => 'colors',
 					'default'  => '#000000',
 				] );
@@ -669,7 +669,7 @@ if ( function_exists( 'Kirki' ) ) {
 				[
 					'type'     => 'color',
 					'settings' => 'color_2',
-					'label'    => __( 'Color #2', 'shoppe' ),
+					'label'    => __( 'Secondary Texts Color', 'shoppe' ),
 					'section'  => 'colors',
 					'default'  => '#707070',
 				] );
@@ -678,7 +678,7 @@ if ( function_exists( 'Kirki' ) ) {
 				[
 					'type'     => 'color',
 					'settings' => 'color_3',
-					'label'    => __( 'Color #3', 'shoppe' ),
+					'label'    => __( 'Borders', 'shoppe' ),
 					'section'  => 'colors',
 					'default'  => '#D8D8D8',
 				] );
@@ -687,7 +687,7 @@ if ( function_exists( 'Kirki' ) ) {
 				[
 					'type'     => 'color',
 					'settings' => 'color_4',
-					'label'    => __( 'Color #4', 'shoppe' ),
+					'label'    => __( 'Inputs', 'shoppe' ),
 					'section'  => 'colors',
 					'default'  => '#EFEFEF',
 				] );
@@ -696,7 +696,7 @@ if ( function_exists( 'Kirki' ) ) {
 				[
 					'type'     => 'color',
 					'settings' => 'color_5',
-					'label'    => __( 'Color #5', 'shoppe' ),
+					'label'    => __( 'Order Dialog Background', 'shoppe' ),
 					'section'  => 'colors',
 					'default'  => '#F9F9F9',
 				] );

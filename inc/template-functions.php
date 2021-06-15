@@ -397,3 +397,15 @@ if ( ! function_exists( 'shoppe_reply_title' ) ) {
 	}
 }
 add_filter( 'comment_form_defaults', 'shoppe_reply_title' );
+
+if ( ! function_exists( 'notation_header_image' ) ) :
+	/**
+	 * Header Image
+     *
+	 */
+	function notation_header_image() {
+		if (has_header_image()) {
+			echo sprintf('<img class="c-header__bg-img" src="%s" height="%s" width="%s" alt="%s" />', esc_url(get_header_image()) , esc_attr(get_custom_header()->height), esc_attr(get_custom_header()->width), esc_attr__('Header Image', '_s'));
+		}
+	}
+endif;
