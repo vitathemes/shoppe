@@ -1460,7 +1460,8 @@ body.admin-bar .c-nav {
   flex-wrap: nowrap; }
   .c-widget.widget_newsletterwidgetminimal form .tnp-email, .tnp .tnp-email {
     flex-grow: 1;
-    max-width: 60%; }
+    max-width: 100%;
+    margin-right: 0.625rem; }
     @media (min-width: 64em) {
       .c-widget.widget_newsletterwidgetminimal form .tnp-email, .tnp .tnp-email {
         min-width: 70%;
@@ -1471,7 +1472,8 @@ body.admin-bar .c-nav {
     border: none;
     font-size: 0.875rem;
     background-color: var(--shoppe-primary-color);
-    border-radius: 0.25rem; }
+    border-radius: 0.25rem;
+    width: auto; }
     @media (min-width: 64em) {
       .c-widget.widget_newsletterwidgetminimal form .tnp-submit, .tnp .tnp-submit {
         margin-left: 0.625rem; } }
@@ -1485,7 +1487,7 @@ body.admin-bar .c-nav {
   border-bottom: 1px solid var(--shoppe-primary-color);
   color: var(--shoppe-secondary-color);
   padding: 0.8125rem 0.25rem;
-  max-width: 100%; }
+  max-width: 90%; }
   @media (min-width: 64em) {
     .tnp.tnp-subscription-minimal input.tnp-email {
       min-width: 70%;
@@ -1525,10 +1527,6 @@ body.admin-bar .c-nav {
         margin-left: 0.625rem;
         max-width: calc(30% - 10px) !important; } }
 
-.tnp.tnp-subscription .tnp-field-email > input[type="email"] {
-  width: 100%;
-  max-width: 100%; }
-
 .tnp.tnp-subscription-minimal {
   flex-wrap: wrap !important; }
   .tnp.tnp-subscription-minimal input[type="email"] {
@@ -1536,6 +1534,13 @@ body.admin-bar .c-nav {
   @media (min-width: 64em) {
     .tnp.tnp-subscription-minimal {
       flex-wrap: nowrap !important; } }
+
+.tnp-field-email {
+  margin-right: 0.625rem; }
+
+.tnp-field-email > .tnp-email {
+  width: 100%;
+  max-width: 100%; }
 
 .c-cats {
   overflow: hidden;

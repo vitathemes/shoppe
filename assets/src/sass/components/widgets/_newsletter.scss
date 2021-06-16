@@ -43,12 +43,13 @@
   }
 }
 
-.c-widget.widget_newsletterwidgetminimal form , .tnp {
+.c-widget.widget_newsletterwidgetminimal form, .tnp {
   flex-wrap: nowrap;
 
   .tnp-email {
     flex-grow: 1;
-    max-width: 60%;
+    max-width: 100%;
+    margin-right: rem(10px);
 
     @include mq(desktop) {
       min-width: 70%;
@@ -63,6 +64,7 @@
     font-size: rem(14px);
     background-color: $shoppe_neutral_black;
     border-radius: $shoppe_global_radius;
+    width: auto;
 
     @include mq(desktop) {
       margin-left: rem(10px);
@@ -81,7 +83,7 @@
   border-bottom: 1px solid $shoppe_neutral_black;
   color: $shoppe_neutral_primary_color;
   padding: rem(13px 4px);
-  max-width: 100%;
+  max-width: 90%;
 
   @include mq(desktop) {
     min-width: 70%;
@@ -102,7 +104,7 @@
   font-size: rem(14px);
   background-color: $shoppe_neutral_black;
   border-radius: $shoppe_global_radius;
-  margin-top:rem(10px);
+  margin-top: rem(10px);
   margin-left: 0;
 
   @include mq(desktop) {
@@ -126,7 +128,7 @@
     }
 
     input.tnp-submit {
-      margin-top:rem(10px);
+      margin-top: rem(10px);
       margin-left: 0;
 
       @include mq(desktop) {
@@ -134,11 +136,6 @@
         max-width: calc(30% - 10px) !important;
       }
     }
-  }
-
-  .tnp-field-email > input[type="email"] {
-    width: 100%;
-    max-width: 100%;
   }
 }
 
@@ -152,4 +149,13 @@
   @include mq(desktop) {
     flex-wrap: nowrap !important;
   }
+}
+
+.tnp-field-email {
+  margin-right: rem(10px);
+}
+
+.tnp-field-email > .tnp-email {
+  width: 100%;
+  max-width: 100%;
 }
