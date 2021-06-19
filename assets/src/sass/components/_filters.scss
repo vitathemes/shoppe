@@ -38,6 +38,7 @@
     .price_slider_amount .button {
       float: right;
       margin-top: rem(16px);
+      background: transparent;
 
       @include mq(tablet) {
         margin-top: 0;
