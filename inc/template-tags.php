@@ -181,12 +181,13 @@ if ( ! function_exists( 'shoppe_header_nav' ) ) {
 	 * Show header nav
 	 */
 	function shoppe_header_nav() {
-		$shoppe_header_menu_args = array(
-			'theme_location'   => 'menu-1',
-			'menu_class' => 'c-nav s-nav',
-			'container'  => '',
-		);
 		if ( has_nav_menu( 'menu-1' ) ) {
+			$shoppe_header_menu_args = array(
+				'theme_location' => 'menu-1',
+				'menu_class'     => 'c-nav s-nav',
+				'container'      => '',
+			);
+
 			echo "<nav class='c-menu js-header-menu'>";
 			get_search_form();
 			wp_nav_menu( $shoppe_header_menu_args );
@@ -275,15 +276,15 @@ if ( ! function_exists( 'shoppe_post_categories' ) ) {
 
 if ( ! function_exists( 'shoppe_separator' ) ) {
 	/**
- * Dash separator
- */
-function shoppe_separator( $condition = true ) {
-	if ( $condition ) {
-		echo '<span class="o-separator">-</span>';
-	}
+	 * Dash separator
+	 */
+	function shoppe_separator( $condition = true ) {
+		if ( $condition ) {
+			echo '<span class="o-separator">-</span>';
+		}
 
-	return null;
-}
+		return null;
+	}
 }
 
 if ( ! function_exists( 'shoppe__share_links' ) ) {

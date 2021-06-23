@@ -890,13 +890,13 @@ if ( function_exists( 'Kirki' ) ) {
 			Kirki::add_field( 'shoppe', [
 				'type'        => 'switch',
 				'settings'    => 'account_navigation',
-				'label'       => esc_html__( 'Account page navigation', 'notation' ),
+				'label'       => esc_html__( 'Account page navigation', 'shoppe' ),
 				'section'     => 'account',
 				'default'     => 'on',
 				'priority'    => 10,
 				'choices'     => [
-					'on'  => esc_html__( 'Tabs', 'notation' ),
-					'off' => esc_html__( 'Sidebar', 'notation' ),
+					'on'  => esc_html__( 'Tabs', 'shoppe' ),
+					'off' => esc_html__( 'Sidebar', 'shoppe' ),
 				],
 			] );
 			// Account

@@ -20,7 +20,7 @@ defined( 'ABSPATH' ) || exit;
 ?>
 <div class="c-notice s-notice">
     <div class="c-notice__main">
-		<?php esc_html_e( 'No products were found matching your selection.', 'woocommerce' ); ?>
+		<?php esc_html_e( 'No products were found matching your selection.', 'shoppe' ); ?>
     </div>
 </div>
 
