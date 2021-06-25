@@ -2,7 +2,7 @@
 
 Contributors: vitathemes, kashani, mrmolaei, mostafas1990
 Requires at least: 5.6
-Tested up to: 5.7.2
+Tested up to: 5.7
 Requires PHP: 5.6
 Stable tag: 1.0.0
 License: GPL-2.0-or-later
@@ -66,6 +66,26 @@ GNU General Public License for more details.
 Shoppe is distributed under the terms of the GNU GPL version 2.0
 
 Shoppe bundles the following third-party resources:
+
+Image for theme screenshot, Copyright PxHere
+License: CC0 1.0 Universal (CC0 1.0)
+License URL: https://pxhere.com/en/license
+Source: https://pxhere.com/en/photo/1336331
+
+Image for theme screenshot, Copyright PxHere
+License: CC0 1.0 Universal (CC0 1.0)
+License URL: https://pxhere.com/en/license
+Source: https://pxhere.com/en/photo/1163982
+
+Image for theme screenshot, Copyright PxHere
+License: CC0 1.0 Universal (CC0 1.0)
+License URL: https://pxhere.com/en/license
+Source: https://pxhere.com/en/photo/1639697
+
+Image for theme screenshot, Copyright PxHere
+License: CC0 1.0 Universal (CC0 1.0)
+License URL: https://pxhere.com/en/license
+Source: https://pxhere.com/en/photo/1015165
 
 Dashicons by WordPress
 License: GNU GPLv2, https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
