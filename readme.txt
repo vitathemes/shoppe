@@ -4,7 +4,7 @@ Contributors: vitathemes, kashani, mrmolaei, mostafas1990
 Requires at least: 5.6
 Tested up to: 5.7
 Requires PHP: 5.6
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPL-2.0-or-later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -35,6 +35,9 @@ Shoppe, is a quick-loading, lightweight, and RTL-ready WordPress theme, that hel
 See a working example at [demo.vitathemes.com/indigo](https://demo.vitathemes.com/indigo/).
 
 == Changelog ==
+
+= 1.0.1 =
+* Fix license issues
 
 = 1.0.0 =
 * Initial version
