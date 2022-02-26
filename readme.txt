@@ -36,8 +36,11 @@ See a working example at [demo.vitathemes.com/indigo](https://demo.vitathemes.co
 
 == Changelog ==
 
+= 1.0.2 =
+* Updateed screenshot
+
 = 1.0.1 =
-* Fix license issues
+* Fixed license issues
 
 = 1.0.0 =
 * Initial version
